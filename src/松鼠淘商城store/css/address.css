@@ -1,0 +1,29 @@
+.dm-input-row input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color: #999;}
+.mui-input-group .mui-input-row:after{left: 0;}
+.dm-input-row .mui-input-group input,.dm-input-row .mui-input-group .mui-input-row,.dm-input-row .mui-input-group:after{height: auto;}
+.dm-input-row .mui-input-group input,.dm-input-row .mui-input-group textarea{padding: .2rem .42rem;font-size: .3rem;}
+.dm-input-row .mui-input-group input{padding: 0 .42rem;height: 1rem;}
+.dm-input-row .mui-input-row .mui-input-clear~.mui-icon-clear{height: 26px; top: 15px;}
+.dm-input-row .mui-input-group textarea{height: 2.12rem;}
+.mui-input-group .mui-input-row:after{background: #dfdfdf;}
+.dm-input-row .mui-input-group{border-bottom: 5px solid #f2f2f2;}
+.mui-input-group:before,.mui-input-group .mui-input-row:last-child:after{height: auto;}
+.dm-input-row .mui-content-padded{margin-top: 20px;}
+.dm-input-row .d_iconfont{color: #7f7f7f;}
+
+/*地址列表*/
+.addressList{background: #fff;margin: .2rem 0;position: relative;overflow: hidden;}
+.addressList .name{overflow: hidden;height: .7rem;line-height: .7rem;}
+.addressList-top,.addressList-bottom{border-bottom: 1px solid #dfdfdf;padding: .28rem .3rem;}
+.addressList-bottom{padding: 0 .3rem;overflow: hidden;position: relative;}
+.addressList-bottom .mui-pull-left{width: 1.8rem;display: inline-block;line-height: .88rem;padding-left: .6rem; font-size: .3rem;}
+.addressList:last-child{margin-bottom: 24px;}
+.mui-content-padded{text-align: center;}
+.addressTxt {line-height: .38rem;color: #666666;}
+.addressList-bottom .mui-pull-right{height: .88rem;line-height: .88rem;}
+.addressList-bottom .mui-pull-right span{font-size: .3rem;}
+.d_icon_shanchu{margin-left: .3rem;}
+.addressList-bottom .mui-pull-right .iconfont{margin-right: .06rem; font-size: .36rem;}
+.addressList-bottom .mui-pull-right .iconfont.icon-shanchu{font-size: .376rem;position: relative;top: 1px;}
+#address_add{margin-top: .2rem;}
+.mui-pciker-list li{line-height: 36px;}

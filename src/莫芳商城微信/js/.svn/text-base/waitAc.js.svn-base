@@ -1,0 +1,9 @@
+function waitAc_show(){
+	document.getElementById("waitAc_Back").style.display="block";
+	document.getElementById("waitAc_Data").style.display="block";
+}
+
+function waitAc_hide(){
+	document.getElementById("waitAc_Back").style.display="none";
+	document.getElementById("waitAc_Data").style.display="none";
+}

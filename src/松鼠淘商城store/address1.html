@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>收货地址</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/address.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+		
+	</head>
+	<body style="background: #f2f2f2;">
+		<!--总分区-->
+		<div class="wrapper">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">收货人信息</h1>
+			</header>
+			<!--内容区域-->
+			<div class="content">				
+				<div class="addressBox md-border-top5">
+					<div class="addressList">
+						<div class="addressList-top">
+							<div class="name">
+								<span class="nickname font-size30">某某某</span>
+								<span class="tel font-size30">15888888888</span>
+							</div>
+							<p class="addressTxt font-size24">广东省广州市海珠区琶洲会展南5路中洲 交易中心(中洲交易中心二期)1219</p>						
+						</div>
+						<div class="addressList-bottom">
+							<span class="mui-pull-left set-default"><i></i>默认</span>
+							<span class="mui-pull-right">
+								<span class="d_icon_bianji"><i class="icon iconfont icon-bianji"></i>编辑</span>
+								<span class="d_icon_shanchu"><i class="icon iconfont icon-shanchu"></i>删除</span>	
+							</span>
+						</div>
+					</div>
+					<div class="addressList">
+						<div class="addressList-top">
+							<div class="name">
+								<span class="nickname font-size30">某某某</span>
+								<span class="tel font-size30">15888888888</span>
+							</div>
+							<p class="addressTxt font-size24">广东省广州市海珠区琶洲会展南5路中洲 交易中心(中洲交易中心二期)1219</p>						
+						</div>
+						<div class="addressList-bottom">
+							<span class="mui-pull-left set-default"><i></i>默认</span>
+							<span class="mui-pull-right">
+								<span class="d_icon_bianji"><i class="icon iconfont icon-bianji"></i>编辑</span>
+								<span class="d_icon_shanchu"><i class="icon iconfont icon-shanchu"></i>删除</span>	
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="mui-content-padded">
+					<a href="address.html"><div class="mui-btn-block mui-btn-primary">新增收货地址</div></a>
+				</div>			
+			</div>
+		</div>
+		<!--弹出窗提示-->
+		<div class="alert-prompt" style="display:none;">
+			<div class="alert-prompt-con">
+				<h3 class="title font-size36">温馨提示</h3>
+				<p class="txt font-size32">你确定要删除此收货地址吗？</p>
+				<div class="confirm-btn">
+					<div class="btn_button cancel">取消</div>
+					<div class="btn_button">确认</div>
+				</div>
+			</div>
+		</div>		
+		
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				$(function(){
+				//点击取消隐藏
+				$(".cancel").click(function(){
+					$(".alert-prompt").hide();//隐藏
+				});
+				//点击删除
+				$(".d_icon_shanchu").click(function(){
+					$(".alert-prompt").show();
+				})
+				
+				//设为默认地址
+				$(".set-default").click(function(){
+					$(this).find("i").toggleClass("cur");
+					$(this).parents('.addressList').siblings().find('.cur').removeClass('cur');
+				});
+			})
+		</script>
+	</body>
+</html>

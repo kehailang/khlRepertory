@@ -1,0 +1,31 @@
+/*通告样式*/
+.annunciate{overflow: hidden;position: relative;background: #181818;color: #fff;padding: .16rem .4rem;}
+.annunciate .header{width: 10%;overflow: hidden;}
+.annunciate .header img{border: 1px solid #fff;border-radius: 50%;}
+.annunciate .text{width: 70%;position:relative;padding-left: .3rem;}
+.annunciate .close{width: 20%;}
+.annunciate .text p{color: #fff;}
+.annunciate .close i{width: .36rem;height: .36rem;display: inline-block;background: url(../images/close.png) no-repeat;background-size:.36rem .36rem;}
+/*四大专区样式*/
+.prefecture{background: url(../images/bg.jpg) no-repeat; background-size:cover;}
+.prefecture .mui-table-view.mui-grid-view{background: none;}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{font-size: .2rem;height: auto;line-height: normal;color: #5d5d5d;margin-top: -2px;}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn){padding: 0;}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: .36rem 6px;border: none;}
+.d_icon_sale,.d_icon_rebate,.d_icon_lottery,.d_icon_prefecture{width: 1.2rem;height: 1.2rem;display: inline-block; background: url(../images/tb1.png) no-repeat; background-size:contain;}
+.d_icon_rebate{ background: url(../images/tb2.png) no-repeat; background-size:contain;}
+.d_icon_lottery{ background: url(../images/tb3.png) no-repeat; background-size:contain;}
+.d_icon_prefecture{ background: url(../images/tb4.png) no-repeat; background-size:contain;}
+/*hot*/
+.hot{background:#de1820;padding: .05rem 0;}
+.hot img:not(:first-child){margin-top: -.2rem;}
+
+/*banner-img*/
+.banner-img{background:#f3c179;}
+.banner-img .mui-media-body p{color: #fd1721;font-size: .24rem;text-align: left;}
+.banner-img .mui-media-body p em{background: #fd1721;font-size: .15rem;color: #fff;border-radius: 2px;padding:.02rem .06rem;}
+.banner-img .mui-media-body p.note{text-decoration: line-through;color: #969696;}
+.banner-img .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{padding: .18rem .12rem .12rem;background: #fff;}
+.banner-img .mui-grid-view.mui-grid-9 .mui-table-view-cell a{background: #fff;}
+.banner-img .mui-grid-view.mui-grid-9 .mui-table-view-cell{padding: .2rem 0;padding-right: .2rem;}
+.banner-img .mui-table-view.mui-grid-view{padding-left: .2rem;}

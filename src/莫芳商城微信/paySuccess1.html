@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>莫芳-支付成功</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/payment.css"/>
+		<style type="text/css">
+			html,body{height: 100%;}
+		</style>
+	</head>
+	<body>
+		<!--添加微信好友-->
+		<div class="alertBg" style="display: block;">
+			<div class="alertBg-con1">
+				<img src="images/bgimg.png" style=""/>
+				<div style="background: #fff;width: 50%;margin: 0 auto;padding: 15px 40px 20px;margin-top: -20px;text-align: center;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;">
+					<img src="images/code3.jpg" style="margin: 10px auto;"/>
+					<p>长按识别二维码添加好友  </p>
+					<p>可赢取现金红包奖励哦！</p>
+				</div>
+    			<div class="prompt-close" style="position: absolute; top: 23%;right: 12%; height: 50px;width: 50px;">
+				</div>
+			</div>
+		</div>
+		
+		<div class="payment">
+			<p class="payName" style=" line-height: 90px;">支付成功</p>
+			<p class="payText" style=" padding: 0 10px;">感谢体验，因发货量过大，我们将于<br />
+<em>3日（工作日）</em>内给您发货，请注意查收。</p>
+			<p class="payText" style="padding: 20px 0;">同时您获得<em>1</em>次抽奖机会~</p>
+		</div>	
+		<div class="mf-btn mf-payBtn">立即抽奖</div>
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("body,html").css("overflow","hidden")
+				$(".alertBg").show();
+				$(".prompt-close").click(function(){
+					$("body,html").css("overflow","initial")
+					$(".alertBg").hide();
+				})
+
+			})
+		</script>
+	</body>
+</html>

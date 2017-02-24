@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登陆</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body class="md-background-white">
+		<!--总分区-->
+		<div class="wrapper md-background-white">
+			<div class="login-frame dm-pading17">
+				<form class="mui-input-group">
+					<div class="mui-input-row">	
+						<input type="text" class="mui-input-clear md-fsize15" placeholder="请输入手机号码">
+					</div>
+					<div class="mui-input-row">	
+						<input id="password" type="password" class="mui-input-clear md-fsize15 mui-input" placeholder="请输入密码">
+					</div>
+				</form>
+			</div>
+			<div class="mui-content-padded">
+				<button class="mui-btn mui-btn-block mui-btn-primary">登 录</button>
+				<div class="link-area">
+					<a class="mui-pull-left md-fsize12">忘记密码</a><a class="mui-pull-right md-fsize12">没有账号？注册</a> 
+				</div>
+			</div>
+			<!--其他登陆方式-->
+			<div class="dm-other-ways">
+				<span class="md-fsize12">其他登录方式</span>
+				<div class="dm-choose-ways">
+					<span class="mui-icon icon d_iconfont d_icon_weixin"></span><span class="mui-icon icon d_iconfont d_icon_weibo"></span><span class="mui-icon icon d_iconfont d_icon_qq"></span>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+	</body>
+</html>

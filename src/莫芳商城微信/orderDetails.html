@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>莫芳-订单详情</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/order.css">
+		<link rel="stylesheet" href="css/address.css" />
+		<link rel="stylesheet" href="css/mui.poppicker.css" />
+		
+		<style type="text/css">
+			.myOrder .orderList{padding: 18px 0 0;}
+			.myOrder .product{padding: 0 20px 18px;}
+			.product .orderTxt{position: relative;}
+		</style>
+	</head>
+	<body>		
+		<!--订单详情-->
+		<div id="bigOrderDetails">
+			<div class="details-box">
+				<ul class="order-number">
+					<li class="items">
+						<span>订单号</span>
+						<span>125112115511</span>
+					</li>
+					<li class="items">
+						<span>下单时间</span>
+						<span class="time">2016/11/22</span>
+					</li>
+				</ul>
+				<ul class="order-number">
+					<li class="items">
+						<span>选择收货地址</span>
+						<span><i class="icon-return"></i></span>
+					</li>
+				</ul>
+				<div class="order-message">
+					<div class="importance">
+						<span style="float: left;">收货人</span>
+					</div>
+					<div class="importance">
+						<span>何想想</span>
+						<span>186 2080 6053</span>
+					</div>
+					<div class="address">广东省广州市海珠区新港东路1088号中洲交易中心1218</div>
+				</div>
+	     	 	<div class="myOrder">
+	     	 		<div class="orderList">
+	    	 			<div class="product">
+	     	 				<div class="orderImg"><img src="images/orderImg.jpg"/></div>
+	     	 				<div class="orderTxt">
+	     	 					<h3><span class="header-txt">茜婷试用套装</span><span class="sum mf-red line-through">90元</span></h3>
+	     	 					<p><span> x2</span></p>
+	     	 					<em class="no-payment">31.8元运费免费体验</em>
+	     	 				</div>		             	 				
+	     	 			</div>		             	 			
+	    	 			<div class="product">
+	     	 				<div class="orderImg"><img src="images/orderImg.jpg"/></div>
+	     	 				<div class="orderTxt">
+	     	 					<h3><span class="header-txt">茜婷试用套装</span><span class="sum mf-red line-through">90元</span></h3>
+	     	 					<p><span> x2</span></p>
+	     	 					<em class="no-payment">31.8元运费免费体验</em>
+	     	 				</div>		             	 				
+	     	 			</div>		             	 			
+	     	 		</div>
+	     	 	</div>
+				<div class="order-sign">* 付邮费即可免费体验。立即获得百分百中奖机会！   最高奖奔驰哦！</div>
+				<div class="remark">
+					<p>留言备注</p>
+					<textarea placeholder="请发顺丰快递~"></textarea>
+				</div>
+				<ul class="order-number">
+					<li class="items">
+						<span>订单运费</span>
+						<span class="free-shipping">包邮</span>
+					</li>
+					<li class="items">
+						<span>订单总计</span>
+						<span class="common">共1件 9.9元</span>
+					</li>
+				</ul>			
+			</div>					
+			<div style="height: 88px;"></div>
+			<div class="btn-fixed">
+				<div class="btn-cancel mf-btn">取消订单</div>
+				<div class="btn-payment mf-btn mf-btn-red"><a href="myOrder.html">去付款</a></div>
+			</div>			
+		</div>
+		<!--订单详情end-->
+		<!--添加地址-->
+		<div id="addAddress" style="display: none;">
+			<div class="addressForm">
+				<form action="">
+					<div class="addressInput">
+						<label class="label"><input type="text" placeholder="收货人" readOnly/></label>
+						<input type="text" id="aName" placeholder="名字" />
+					</div>
+					<div class="addressInput">
+						<label class="label"><input type="text" placeholder="手机号码" readOnly/></label>
+						<input type="text" id="aPhone" placeholder="11位手机号码" />
+					</div>
+					<div class="addressInput">
+						<label class="label"><input type="text" placeholder="选择地区" readOnly/></label>
+						<input type="text" class="aArea" id="city-picker" placeholder="地区信息" readOnly/><i></i>
+					</div>
+					<div class="addressInput address-detail">
+						<label class="label"><input type="text" placeholder="详细地址" readOnly/></label>
+						<textarea type="text" id="aAddressDetails" placeholder="街道门牌信息"></textarea>
+					</div>
+					<div class="addressInput">
+						<label class="label"><input type="text" placeholder="邮政编码" readOnly/></label>
+						<input type="text" id="aZipCode" placeholder="邮政编码" />
+					</div>				
+					<div class="addressInput">
+						<label class="label"><input type="text" placeholder="设为默认" readOnly/></label>
+						<span class="default cur"></span>
+					</div>				
+				</form>
+			</div>
+			<div class="btn-fixed">
+				<div class="btn-cancel mf-btn">取消</div>
+				<div class="btn-save mf-btn mf-btn-red" id="save">保存</div>
+			</div>					
+		</div>
+		<!--添加地址end-->
+		<!--选择地址-->
+		<div id="chooseAddress"  style="display: none;">
+			<div class="addressBox">
+				<div class="addressList">
+					<div class="name">
+						<span class="nickname">某某某</span>
+						<span class="tel">15888888888</span>
+						<span class="set-default">设为默认</span>
+					</div>
+					<p class="addressTxt">广东省广州市海珠区琶洲会展南5路中洲 交易中心(中洲交易中心二期)1219</p>
+					<i class="icon-setting"></i>
+				</div>
+				<div class="addressList">
+					<div class="name">
+						<span class="nickname">某某某</span>
+						<span class="tel">15888888888</span>
+						<span class="set-default">设为默认</span>
+					</div>
+					<p class="addressTxt">广东省广州市海珠区琶洲会展南5路中洲 交易中心(中洲交易中心二期)1219</p>
+					<i class="icon-setting"></i>
+				</div>
+				<div class="addressList">
+					<div class="name">
+						<span class="nickname">某某某</span>
+						<span class="tel">15888888888</span>
+						<span class="set-default">设为默认</span>
+					</div>
+					<p class="addressTxt">广东省广州市海珠区琶洲会展南5路中洲 交易中心(中洲交易中心二期)1219</p>
+					<i class="icon-setting"></i>
+				</div>
+			</div>
+			<a href="address.html"><div class="address-fixed" id="addAddress"><i class="icon-add"></i>新增收货地址</div></a>			
+		</div>
+		<!--物流停运温馨提示-->
+		<div class="alertBg" style="display: block;">
+			<div class="alert-prompt-con">
+				<h3 class="title">温馨提示</h3>
+				<p class="txt">因春运物流停运，2017年01月16日起，下单年后（2月6日）统一发货</p>
+				<div class="confirm-btn">
+					<div class="btn_button cancel">我知道了</div>
+				</div>
+			</div>
+		</div>		
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script>		
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//-----------------------------------------
+					//					//级联示例
+					var cityPicker = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('city-picker');	
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							showCityPickerButton.value=(items[0] || {}).text + "" + (items[1] || {}).text + "" + (items[2] || {}).text;
+							//alert(showCityPickerButton.value)
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//点击我知道了弹窗隐藏
+			$(".cancel").click(function(){
+				$(".alertBg").hide();
+			});		
+			$(".addressInput").click(function(){
+				$(this).find(".default").toggleClass("cur")
+			})
+			$(".addressInput>input,textarea").focus(function(){
+				$(".btn-fixed").css({"position":"relative","margin-top": "70px"})
+			})
+			$(".addressInput>input,textarea").blur(function(){
+				$(".btn-fixed").css("position","fixed")
+			})
+		</script>
+		
+	</body>
+</html>

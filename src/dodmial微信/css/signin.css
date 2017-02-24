@@ -1,0 +1,31 @@
+body{background: #fff;}
+.checkin{margin: auto auto auto auto;padding: 15px 22px; }
+.clear {clear:both; height:0; overflow:hidden; display:block; line-height:0}
+.clearfix:after {clear:both;font-size:0; height:0; display:block; visibility:hidden; content:" "; line-height:0}
+.clearfix {zoom:1}/* for IE6 IE7 */
+.title{height: 50px;line-height: 50px;border-bottom: 1px solid #e4e4e4;font-size: 15px;margin-bottom: 10px;}
+.title p.mui-pull-left{color: #666;}
+.title p.mui-pull-left em,.title p.mui-pull-right em{color: #fe693a;}
+.title p.mui-pull-right{color: #999;}
+.title a{display: inline-block;line-height: 36px;text-align: center;background: #42941a;border-radius: 5px;color: #fff;text-decoration: none;font-size: 16px;}
+.checkin li{float: left;padding: 10px 0;text-align: center;color: #333;}
+.checkBtn{background: #ff4747;color: #fff;line-height: 44px;height: 44px;padding: 0;border-radius: 4px;}
+.qiandao-state{margin: 10px 0 20px;color: #666;}
+.qiandao-state span{font-size: 12px;}
+.yi-qiandao i,.wei-qiandao i,.dantian i{display:inline-block;background: #ff4747;width: 10px;height: 10px;color: #fff;text-align: center;margin-right: 5px;}
+.wei-qiandao{margin:0 14px;}
+.wei-qiandao i{background: #999999;}
+.dantian i{background: #e49696;}
+li.able-qiandao{background: #e49696;color: #fff; }
+li.checked{background:#ff4747;color: #fff;}
+.checkin >p.md-fsize12{color: #666;}
+.mask{ width: 100%;height: 100%;position: absolute;top: 0; background-color: rgba(0,0,0,0.55);visibility: hidden;transition: all 0.25s ease;    max-width: 768px; margin: 0 auto;}
+a.closeBtn{display: block;position: absolute;right: 10px;top: 5px;font-family: 'simsun';font-size: 22px;text-decoration: none;font-weight: bolder;color: #333}
+.title_h1{text-align: center;font-size: 40px;font-weight: normal;padding: 50px 0;display: block;width: 100%}
+.title_h1 span{display: block;width: 40px;height: 40px;border-radius: 100%;background: #ff4747;color: #fff;margin: 0 auto; margin-top: 7px;position: relative;}
+.title_h1 span::before{width: 10px;height: 2px;background: #fff;position: absolute;left: 8px;top: 25px;display: block;line-height: 0;font-size: 0;content: ""; transform: rotate(52deg);}
+.title_h1 span::after{width: 24px;height: 2px;background: #fff;position: absolute;left: 12px;top: 20px;display: block;line-height: 0;font-size: 0;content: "";transform: rotate(-45deg);}
+.title_h1 em{display: block;font-size: 30px;margin-left: 10px;position: relative;top: 10px;}
+.trf{visibility: visible;}
+.trf .modal{transform: translateY(0);}
+.modal{background:#fff;width: 90%;border-radius: 10px;margin: 0 auto;border:5px solid #ff4747;box-sizing:border-box;transform: translateY(-220%);transition: all 0.25s ease;margin-top: 200px;}

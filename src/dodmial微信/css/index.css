@@ -1,0 +1,39 @@
+.dm-recommend{padding: 20px 0;box-sizing: border-box;}
+.dm-recommend li{white-space:nowrap;overflow-x:auto;overflow-y: auto; float: left;width: 70px;}
+.dm-recommend ul{margin: 10px 0;}
+.dm-recommend .mui-text-center{position: relative;}
+.dm-border{width: 70px;height: 1px;background: #000;display: block;margin: 3px auto;}
+.dm-recommend .mui-segmented-control.mui-scroll-wrapper{padding-left: 10px;}
+.dm-recommend-ul-li{width: 80%;margin: 0 auto;}
+.dm-recommend-ul-li .mui-media-body{color: #000;}
+.dm-recommend .mui-segmented-control.mui-scroll-wrapper img{width: 100%;border-radius: 50%;}
+.mui-media-body{font-size: 12px;}
+.do-header-img i,.dm-header-title span i{position: absolute;bottom: 3px;right: 0;width: 16px;height: 16px;background: url(../images/v.png) no-repeat;background-size:16px 16px;}
+.dm-header-title span i{width: 8px;height: 8px;background-size:8px 8px;}
+.dm-data{padding: 22px 0;}
+
+/*文章列表*/
+.mui-card{ margin: 5px 0 0;}
+.dm-header-title{width: 100%;position: relative;color: #000;}
+.dm-header-title span{float: left;display: inline-block;font-size: 15px;}
+.dm-header-title >span:nth-of-type(1){width: 32px;position: relative;}
+.dm-header-title span img{border-radius: 50%;}
+.dm-header-title >span:nth-of-type(2){/*width: 100%;position: absolute;top: 50%;right: 0;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);*/padding-left: 10px;line-height: 32px;}
+.dm-header-title .mui-ellipsis span:last-child{float: right;color: #666666;font-size: 12px;}
+.mui-card-img img{border: 1px solid #e7e7e7;}
+.mui-card-img{padding: 0 15px;}
+.mui-card-footer:before, .mui-card-header:after{height: auto;}
+.mui-card-content-inner p{font-size: 16px;margin: 0;}
+.mui-card-content-inner{padding: 5px 15px 0;}
+.mui-card-footer{padding: 0 15px;    color: #666;}
+.mui-card-link >span i{padding:0 4px 0 0;}
+.mui-card-link >span:last-child{margin-left: 12px;}
+.d_icon_aixin{line-height: 40px;padding-right: 4px;}
+
+.dm-recommend .dm-recommend-ul-li{width: 70px;}
+.mui-scroll-wrapper .dm-recommend .mui-segmented-control.mui-scroll-wrapper{height: 160px;}
+.dm-recommend .mui-segmented-control.mui-scroll-wrapper,.dm-recommend .mui-segmented-control.mui-scroll-wrapper .mui-scroll,.dm-recommend .mui-segmented-control.mui-scroll-wrapper .mui-control-item{height: 180px;}
+.dm-recommend .mui-segmented-control.mui-scroll-wrapper{    padding: 24px 15px 16px;box-sizing: border-box;}
+.dm-recommend .mui-segmented-control.mui-scroll-wrapper .mui-control-item{margin: 0 5px;}
+.dm-parent .mui-scroll-wrapper{    overflow-y: auto;height: 100%;}
+.dm-header-title span a{height: 100%;width: 100%;display: inline-block;}

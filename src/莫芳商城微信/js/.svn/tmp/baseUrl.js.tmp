@@ -1,0 +1,19 @@
+function baseUrl_getWebServiceUrl(){
+	//var url="http://192.168.31.113:8080/SongShuWeiXin/"
+<<<<<<< .mine
+	var url="http://bu.songshushuo.cn/xxxwxt10zz25z/";
+=======
+	var url="http://192.168.31.183:8085/SongShuWeiXin/"
+	//var url="http://bu.songshushuo.cn/xxxwxt10zz25z/";
+>>>>>>> .r3755
+	//var url="http://192.168.31.66:7080/Shop/";
+	//var url="http://bu.songshushuo.cn:7080/Shop/";
+	//var url="http://butest.songshushuo.cn:7080/Shop/";
+	//var url="http://192.168.31.146:8081/Shop/";
+	return url;
+}
+
+function WeChat_appid(){
+	var appid="wx83e23b965c17dd4b";
+	return appid;
+}

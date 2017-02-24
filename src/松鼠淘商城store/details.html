@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>详情</title>  
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->    
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>	    
+   		<link rel="stylesheet" href="css/swiper.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/details.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	</head>
+	<body>
+	<!--总分区-->
+	<div class="wrapper">			
+		<div id="slider" class="mui-slider mui-fullscreen md-margin-top0">
+			<!--选项卡-->
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted ss-nav">
+				<div class="mui-scroll">
+					<span class="return dm-positionleft50 mui-action-back"><a href="javascript:;" class=""><span class="icon iconfont icon-fanhui"></span></a></span>
+					<a class="mui-control-item mui-active" href="#item1mobile">
+						商品
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						详情
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						评价
+					</a>	
+					<span class="home dm-positionright50"><a href="index.html" class="home"><span class="icon iconfont icon-shouye"></span></a></span>
+					
+								
+				</div>
+			</div>
+			<!--选项内容-->
+			<div class="mui-slider-group">
+				<!--第一个选卡-->
+				<div id="item1mobile" class="mui-slider-item mui-control-content mui-active dm-parent">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!--banner-->
+							<div class="swiper-container">
+							    <div class="swiper-wrapper">
+							        <div class="swiper-slide"><img src="images/pbanner.png"/></div>
+							        <div class="swiper-slide"><img src="images/pbanner.png"/></div>
+							        <div class="swiper-slide"><img src="images/pbanner.png"/></div>
+							    </div>
+							    <!-- 如果需要分页器 -->
+							    <div class="swiper-pagination"></div>
+							</div>	
+							<!--推荐产品-->
+							<div class="page1_tBox">
+								<div class="p-details">
+									<div class="details1">
+										<p >雪屋猫砂盘 大号封闭式猫便盆厕所 极简优雅</p>
+										<p>原创设计 / 松鼠汇</p>
+										<i class="icon iconfont icon-fenxiang dm-positionright50" id="share"></i>
+									</div>										
+									<p class="price">￥367.00<span class="marketP">市场价：420.00</span></p>
+									<div class="reward"><span class="Cashback">返现<em>￥99</em></span><span class="points">可获得松鼠币</span></div>
+									<p class="spokesman">代言人总奖金：<em>2.00/件</em></p>
+								</div>
+								<div class="return-goods">
+									<span><i class="icon iconfont icon-success"></i>7天无理由退货</span>
+									<span><i class="icon iconfont icon-success"></i>48小时发货</span>
+									<span><i class="icon iconfont icon-success"></i>正品保证</span>
+								</div>
+							</div>
+							<div class="page1bottom"></div>							
+							<!--推荐产品end-->	
+							
+						</div>
+					</div>
+				</div>
+				<!--第二个选卡-->
+				<div id="item2mobile" class="mui-slider-item mui-control-content dm-parent">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<img src="images/pbanner.png"/>
+							<img src="images/pbanner.png"/>
+							<img src="images/pbanner.png"/>
+							<img src="images/pbanner.png"/>
+							<img src="images/pbanner.png"/>
+							<img src="images/pbanner.png"/>
+							<img src="images/pbanner.png"/>
+							<img src="images/pbanner.png"/>
+						</div>
+					</div>
+				</div>
+				<!--第三个选卡-->
+				<div id="item3mobile" class="mui-slider-item mui-control-content dm-parent">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="review">
+								<li>								
+									<div class="mui-media-body">	
+										<img class="mui-media-object mui-pull-left" src="images/header1.jpg"/>
+										<p class='mui-ellipsis font-size34'>何想想是只猪</p>
+									</div>
+									<div class="review-txt">何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想</div>
+								</li>
+								<li>								
+									<div class="mui-media-body">	
+										<img class="mui-media-object mui-pull-left" src="images/header1.jpg"/>
+										<p class='mui-ellipsis font-size34'>何想想是只猪</p>
+									</div>
+									<div class="review-txt">何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想是只猪何想想</div>
+								</li>
+							</ul>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--底部-->
+	<div class="dm-fixed-bm">
+        <div class="shoucan btn-bmicon box-center">
+        	<div>
+        	 	<span class="icon iconfont icon-shoucang"></span>
+            	<div class="mui-media-body">收藏</div>       		
+        	</div>
+        </div>
+        <div class="gouwu btn-bmicon box-center">
+        	<div>
+	        	 <span class="icon iconfont icon-gouwuche"></span>
+	             <div class="mui-media-body">购物车</div>
+            </div>
+        </div>
+        <div class="ss-button btn-bmicon">
+			<a href="javascript:;" class="add-cart font-size36 yellow add_cart">加入购物车</a>
+			<a href="submit_orders.html" class="buy-now font-size36 red">立即购买</a>
+	    </div>
+	</div>	
+	<!--加入购物车-->
+	<div class="alert-prompt addgongwu">
+		<div class="addShoppingCart">
+			<div class="addShoppingCart-top">
+				<div class="cartProductImg">
+					<img src="images/img7.jpg"/>
+				</div>	
+				<div class="cartProductTxt">
+					<h3 class="font-size28">雪屋猫砂盘大号封闭式 猫便盆厕所极简优雅...</h3>
+				</div>
+				<p class="jiage">
+					<span class="font-size32 red-color">￥2299.00</span>
+					<span class="font-size28">库存78件</span>
+				</p>				
+				<span class="icon iconfont icon-guanbi close"></span>
+			</div>
+			<div class="addShoppingCart-bottom">
+				<!--颜色-->
+				<p>颜色</p>
+				<div class="addshopping-model">
+					<span>米m白色</span><span class="gray1">高端黑</span><span>灰色</span><span>红色</span><span>红色</span><span>红色</span>
+				</div>
+				<!--颜色-->
+				<p>尺码</p>
+				<div class="addshopping-model">
+					<span>170/92A/M</span><span class="gray1" >170/92A/M</span><span>170/92A/M</span><span>170/92A/M</span>
+				</div>
+				<!--数量-->
+				<div class="border-bottom">
+					<p class="mui-pull-left goumai-p">购买数量</p>
+					<div class="amount mui-pull-right goumai">
+						<span class="min"><i></i></span>
+						<input class="text_box md-fsize15" type="text" value="0" readonly="readonly" />
+						<span class="add"><i></i></span>
+						<input class="product_id" type="hidden" name="productId" value="10">	
+					</div>	
+				</div>
+			</div>
+			<!--确认-->
+			<div class="addshopping-center">
+				<div class="ss-button btn-bmicon">
+					<a href="javascript:;" class="add-cart font-size36 yellow add_cart">加入购物车</a>
+					<a href="javascript:;" class="buy-now font-size36 red">立即购买</a>
+			    </div>			
+				
+			</div>
+		</div>
+	</div>
+	<!--关注 “松鼠淘”微信公众号-->
+	<div class="alert-prompt guanzhu">
+		<div class="alert-prompt-con">
+			<h3 class="title font-size36">温馨提示</h3>
+			<p class="guanzhu_txt">为了返利的顺利发放，请长按二维码关注
+“松鼠淘”微信公众号</p>
+			<div class="erweima">
+				<img src="images/erweima.jpg"/>
+			</div>
+		</div>
+	</div>	
+	<!--分享-->
+	<div class="alert-prompt tishi">
+		<img src="images/tishi.png">
+	</div>	
+	<!--返回顶部-->
+	<div id="top" class="top"></div>	 <!--style="display: block;"-->
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="js/collect_choose.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/dropload.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function(){
+			//评价上拉加载
+		    var counter = 0;
+		    // 每页展示6个
+		    var num = 6;
+		    var pageStart = 0,pageEnd = 0;
+		
+		    // dropload
+		    $('#item3mobile .mui-scroll-wrapper .mui-scroll').dropload({
+		        scrollArea : window,
+		        domDown : {
+		            domClass   : 'dropload-down',
+		            domRefresh : '<div class="dropload-refresh">↑上拉加载更多</div>',
+		            domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+		            domNoData  : '<div class="dropload-noData">暂无数据</div>'
+		        },
+		        loadDownFn : function(me){
+		        	console.log('下拉')
+		            $.ajax({
+		                type: 'GET',
+		                url: 'more.json',
+		                dataType: 'json',
+		                success: function(data){
+	//			                	$('.lists').empty("")
+		                    var result = '';
+		                    counter++;
+		                    pageEnd = num * counter;
+		                    pageStart = pageEnd - num;
+		
+		                    for(var i = pageStart; i < pageEnd; i++){
+		                        result +=   '<li><div class="mui-media-body">'
+		                                        +'<img class="mui-media-object mui-pull-left" src="images/header1.jpg"/>'
+		                                        +'<p class="mui-ellipsis font-size34">何想想是只猪</p></div>'
+		                                        +'<div class="review-txt">'+data.lists[i].title+'</div>'
+		                                    +'</li>';
+
+		                        if((i + 1) >= data.lists.length){
+		                            // 锁定
+		                            me.lock();
+		                            // 无数据
+		                            me.noData();
+		                            break;
+		                        }
+		                    }
+		                    // 为了测试，延迟1秒加载
+		                    setTimeout(function(){
+		                        $('.review').append(result);
+		                        // 每次数据加载完，必须重置
+		                        me.resetload();
+		                    },1000);
+		                },
+		                error: function(xhr, type){
+		                    alert('Ajax error!');
+		                    // 即使加载出错，也得重置
+		                    me.resetload();
+		                }
+		            });
+		        },
+		        threshold : 50
+		    });
+			//点击分享按钮弹出提示分享
+			$("#share").click(function(){
+				$(".tishi").show();//显示
+			});
+			//点击tishi分享弹窗消失
+			$(".tishi").click(function(){
+				$(".tishi").hide();//隐藏
+			})
+			
+			//加入购物车	    
+	    	$(".add_cart").click(function(){
+	    		$(".addgongwu").fadeIn();
+	    	})
+	    	$(".close").click(function(){
+	    		$(".alert-prompt").fadeOut();
+	    	})
+	   
+			//类型排他
+			$(".addshopping-model span:not(.gray1)").click(function(){
+				$(this).addClass("active").siblings().removeClass("active")
+			})	
+		
+			//返回顶部
+			$('#item2mobile .mui-scroll-wrapper').scroll(function(){
+				if($('#item2mobile.dm-parent .mui-scroll-wrapper').scrollTop()>200){
+					
+					$("#top").fadeIn(500);
+				}else{
+					$("#top").fadeOut(500);
+				}
+			})
+			$('#item3mobile .mui-scroll-wrapper').scroll(function(){
+				if($('#item3mobile.dm-parent .mui-scroll-wrapper').scrollTop()>200){
+					
+					$("#top").fadeIn(500);
+				}else{
+					$("#top").fadeOut(500);
+				}
+			})
+			
+			$("#top").click(function(){
+				$(".dm-parent .mui-scroll-wrapper").animate({scrollTop:0},500);
+				return false;
+			});
+
+		});	
+		//banner
+		var swiper = new Swiper('.swiper-container', {
+		    pagination: '.swiper-pagination',
+		    paginationClickable: true,
+		    autoplay: 2000,//可选选项，自动滑动
+		    autoplayDisableOnInteraction : false,    //注意此参数，默认为true
+		});
+		// 监听tap事件，解决 a标签 不能跳转页面问题
+		mui('nav,.mui-slider-group,header,.home,.return').on('tap','a',function(){document.location.href=this.href;});
+	
+
+	</script>
+	</body>
+</html>

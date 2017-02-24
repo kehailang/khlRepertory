@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>莫芳-购物车</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->		
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/shoppingCart.css" />
+	</head>
+	<body>
+		<footer class="nav">
+			<ul>
+			    <li class="index"><a href="index.html?type=1"><i class="icon1-A"></i><span>首页</span></a></li>
+			    <li class="shoppingCart"><a href="shoppingCart.html?type=2"><i class="icon2-B"></i><span>购物车</span></a></li>
+			    <li class="surprise"><a href="surprise.html?type=3"><i class="icon3-A"></i><span>惊喜</span></a></li>
+			    <li class="me"><a href="personCenter.html?type=4"><i class="icon4-A"></i><span>我</span></a></li>
+			</ul>		
+		</footer>				
+		<div class="myOrder">
+			<div class="orderList">
+				<div class="product">
+					<span></span>
+					<div class="orderImg"><img src=""/></div>
+					<div class="orderTxt">
+						<h3>dfdfd</h3>
+						<span class="delete">删除</span>
+						<p>asdsad<span> ¥3</span></p>
+						<span class="coin">¥<i class="price mf-red">111</i></span>
+						<div class="amount">
+							<span class="min"><i></i></span>
+							<input class="text_box" type="text" value="33" readonly="readonly" />
+							<span class="add"><i></i></span>
+							<input class="product_id" type="hidden" name="productId" value="10">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="orderList">
+				<div class="product">
+					<span></span>
+					<div class="orderImg"><img src=""/></div>
+					<div class="orderTxt">
+						<h3>dfdfd</h3>
+						<span class="delete">删除</span>
+						<p>asdsad<span> ¥3</span></p>
+						<span class="coin">¥<i class="price mf-red">111</i></span>
+						<div class="amount">
+							<span class="min"><i></i></span>
+							<input class="text_box" type="text" value="33" readonly="readonly" />
+							<span class="add"><i></i></span>
+							<input class="product_id" type="hidden" name="productId" value="120">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fixed">
+			<div class="onceAccount">
+				<div class="left">
+					<div class="check-all"><span></span>全选</div>
+					<p class="replace mf-red">请选择商品</p>
+				</div>
+				<input type="hidden" id="allProductId" value="">
+				<div class="right mf-btn btn-settleAccounts"><a href="">去结算</a></div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js" ></script>
+		<script type="text/javascript" src="js/shop.js" ></script>
+<script type="text/javascript">
+		//单选的时候
+//		$(".product > span").click(function(){
+//			console.log($(this).parents().children(".orderTxt").children(".amount").children(".product_id").val());
+//		})
+		//全选的时候
+//		$(".onceAccount .left span").click(function(){
+//			//console.log($(".product_id").val());
+//			var  isAllChecked =$(this).attr("class");
+//			if(isAllChecked =="cur"){
+//				$(".product_id").each(function(){
+//					console.log($(this).val());
+//				})				
+//			}
+
+//		})
+		//删除的时候
+		$(".delete").click(function(){
+			console.log($(this).parents(".orderList").children(".product").children(".orderTxt").children(".amount").children(".product_id").val());
+		})
+
+
+
+
+</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+body{background: #f0f0f0;}
+.collect{margin-bottom: 1.2rem;}
+.collect.mui-table-view .mui-media-object{width: 1.16rem;height: 1.16rem;max-width: 1.16rem;}
+.content .mui-table-view .mui-table-view-cell{padding: .4rem .3rem;}
+.collect .mui-table-view-cell>a:not(.mui-btn){padding: 0;margin: 0;}
+.mui-table-view-cell span.note{text-decoration: line-through; color: #ABABAB;margin-left: .12rem;}
+.content .mui-table-view .mui-table-view-cell.orderList p.shopping-body-price{margin-bottom: 0;min-height: .6rem;}
+.mui-table-view-cell p{color: #292929;line-height: .36rem;margin-bottom: .4rem;text-align: justify;}
+.back-btn{border-radius: .06rem;width: .34rem;height: .34rem;line-height: .34rem; font-size: .24rem;background: #e61511;color: #fff;display: inline-block;text-align: center;}
+.collect.delete-list .select-btn{top: 1rem;}
+.mui-table-view-cell p.shopping-body-price{margin-top: .23rem;}
+.collect.delete-list .mui-table-view-cell>a{margin-left: .7rem;}
+.check-all,.total{height: 1.08rem;margin-left: .88rem;line-height: 1.08rem;}
+.delete-btn{display: inline-block;height: .77rem;line-height: .77rem;border-radius: .08rem;padding: 0 .36rem;}
+.delete-btn .iconfont{color: #fff;  position: relative;top: 1px;margin-right: .08rem;}
+.orderList .dm-positionleft50{left: 0;}
+.shopping .orderList .dm-positionleft50{left: .3rem;}
+
+/*暂无收藏*/
+.no-collection{text-align: center;top: 5.5rem;}
+.no-collection .d_iconfont{font-size: .7rem;color: #ababab;}
+.no-collection p{color: #ababab; font-size: .48rem;    margin-top: .61rem;}
+
+/*购物车*/
+.shopping .mui-table-view .shopping-title{width: 3rem;    display: inline-block;}
+.shopping-price p{margin-bottom: .5rem;}
+.shopping-body-title{overflow: hidden;}
+.shopping-body-price{overflow: hidden;position: relative;}
+.shopping-body-price .mui-ellipsis-2{width: 3rem;color: #ababab;}
+.shopping-title .mui-ellipsis-2{line-height: .36rem;}
+.shopping-body-price .mui-pull-right{position: absolute;bottom: 0;right: 0;}
+.total{margin: 0;text-align: right; width: 50%;}
+.total p{color: #e61511;line-height: 1.08rem;}
+.clearing{width: 1.9rem;text-align: center;}
+.lose_efficacy .mui-table-view-cell p{margin-bottom:0;}
+/*支付完成状态*/
+.border{background: #fff; margin: .32rem auto;}
+.goshopp.border.look{background: #fff; margin: 1.5rem auto 0;}
+.tubiao{width: 1.4rem;height: 1.4rem;margin: 0 auto;}
+.huise-color{color: #666666 !important;}
+/*退货列表*/
+.refund_list .mui-table-view-cell p{width: 66%;margin-top: 0;}
+.refund_list .text_bottom span{font-size: .28rem;}
+.refund_list .hui-color{margin-left: .24rem;}
+.text_bottom{position: absolute;bottom: -2px;}
+.refund_list .dm-positionright50{background: #e61511;color: #fff;text-align: center;height: .66rem;line-height: .66rem;width: 1.6rem;border-radius: .08rem;right: 0;font-size: .3rem;}
+.case_number{position: absolute;bottom: .32rem;right: 0;margin-right: .32rem;}
+.refund_list a~.dm-positionright50{margin-right: .3rem;}
+/*失效订单*/
+.lose_efficacy p.font-size30{line-height: 1rem;text-align: center;background: #fff;border-top: 1px solid #e1e1e1;}
+.content .lose_efficacy .mui-table-view .mui-table-view-cell{border-bottom: 0;}
+.content .lose_efficacy .mui-table-view .mui-table-view-cell:last-child{ border-bottom: 1px solid #e1e1e1;}
+.lose_efficacy .collect{margin: 0;}
+.lose_efficacy{margin: -.9rem 0 1.2rem;background: #fff;padding-bottom: .2rem;}
+.lose_efficacy ul *{color: #ababab !important;}
+.lose_efficacy .empty_btn{border: 1px solid #e1e1e1;border-radius: .16rem;margin: .2rem .32rem 0;line-height: .88rem;text-align: center;font-size: .3rem;}
+.lose_efficacy ul .icon{font-size: .41rem;top: 1rem;}
+.jiage.amount{border: none;text-align: right;position: relative;top: 4px;}
+.jiage.amount .text_box{float: none;border: none;width: .3rem;}
+.empty_box{width: 2.29rem;height: 2.53rem;margin: 0 auto;}
+.no-collection .empty_text{font-size: .34rem;color: #000000;margin-top: .3rem;}
+.select_number{display: none;}

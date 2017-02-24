@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>莫芳-绑定手机号</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/withdraw.css"/>
+		<style type="text/css">
+			.items .label{width: 20%;}
+			.items .input{width: 80%;}
+		</style>
+	</head>
+	<body>
+		<div class="add-text">填写您本人的手机号码</div>
+		<ul class="carry-amount addBankCard">
+			<li class="items">
+				<label class="label"><input type="text" placeholder="手机号" readonly="readonly" /></label>
+				<label class="input"><input type="text" placeholder="134364654"/></label>
+			</li>
+			<li class="items">
+				<label class="label"><input type="text" placeholder="验证码" readonly="readonly" /></label>
+				<label class="input">
+					<input class="bank-card" type="text" placeholder="4位验证码"/>
+					<span class="verify">获取验证码</span>
+				</label>
+			</li>
+		</ul>
+		<div class="mf-btn mf-confirm">绑 定</div> 
+		
+	</body>
+</html>

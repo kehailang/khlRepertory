@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>莫芳-添加银行卡</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/withdraw.css"/>
+	</head>
+	<body>
+		<div class="add-text">填写您本人的银行卡信息</div>
+		<ul class="carry-amount addBankCard">
+			<li class="items">
+				<label class="label"><input type="text" placeholder="姓名" readonly="readonly" /></label>
+				<label class="input"><input type="text" placeholder="何想想"/></label>
+			</li>
+			<li class="items">
+				<label class="label"><input type="text" placeholder="银行卡号" readonly="readonly" /></label>
+				<label class="input"><input type="text" placeholder="银行卡号"/></label>
+			</li>
+			<li class="items">
+				<label class="label"><input type="text" placeholder="银行名称" readonly="readonly" /></label>
+				<label class="input">
+					<select class="mf-choose" id="selectId">
+						<option readOnly="true">请选择银行卡</option>
+						<option>中国邮政</option>
+						<option>中国农业银行</option>
+						<option>中国建设银行</option>
+						<option>中国工商银行</option>
+						<option>中国银行</option>
+						<option>中国光大银行</option>
+						<option>华夏银行</option>
+						<option>中国民生银行</option>
+						<option>平安银行</option>
+						<option>兴业银行</option>
+					</select>
+					
+				</label>
+			</li>
+		</ul>
+
+		<div class="mf-btn mf-confirm">确认添加</div> 
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//请选择银行卡color颜色默认为灰色			
+				$("#selectId").css("color","#d5cccc")
+				$("#selectId").change(function(){
+					console.log($(this).val())
+					//请选择其他银行卡color颜色为333333		
+					$("#selectId").css("color","#333333");
+				});			
+			})
+		</script>
+	</body>
+</html>

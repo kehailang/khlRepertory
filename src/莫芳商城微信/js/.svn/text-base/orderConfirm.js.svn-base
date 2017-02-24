@@ -1,0 +1,20 @@
+//计算选择商品盒子宽
+function resizeBox(){
+	$("li.last div,.stateBox").css({"height":$("li.one img").css("height")})
+}resizeBox();
+window.onresize = resizeBox;
+
+$(function(){
+	//配送方式
+	var bottomPopup = $(".LogistListBox").height();
+	$(".LogistListBox").css({"bottom":-(bottomPopup)+'px'});
+	$(".tNewCapacityBack").click(function(){		
+		$(".LogistListBox").animate({bottom:-(bottomPopup)+'px'},200);
+		$(".tNewCapacityBack").hide();
+	});	
+})
+function LogistListShow(){
+	$(".tNewCapacityBack").show()
+	$(".LogistListBox").animate({bottom:'0'});	
+}
+

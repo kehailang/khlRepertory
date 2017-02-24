@@ -1,0 +1,27 @@
+body{max-width: 768px;margin: 0 auto;font-size: 14px;background: #eeeeee;}
+.color{color: #ee4910 !important;}
+.gray{color: #a9a9a9;}
+.yellow{color: #ffff00 !important;}
+.white{color: #fff !important;}
+.wrap{height: 100%;}
+/*买单优惠页面*/
+.shop-bg{background: url(../images/shop-bg.jpg) no-repeat;background-size:cover;padding-bottom: 5.4%;text-align: center;}
+.shop-title{position: relative;padding-top:5%;}
+.shop-name{font-size: 18px;color: #fff;position: relative; top: -7px;margin-left: 12px;}
+.shop-avatar{width: 26px;height: 26px; border: 1px solid #fff;border-radius: 50%;display: inline-block;overflow: hidden;}
+.status-bar{ padding: 0 8px;overflow: hidden;background: #fff;}
+.status-bar .item{border-bottom: 1px solid #f0f0f0;line-height: 44px;overflow: hidden;}
+.status-bar .item span,.status-bar .item span input{font-size: 14px;text-align: right;}
+.status-bar .item span:last-child{float: right;width: 50%;text-align: right;}
+.way{font-size: 15px;}
+.status-bar .item img{width:28px;display: inline-block;margin-right: 10px;}
+.weixin img{position: relative;top: 9px;}
+.zhifubao img{position: relative;top: 9px;}
+.yinlian img{position: relative;top: 5px;}
+.status-bar .item i{width: 18px;height: 18px;background:url(../images/ss-sprites.png) no-repeat;background-size:225px 225px;background-position:-207px -72px;display: inline-block;position: relative;top: 5px;}
+.status-bar .item i.current{background-position:-187px -72px;}
+
+p{ line-height: 30px; font-size: 13px; padding-left: 8px; color: #555;}
+.item .kd{color: #555;}
+
+

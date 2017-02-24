@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>物流信息</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/logistics.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+		
+	</head>
+	<body class="md-background-white">
+		<!--总分区-->
+		<div class="wrapper md-background-white">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">物流信息</h1>
+			</header>
+			<!--内容区域-->
+			<div class="content">
+				<!--物流信息-->
+				<ul class="wuliu-information">
+					<li class="items">
+						<span class="title">物流状态：</span>
+						<span id="status">已签收</span>
+					</li>
+					<li class="items">
+						<span class="title">物流公司：</span>
+						<span id="company">全峰快递</span>
+					</li>
+					<li class="items">
+						<span class="title">运单编号：</span>
+						<input id="popatxt" readonly="readonly" value="98375893re9009485">
+					</li>
+				</ul>
+				<div class="track">
+				  <div class="track-title">物流跟踪</div>
+				  <div class="Lmessage">
+				    <div class="message active">
+				      <span class="circle"></span>
+				      <p>已签收,签收人是【冯生】,签收网点是【海珠同福】</p>
+				      <p>2017-01-12 12:11:11</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>【海珠同福】的【冯灿深】正在派件</p>
+				      <p>2017-01-12 09:19:11</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>快件到达【海珠同福】,上一站是【海珠仓】</p>
+				      <p>2017-01-12 09:17:52</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>快件在【海珠仓】装车,正发往【海珠同福】</p>
+				      <p>2017-01-12 07:54:29</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>快件到达【海珠仓】,上一站是【广州分拨中心】</p>
+				      <p>2017-01-12 07:40:49</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>快件在【广州分拨中心】装车,正发往【海珠仓】</p>
+				      <p>2017-01-12 00:23:54</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>快件到达【广州分拨中心】,上一站是【广州从化站】</p>
+				      <p>2017-01-11 22:35:18</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>快件在【广州从化站】装车,正发往【广州分拨中心】</p>
+				      <p>2017-01-11 19:15:56</p>
+				      <div class="line"></div>
+				    </div>
+				    <div class="message">
+				      <span class="circle"></span>
+				      <p>【广州从化站】的【松鼠行动】已收件</p>
+				      <p>2017-01-11 19:13:27</p>
+				      <div class="line"></div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+	</body>
+</html>

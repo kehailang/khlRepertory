@@ -1,0 +1,5 @@
+.wrapBox{margin-bottom: 56px;}
+.classify-tip{display: none;}
+.classify-name{border-bottom: 1px solid #eeeeee;padding: 14px 15px;position: relative;}
+.classify-name:first-child{border-top: 1px solid #eeeeee;}
+.return-icon{width: 7px;height: 12px;display: inline-block; background: url(../images/return_icon.png) no-repeat;background-size: 100%;position: absolute;top: 17px;right: 15px;}

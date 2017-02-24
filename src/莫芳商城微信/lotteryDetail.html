@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>莫芳-抽奖明细</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>		
+		<link rel="stylesheet" href="css/order.css">
+		<link rel="stylesheet" type="text/css" href="css/lotteryDetail.css"/>
+		<style type="text/css">
+			html,body{height: 100%;}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+	 	 	<div class="myOrder">
+	 	 		<div class="orderList">
+	 	 			<p class="din-number"><span>订单号：1606488479666</span></p>
+	 	 			<p class="size">恭喜您12月24日16:35:58，您的分享产生体验， 您获得一次抽奖机会</p>
+	 	 			<div class="product">
+	 	 				<a href="orderDetails.html">
+	     	 				<div class="orderImg"><img src="images/orderImg.jpg"/></div>
+	     	 				<div class="orderTxt">
+	     	 					<h3><span class="header-txt">喝呵呵玫瑰女性滋补养生泡茶</span><span class="sum">¥9.9</span></h3>
+	     	 				</div>	
+	 	 				</a>
+	 	 			</div>		             	 			
+	 	 			<div class="orderBtn">
+	 	 				<div class="btn">
+	 	 					<a href="javascript:;" class="orange">查看物流</a>
+	 	 					<a href="javascript:;" class="orange evaluate-click">去评价</a>
+	 	 				</div>
+	 	 			</div>
+	 	 		</div>
+	 	 	</div>
+	 	 	<div class="myOrder">
+	 	 		<div class="orderList">
+	 	 			<p class="size">恭喜您12月24日16:35:58，您的分享产生体验， 您获得一次抽奖机会</p>
+	 	 			<div class="product">
+	 	 				<a href="orderDetails.html">
+	     	 				<div class="orderImg"><img src="images/orderImg.jpg"/></div>
+	     	 				<div class="orderTxt">
+	     	 					<h3><span class="header-txt">喝呵呵玫瑰女性滋补养生泡茶</span><span class="sum">¥9.9</span></h3>
+	     	 				</div>	
+	 	 				</a>
+	 	 			</div>		             	 			
+	 	 			<div class="orderBtn">
+	 	 				<div class="btn">
+	 	 					<a href="javascript:;" class="orange">查看物流</a>
+	 	 					<a href="javascript:;" class="orange evaluate-click">去评价</a>
+	 	 				</div>
+	 	 			</div>
+	 	 		</div>
+	 	 	</div>
+		</div>
+		<!--去评价弹窗-->
+		<div class="evaluateBg">
+			<div class="evaluateBg-con">
+				<textarea placeholder="请输入评论内容"></textarea>
+				<div class="btn">
+					<a href="javascript:;" class="orange cancel-click">取消发布</a>
+ 					<a href="javascript:;" class="orange fabu">发布评论</a>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js" ></script>
+		<script>
+			$(function(){
+				$(".evaluate-click").click(function(){
+					$("body,html").css("overflow","hidden")
+					$('.evaluateBg').show()
+				})
+				$(".cancel-click").click(function(){
+					$("body,html").css("overflow","initial")
+					$('.evaluateBg').hide()
+				})
+				
+			})
+			
+		</script>
+	</body>
+</html>

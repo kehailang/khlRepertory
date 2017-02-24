@@ -1,0 +1,23 @@
+.dm-input-row input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color: #999;}
+.mui-input-group .mui-input-row:after{left: 0;}
+.dm-input-row .mui-input-group input,.dm-input-row .mui-input-group .mui-input-row,.dm-input-row .mui-input-group:after{height: auto;}
+.dm-input-row .mui-input-group input,.dm-input-row .mui-input-group textarea{padding: 14px 20px;}
+.dm-input-row .mui-input-group input{padding: 14px 30px 14px 20px;}
+.dm-input-row .mui-input-row .mui-input-clear~.mui-icon-clear{height: 26px; top: 15px;}
+.dm-input-row .mui-input-group textarea{height: 114px;}
+.mui-input-group .mui-input-row:after{background: #dfdfdf;}
+.dm-input-row .mui-input-group{border-bottom: 5px solid #f2f2f2;}
+.mui-input-group:before,.mui-input-group .mui-input-row:last-child:after{height: auto;}
+.dm-input-row .mui-content-padded{margin-top: 20px;}
+.dm-input-row .d_iconfont{color: #7f7f7f;}
+
+/*地址列表*/
+.addressList{background: #fff;margin: 10px 0;position: relative;overflow: hidden;}
+.addressList .name{font-size: 16px;overflow: hidden;height: 35px;line-height: 35px;}
+.addressList-top,.addressList-bottom{border-bottom: 1px solid #dfdfdf;padding: 14px 16px;}
+.addressList-bottom{padding: 0 16px;overflow: hidden;position: relative;}
+.addressList-bottom .mui-pull-left{width: 70px;display: inline-block;line-height: 44px;padding-left: 22px;}
+.addressList .d_iconfont{color: #333;margin-right: 6px;}
+.addressList .d_icon_shanchu{margin-left: 22px;}
+.addressList .d_icon_bianji{ position: relative;top: -1px;}
+.addressList:last-child{margin-bottom: 24px;}

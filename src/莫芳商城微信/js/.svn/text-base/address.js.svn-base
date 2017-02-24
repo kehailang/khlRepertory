@@ -1,0 +1,49 @@
+$(function(){
+	$(".setting .default").click(function(){
+		$(this).find("i").addClass("cur").parents('.default').find('span').addClass('cur');
+		$(this).parents('.addressList').siblings().find('.cur').removeClass('cur');
+	});
+	
+})
+function AddAddressExamine(){
+	var bool=true;
+	var codeTest=/^(\d{0}|[1-9]\d{5})$/;
+	var phoneTest=/^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+	var specialSymbol = /\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g;
+	var len = $("#aAddressDetails").val().length;
+	var nameLen = $("#aName").val().length;
+
+	if($("#aName").val()==""){
+		newAlert("请输入收货人姓名");
+		bool=false;
+	}else if(specialSymbol.test($("#aName").val())){
+		newAlert("不能输入表情");
+		return false;
+	}else if($("#aPhone").val()==""){
+		newAlert("请输入收货人手机号");
+		bool=false;
+	}else if(!phoneTest.test($("#aPhone").val())){
+		newAlert("收货人手机号格式有误");
+		bool=false;
+	}else if($(".aArea").val()==""){
+		newAlert("请输入收货人地区");
+		bool=false;
+	}else if($("#aAddressDetails").val()==""){
+		newAlert("请输入详细地址");
+		bool=false;
+	}else if(specialSymbol.test($("#aAddressDetails").val())){
+		newAlert("不能输入表情");
+		bool=false;
+	}else if(!codeTest.test($("#aZipCode").val())){
+		newAlert("邮政编码格式有误");
+		bool=false;
+	}
+	if(len>40){
+		newAlert("地址不能超过40个字符");
+		bool=false;
+	}if(nameLen>14){
+		newAlert("收货人不能超过14个");
+		bool=false;
+	}
+	return bool;
+}

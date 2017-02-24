@@ -1,0 +1,19 @@
+//function getDis(){
+//		var theScale=0.8;
+//		//当前窗口大小
+//		var width=$(window).width();
+//		var height=$(window).height();
+//			
+//		if(width<=320 && height<500){
+//			$(".exchange-group,.exchange-btn").css({"height":"34px"});
+//			$(".exchange-group input").css({"font-size":"14px"})
+//			$(".exchange-conBg").css({"margin-top":" 29px"});
+//			$("footer").css({"top":0})
+////			$(".hot-line").css({"margin-top":" 20px"});	
+//		}
+//		if(width<=320){
+//			$(".exchange-group,.exchange-btn").css({"height":"34px"});
+//		}
+//
+//}getDis();  
+//

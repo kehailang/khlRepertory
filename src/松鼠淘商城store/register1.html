@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>设置密码</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body>
+		<!--总分区-->
+		<div class="wrapper">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">设置密码</h1>
+			</header>
+			<!--内容区域-->
+			<div class="content">				
+				<div class="login-frame dm-pading17">
+					<form class="mui-input-group">
+						<div class="mui-input-row">	
+							<input id="password" type="password" class="mui-input-clear md-fsize15 mui-input" placeholder=" 请设置登录密码">
+							<i class="icon iconfont icon-biyan dm-positionright50" id="eyes-icon"></i>
+						</div>
+					</form>
+				</div>
+				<!--登录部分-->
+				<div class="mui-content-padded">
+					<a href="reset_success.html"><div class="mui-btn-block wx-btn-primary">确 认</div></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				//密码password显示和隐藏
+				var cur = true;
+				$("#eyes-icon").click(function(){	
+					console.log('dd')
+					if(cur ==true){
+						$(this).removeClass("icon-biyan");
+						$(this).addClass("icon-yanjing")
+						$(this).siblings("input").attr("type","text");
+						cur = false;
+					}else{
+						$(this).removeClass("icon-yanjing")
+						$(this).addClass("icon-biyan")
+						$(this).siblings("input").attr("type","password");
+						cur = true;
+					};
+				});
+			})
+		</script>
+		
+	</body>
+</html>

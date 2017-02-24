@@ -1,0 +1,135 @@
+$(window).ready(function() {
+	getOrderData();	
+});	
+var sMoney=0;
+function getOrderData(){
+	
+	if(getCookie("uid")==""||getCookie("uid")==null){
+		newAlert("网络异常,请重新登录！");
+		window.location.href = '../login/login.html';	
+	}else{
+		var token = getTk("getOrderDetail");
+		var oId=QueryString("orderId");
+		waitAc_show();
+		var theUrl="../orderV_T/getOrderDetail";
+		//var theUrl=baseUrl_getWebServiceUrl()+"orderV_T/getOrderDetail";
+		$.ajax({
+			url : theUrl,
+			data : {
+				order_id:""+oId,
+				token:token
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+
+			},
+			success : function(result) {
+				var data=result.entity;
+				var strhtml1="";
+				var strhtml2="";
+				strhtml1+='<span>收货人：'+data.user_name+'</span> <span>'+data.phone+'</span>';
+				strhtml2+=data.address;
+				$(".name").html(strhtml1);
+				$(".default").html(strhtml2);
+				
+				$("#pop1").html("订单编号：<input id='popatxt' type='text' readonly='readonly' value='"+data.order_id+"' />");
+				$("#pop2").html("购买时间："+data.create_time);
+				if(data.order_status==0){
+					$("#pop3").html("支付时间：未支付");
+				}else{
+					$("#pop3").html("支付时间："+data.pay_time);
+				}
+				if(data.deliver_time==null){
+					$("#pop4").html("发货时间：未发货");
+				}else{
+					$("#pop4").html("发货时间："+data.deliver_time);
+				}
+				
+				$("#logistText").html(data.logist_name);
+				sMoney=data.points;
+				$("#thePriceS").html(data.points);
+				if(data.money=="0"){
+					$("#thePriceL").html("包邮");
+					$("#isFee").val(1);
+				}else{
+					$("#thePriceL").html("¥"+data.money);
+				}
+																		
+				var pnums=0;
+				for(var i=0;i<data.productList.length;i++){
+					var strhtml="";
+					if(i<2){
+						strhtml+='<li class="one">';
+						strhtml+='<div>';
+						strhtml+='<img src="'+data.productList[i].img_name+'" /> <span>x'+data.productList[i].count+'</span>';
+						strhtml+='</div>';
+						strhtml+='</li>';
+						$("#pList").append(strhtml);
+					}else{
+						$("#lastTi").show();
+					}
+					pnums=pnums+parseInt(data.productList[i].count);
+				}
+				
+				$("#pTotalNums").html("共"+pnums+"件");
+				if(QueryString("code")!=""&&QueryString("code")!=null){
+					toWeiChaPay();
+				}
+				waitAc_hide();
+			}
+		});
+	}
+	
+}
+
+function deleteOrder(){
+	if(getCookie("uid")==""||getCookie("uid")==null){
+		newAlert("网络异常,请重新登录！");
+		window.location.href ='../login/login.html';	
+	}else{
+		newConfirm("是否删除该订单？",function() {
+			var oId=QueryString("orderId");
+			waitAc_show();
+			var token = getTk("deleteOrder");
+			var theUrl="../orderV_T/deleteOrder";
+			//var theUrl=baseUrl_getWebServiceUrl()+"orderV_T/deleteOrder";
+			$.ajax({
+				url : theUrl,
+				data : {
+					order_id:""+oId,
+					token:token
+				},
+				error : function(jqXHR, textStatus, errorThrown) {
+					newAlert("网络超时");
+					waitAc_hide();
+				},
+				success : function(result) {
+					waitAc_hide();
+					window.location.href='myOrder.html?status=0';
+				}
+			});
+		});
+	}
+}
+function goLPD(){
+	var oId=QueryString("orderId");
+	window.location.href='orderList.html?orderId='+oId;
+}
+
+function jsCopy(){		
+    var len = $("#popatxt").val().length;
+    document.getElementById("popatxt").setSelectionRange(0, len);
+    document.getElementById("popatxt").focus();
+    document.execCommand("Copy"); //执行浏览器复制命令
+    newAlert("订单号已复制到剪切板");
+}
+
+function logistics(){
+	var oId=QueryString("orderId");
+	window.location.href='logisticsInformation.html?orderId='+oId;
+}
+
+
+function postReview(){
+	var oId=QueryString("orderId");
+	window.location.href='orderEvaluate.html?orderId='+oId;
+}

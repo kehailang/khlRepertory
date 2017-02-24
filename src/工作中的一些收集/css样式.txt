@@ -1,0 +1,216 @@
+CSS：
+<<文字只读状态>>
+readonly
+<<能显示在盒子的中间>>
+vertical-align: middle;display: table-cell;
+
+<<1.效果：可以实现中文和英文自动换行>> 
+//不换行：word-break:keep-all;white-space:normal;
+#wrap{white-space:normal;word-break: break-all;
+ width:200px; } white-space:normal;word-break:break-all;
+或者 
+#wrap{word-break:break-all;width:200px;} 
+<div id="wrap">本地本地本地本地本地本地
+本地本地本地本地本地本地本地本地</div> 
+
+<<2.文字左右两边对齐>>
+ text-align: justify;
+
+<<3.给placeholder设置默认样式>>
+.addressInput input::-webkit-input-placeholder{color:#8d8d8d;}
+.addressInput input:-moz-placeholder{color:#8d8d8d;}
+
+<<3.限制div高度，内容多了显示滚动条>>
+#test{min-height:250px;overflow-y:auto; max-height:300px;}
+或者
+<div style="width:300px;height:300px;overflow:auto;"></div>
+
+<<4.字与字的左右间距>>
+letter-spacing: 6px;
+
+<<5.表格线太粗>>
+ border-collapse:collapse; border-spacing:0;
+
+<<6图片>>
+background-size: cover;background-position: center;
+vertical-align:text-top;
+
+
+使用CSS3中的border-radius
+table{border-radius:5px;overflow:hidden}
+ 如果需要单独针对某一个角设置为圆角可以使用下面代码
+border-top-left-radius:5em;
+border-top-right-radius:5em;
+border-bottom-right-radius:5em;
+border-bottom-left-radius:5em;
+
+
+两行文字显示多余用省略号...文字截断功能可以用css做，
+如下css样式：
+
+-webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+一行文字显示多余用省略号...文字截断功能可以用css做，
+如下css样式：
+.test{ 
+width:200px; 
+height:50px; 16:02 2016/10/27
+border:1px solid red; 
+padding:10px; 
+overflow:hidden; /*不显示超过对象宽度的内容*/ 
+text-overflow:ellipsis; /*当对象内文本溢出时显示省略标记（...）*/ 
+white-space:nowrap; /*限制在一行内显示所有文本*/ 
+}
+
+color: #666;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 16px;
+    overflow: hidden;
+    /* height: 100px; */
+    padding-top: 23px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 360px;
+
+
+<<文本域textarea>>
+去掉右下角的拉伸:resize:none
+顶部有内阴影：-webkit-appearance: none;
+    border: none;
+input默认带的蓝色边框去掉:outline: none;
+
+《文字顶部对齐》
+vertical-align: bottom;
+
+《文字加载有颜色，滚动然后没有颜色》
+：<a href="tel:400-4848-0000">400-4848-0000</a>
+   
+《在里面打字的字消失 》
+placeholder=""
+
+
+
+
+<<这个是指定 5 到 8  第9以上可以显示的
+>>
+:nth-child(-1n+8):not(:nth-child(-1n+4)) 
+
+<<偶数和奇数css选择器>>
+
+ul li:nth-child(2n){ display:block; background:#f40; height:20px; width:100px;}
+ul li:nth-child(2n+1){ display:block; background:#000; height:20px; width:100px;}
+
+<<鼠标选中字背景和字体的颜色更改>>
+::selection{ background:#f40; color:#fff;}
+
+<<css背景模糊>>
+.blur {	
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10,
+ MakeShadow=false); /* IE6~IE9 */
+}
+
+<<css3动画属性>>
+用CSS代码的方式表示，就是：
+单向循环： animation-iteration-count: infinite; animation-direction: normal;
+双向循环：  animation-iteration-count: infinite; animation-direction: alternate;
+
+
+<<让input变成不可编辑状态的方法  >>>
+disabled="true "此果文字会变成灰色，不可编辑。
+
+readOnly="true" 文字不会变色，也是不可编辑的
+
+
+
+<<404页面的图片显示在正中间>>
+
+body{height:100%; padding:0; margin:0; background:url(http://image.zhangxinxu.com/image/404.png) no-repeat fixed 50% 40%;}
+
+
+
+<title>竖向排列的文字</title> 
+<style> 
+h1 { 
+width: 50px; 
+font-size: 50px; 
+word-wrap: break-word; 
+letter-spacing: 20px; 
+} 
+</style> 
+
+<<渐变>>
+background: -webkit-gradient(linear, 0% 100%, 0% 0%,from(rgba(0,0,0,0.07)), to(#000));
+
+<<聊天一样   我们的信息再多  后面的背景都是不会动的
+>>
+固定背景图片，我们修改代码为
+<style type="text/css">
+body 
+{
+background-image:url(d:/bg.gif);
+background-repeat:no-repeat;
+background-attachment:fixed
+}
+</style>
+
+<<opacity兼容到ie8>>
+opacity:0;filter:alpha(opacity=0);
+
+
+
+<<input输入框中的灰色初始值的显示>>
+ value="初始值" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue; this.style.color='#999'}" style="color:#999" 
+
+
+<<CSS如何使字母变成大写或小写>>
+
+将字母字符串变成大写：text-transform:uppercase;
+将字母字符串变成小写：text-transform:lowercase;
+如果要保持不改变文本的大小写时，得用none值：text-transform:none;
+
+<<js text文本框字数限制>>
+ 	<input type="text" onkeyup="clickLength(this);"/>
+
+	function clickLength(which){
+		var len = 140;
+		if(which.value.length > len){
+			alert("最多输入140个字");
+			which.value = which.value.substring(0,len);
+			return false;	
+		}
+	}
+
+
+<<根据屏幕的高度让某元素固定在底部jq>>
+$(function(){
+    function wh(){
+        var wh = $(window).height()-100;
+        var mh = $('.warp').height();
+        if( mh < wh){
+            $('.g-bottom').addClass('cur1');
+            
+        }else{
+            $('.g-bottom').removeClass('cur1');   
+        }
+    }
+    wh();
+})
+《.g-bottom.cur1{ position:fixed; bottom:0; left:0; width:100%;}
+》
+
+<<长按不能复制>>
+<style>*{-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;}</style>

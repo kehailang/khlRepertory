@@ -1,0 +1,27 @@
+var tabsSwiper = new Swiper('.swiper-container',{	
+	followFinger : false,
+	onSwiperCreated:function(){
+		var H=$(".content-slide").eq(0).height()+12;
+		$(".swiper-wrapper").css('height', H+'px');
+		$(".swiper-slide").css('height', H+'px');
+	},
+	onSlideChangeStart: function() {
+		var H = $(".content-slide").eq(tabsSwiper.activeIndex).height()+12;
+		$(".tabs span.active").removeClass('active');
+		$(".tabs a").eq(tabsSwiper.activeIndex).find("span").addClass('active');
+		$(".swiper-slide").css('height', H + 'px');
+		$(".swiper-wrapper").css('height', H + 'px');
+	},	
+});
+$(".tabs a").on('touchstart mousedown',function(e){
+	e.preventDefault()
+	$(".tabs span.active").removeClass('active');
+	$(this).find("span").addClass('active');
+	tabsSwiper.swipeTo($(this).index());
+});
+function goClassify(){
+	 window.location.href="../classify.html";
+}
+
+
+

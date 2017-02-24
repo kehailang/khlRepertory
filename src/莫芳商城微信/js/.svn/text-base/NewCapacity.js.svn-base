@@ -1,0 +1,58 @@
+function newAlert(tText){
+	$('.tNewCapacityAlert_text').html(tText);
+	$('.tNewCapacityBack').show();
+	$('.tNewCapacityAlert').show();
+	$('.tNewCapacityAlert_text').show();
+	$('.tNewCapacityAlert_button').show();
+}
+function newAlert1(tText){
+	$('.tNewCapacityAlert_text').html(tText);
+	$('.tNewCapacityBack').show();
+	$('.tNewCapacityAlert').show();
+	$('.tNewCapacityAlert_text').show();
+	$('.tNewCapacityAlert_button').show();
+	
+	$(".tNewCapacityAlert_button").click(function(){
+		self.location = document.referrer;
+	});
+}
+
+function alertVerify(){	
+	$('.tNewCapacityAlert_text').hide();
+	$('.tNewCapacityBack').hide();
+	$('.tNewCapacityAlert').hide();
+}
+
+function newConfirm(tText,yesfun){
+	$('.tNewCapacityConfirm_text').html(tText);
+	$('.tNewCapacityConfirm_text').show();
+	$('.tNewCapacityBack').show();
+	$('.tNewCapacityConfirm').show();
+	$('.tNewCapacityConfirmControlBox').show();
+	$('.tNewCapacityConfirm_button1').show();
+	$('.tNewCapacityConfirm_button2').show();
+	$(".tNewCapacityConfirm_button2").one("click",function() {
+		yesfun();
+		confirmCancel();
+	});	
+}
+
+function confirmCancel(){
+	$('.tNewCapacityBack').hide();
+	$('.tNewCapacityConfirm').hide();
+	$('.tNewCapacityConfirm_text').hide();
+	$('.tNewCapacityConfirmControlBox').hide();
+	$('.tNewCapacityConfirm_button1').hide();
+	$('.tNewCapacityConfirm_button2').hide();
+	$(".tNewCapacityConfirm_button2").unbind("click");
+}
+
+function waitAc_show(){
+	document.getElementById("theWaitAcBack").style.display="block";
+	document.getElementById("theWaitAcData").style.display="block";
+}
+
+function waitAc_hide(){
+	document.getElementById("theWaitAcBack").style.display="none";
+	document.getElementById("theWaitAcData").style.display="none";
+}

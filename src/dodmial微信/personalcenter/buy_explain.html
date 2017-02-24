@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>购买说明</title>  
+	<!-- 为移动设备添加 viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!-- telephone为no -->
+	<meta name="format-detection" content="telephone = no">
+	<!-- 公共基础样式 -->    
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../css/index.css"/>-->
+    <link rel="stylesheet" type="text/css" href="../css/goods.css"/>
+</head>
+<body class="md-background-white">
+	<!--总分区-->
+	<div class="wrapper">	
+		<div class="dm-common-con buy-explan">
+		    <div class="tabs">
+		        <a href="#" hidefocus="true"><span class="active">运费说明</span></a>
+		        <a href="#" hidefocus="true"><span>购买咨询 </span></a>
+		        <a href="#" hidefocus="true"><span>退换货说明</span></a>
+		    </div>    
+		    <div class="swiper-container md-background-white">
+		        <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+		           		<div class="content-slide">
+							单色图标与多色图标混合在一个图标库内没有符合绘制规则，参照帮助中心 绘制规则图标质量实在辣眼睛抄袭 Iconfont 线上已有多色图标大家在对图标库和图标命名的时候，尽量如实描述，不要出现只有自己才能懂的火星文考虑到图标库的公开属性，通用易懂比较绿色健康无公害		           		
+		           		</div>
+		       		</div>
+			        <div class="swiper-slide">
+		           		<div class="content-slide">
+							单色图标与多色图标混合在一个图标库内没有符合绘制规则，参照帮助中心 绘制规则图标质量实在辣眼睛抄袭 Iconfont 线上已有多色图标大家在对图标库和图标命名的时候，尽量如实描述，不要出现只有自己才能懂的火星文考虑到图标库的公开属性，通用易懂比较绿色健康无公害		           		
+		           		</div>
+		       		</div>
+			        <div class="swiper-slide">
+		           		<div class="content-slide">
+							单色图标与多色图标混合在一个图标库内没有符合绘制规则，参照帮助中心 绘制规则图标质量实在辣眼睛抄袭 Iconfont 线上已有多色图标大家在对图标库和图标命名的时候，尽量如实描述，不要出现只有自己才能懂的火星文考虑到图标库的公开属性，通用易懂比较绿色健康无公害		           		
+		           		</div>
+		       		</div>
+		        </div>
+		   </div>
+			
+		</div>
+	</div>
+	<script src="../js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/swiperO.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>	
+		var tabsSwiper = new Swiper('.swiper-container',{	
+			followFinger : false,
+			onSwiperCreated:function(){
+				var H=$(".content-slide").eq(0).height()+12;
+				$(".swiper-wrapper").css('height', H+'px');
+				$(".swiper-slide").css('height', H+'px');
+			},
+			onSlideChangeStart: function() {
+				var H = $(".content-slide").eq(tabsSwiper.activeIndex).height()+12;
+				$(".tabs span.active").removeClass('active');
+				$(".tabs a").eq(tabsSwiper.activeIndex).find("span").addClass('active');
+				$(".swiper-slide").css('height', H + 'px');
+				$(".swiper-wrapper").css('height', H + 'px');
+			},	
+		});
+		$(".tabs a").on('touchstart mousedown',function(e){
+			e.preventDefault()
+			$(".tabs span.active").removeClass('active');
+			$(this).find("span").addClass('active');
+			tabsSwiper.swipeTo($(this).index());
+		});
+
+	</script>
+
+</body>
+</html>

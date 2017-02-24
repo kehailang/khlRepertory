@@ -1,0 +1,36 @@
+/*物流信息*/
+.wuliu-information{
+	background: #fff;padding: 20px 14px 16px;color: #666;margin-bottom: 10px;
+}
+.wuliu-information .title{
+}
+.wuliu-information .items{
+	position: relative;
+	margin-bottom: .08rem;
+}
+.items:first-child .title{color: black;}
+.items #copy{
+	position: absolute;top: 0;right: 0;
+}
+.track{
+	background: #fff;padding-bottom: .6rem;
+}
+.track-title{
+	font-size: .3rem;margin: 0 .2rem;border-bottom:1px solid #e7e4e4;line-height: .88rem;
+}
+.name span:first-child{display: inline-block;width: 54%;}
+.Lmessage{ padding-top: .8rem;}
+.message{ padding:0 .36rem .4rem .46rem;  position: relative; overflow: hidden;}
+.message.active p{color: #2d2d2d !important;}
+.message:last-child{padding-bottom: 0;position: relative;}
+.line{ position: absolute; left: .46rem; top:0; width: 1px; height: 100%; background: #a6a7a1;}
+.message.active .circle{ width: .24rem; height: .24rem; border-radius: 50%; background: #e61511;}
+.message .clircle2{ background: #f38013;}
+.circle{ position: absolute; top: 0px; left: .34rem; width: .24rem; height: .24rem;border-radius: 50%; background: #ccc; z-index: 9;}
+.clrcle2{ width: 24rem; height: 24rem; background: #ccc;border-radius: 50%; position: absolute; bottom: 0;}
+.message p{ float: left; margin-left: .4rem;padding-bottom: .08rem;line-height: .4rem;font-size: .24rem;color: #787878 !important;}
+#status{color: #2bca00;}
+.items:first-child span{font-size: .32rem;}
+.message:last-child:before{content: "";position: absolute; bottom: 0px; left: .34rem; width: .24rem; height: .24rem;border-radius: 50%; background: #ccc; z-index: 10;}
+.wuliu-information input{border: 0; width: 5.3rem;font-size: .24rem;}
+.wuliu-information li{line-height: .38rem;}

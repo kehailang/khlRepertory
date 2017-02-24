@@ -1,0 +1,17 @@
+
+	function goIndex(){		
+		 window.location.href="index.html?type=1";
+	}
+	function goClassification(){
+		window.location.href="classify.html?type=2";
+	}
+	function goBusinessList(){
+		 window.location.href="businessList.html?type=3";
+	}
+	function goPersonal(){
+		if(getCookie("uid")==""||getCookie("uid")==null){
+			window.location.href = "login/login.html?type=4";
+		}else{
+		 	window.location.href="my/personCenter.html?type=4";
+		}
+	}

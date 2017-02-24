@@ -1,0 +1,258 @@
+body{background: #eee;}
+.wrap{margin:0 auto 45px; float: left; width: 100%;}
+.tabs{height:40px;background: #fff;}
+.tabs a{display:block;float:left;width:25%;color:#333;text-align:center;line-height:38px;font-size:14px;text-decoration:none;}
+.tabs a span.active{color:#ee4910;border-bottom: 2px solid #ee4910; box-sizing: border-box;}
+.tabs a span{line-height:38px;    display: inline-block;}
+.swiper-container{width:100%;border-top:0;}
+.myOrder > .allSum{ margin-top:45px;}
+.myOrder{margin: 10px 0; background: #fff; }
+.orderList{ position:relative;}
+.myOrder .size{line-height: 35px;color: #8d8d8d; border-bottom: 1px solid #eeeeee; padding: 0 10px;}
+.myOrder .size em{font-style: normal;float: right;color: #ee4910;}
+.myOrder .product{padding:10px;overflow: hidden;position: relative;}
+.product .orderImg{float: left; width: 93px;height: 86px;border-radius: 5px;border: 1px solid #e5e5e5; overflow: hidden;margin-right: 10px;}
+.product .orderImg img{width: 100%;height: 100%;}
+.product .orderTxt{overflow: hidden; position: relative;height: 88px;}
+.product .orderTxt h3{margin-top: 0;line-height: 16px;font-size: 15px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.product .orderTxt p{color: #8d8d8d;margin-top: 8px;font-size: 12px;}
+.product .orderTxt p span:last-child{margin-right: 0;}
+.product .sum{position: absolute; top: 50%; right: 10px;  color: #ee4910; display: block;}
+.product .orderTxt .sum{position: absolute;bottom: 0;left: 0;color: #ee4910;font-size: 14px;}
+.product .orderTxt .sum em{font-size: 17px;color: #000;margin-left: 6px;}
+.orderTxt .sum em {font-size: 17px;color: #000;margin-left: 6px;}
+.orderList > .sum{ top:120%;}
+.allSum{line-height: 32px; border-top: 1px solid #eeeeee;border-bottom: 1px solid #eeeeee;text-align: right;padding: 0 20px;}
+.orderBtn .btn a{width: 76px;line-height: 25px; color: #fff;display: inline-block;background: #ee4910;text-align: center;text-decoration: none;border-radius: 4px;margin: -2px 5px 10px 0px;}
+.orderBtn{text-align: right;padding-right: 15px; margin-top: 10px;}
+.orderBtn .btn a.orange{background: #f18e1d;}
+.orderBtn .btn a.gray{background: #8d8d8d;}
+.orderF{float: left; width: 100%;}
+.theOmit{ width: 20px; float:left; margin-top: 45px;}
+.product .coin{position: absolute;left: 0;bottom: -2px;color: #ee4910;font-size: 14px;}
+
+.waitPayment{width: 100%;color: #fff;position: relative;text-align: center;background: url(../images/myOrder/detailsBg.jpg) no-repeat;background-size: 100%;}
+.waitPayment img{display: block;}
+.waitPayment > div{padding: 17% 0;position: relative;box-sizing: border-box;}
+.waitPayment i.waitIcon,.waitPayment i.succeedIcon,.waitPayment i.succeedPayIcon{background: url(../images/myOrder/wait.png) no-repeat center center;width:36px;height: 100%;display: inline-block;background-size: 100%;margin-right: 15px;position: absolute;top: 0;}
+.waitPayment i.succeedIcon{background: url(../images/myOrder/succed.png) no-repeat;background-size: 100%;top: 17px;}
+.waitPayment i.succeedPayIcon{background: url(../images/myOrder/succeed_pay.png) no-repeat center center;background-size: 100%;}
+.waitPayment .wait{display: inline-block;margin-left: 13%;}
+.waitPayment .wait h2{font-size: 30px;}
+.waitPayment .wait h6{text-align: left;font-size: 13px;}
+.myOrderEnvelope{position: relative;    margin: 2% 0;overflow: hidden;background: #fff;padding: 20px 25px 20px 45px;}
+.myOrderEnvelope:before{content: "";width: 100%;height: 2px;position: absolute;top: 0;left: 0;background: url(../images/myOrder/border-bg.jpg) no-repeat;background-size: 100%;}
+.myOrderEnvelope:after{content: "";width: 100%;height: 2px;position: absolute;bottom: 0;left: 0;background: url(../images/myOrder/border-bg.jpg) no-repeat;background-size: 100%;}
+.name{color: #323232;font-size: 16px; }
+.name span:last-child{float: right;}
+.default{color: #8d8d8d;line-height: 15px;font-size: 14px; text-align: justify;margin-top: 4px; position: relative;word-break: break-all;}
+.addressIcon{display: inline-block;position: absolute;top:50%;right:14px;-webkit-transform: translate(0,-50%);-ms-transform: translate(0,-50%);transform: translate(0,-50%);}
+.default-txt {position: absolute;top: 50%;left: 8px;font-size: 12px;line-height: 14px;padding: 2px 4px;background: #ee4910;color: #fff;text-align: center;border-radius: 2px;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);
+}
+.envelopeCenterBox{position: absolute;top:50%;left:0;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);padding:0 8% 0 14%; width: 100%;box-sizing: border-box;}
+.myOrderEnvelopePhone{float: right;margin-right: 10px;}
+.onceAccount.ss-btn{background: #ee4911;border-radius: 0;text-align: center;height: 45px;line-height: 45px;}
+.onceAccount.ss-btn .right{float: none;height: auto;line-height: auto;}
+
+.commodity{background: #fff;padding:12px 15px;overflow: hidden;position: relative;margin:0 0 2%;}
+.commodity li{float: left;}
+.commodity li.one{width: 99px; height:89px; overflow:hidden; position: relative;border-right: 10px solid #fff;box-sizing: border-box;}
+.commodity li.one img{width: 100%;height:100%;display: block;}
+.commodity li.one .number{position: absolute;bottom: 0;right: 0;width: 21px;height: 16px;line-height: 14px; display: inline-block;background: #cacaca;color: #fff;text-align: center;border-top-left-radius: 4px;border-bottom-right-radius: 4px;}
+.commodity li.last img{width: 27px;height: 6px;}
+.commodity li.one .oneBox{border: 1px solid #cacaca;border-radius: 4px;overflow: hidden;}
+.commodity li.one div{border: 1px solid #cacaca;border-radius: 4px;overflow: hidden;height: 89px;box-sizing: border-box;}
+.commodity li.one span{position: absolute;bottom: 0;right: 0;width: 21px;height: 16px;line-height: 14px; display: inline-block;background: #cacaca;color: #fff;text-align: center;border-top-left-radius: 4px;border-bottom-right-radius: 4px;}
+.commodity li.last{width: 21%;  float: right; padding-top: 12%;}
+.commodity li #lastTi{width: 10%;padding-top: 14%;}
+.commodity li.last span{color: #ee4910;display: block;text-align: right;}
+.fixed{position: fixed;bottom: 0;left: 0;width: 100%;z-index: 100;}
+.onceAccount{background: #fff;border-top: 1px solid #e2e2e2;max-width: 768px;margin: 0 auto;overflow: hidden;}
+.onceAccount > div{float: left;}
+.onceAccount span,.threeBox span{overflow: hidden;width: 50%; height: 45px;line-height: 45px;display: inline-block;float: left;font-size: 13px;text-align: center;}
+.onceAccount .right{background:#ee4910 ;color: #fff; width: 30%;}
+.onceAccount .left{ width: 70%;}
+.onceAccount span i{display: inline-block;width: 20px;height: 23px;position: relative;top: 7px;margin-right: 4px;}
+.onceAccount .right i{background:url(../images/myOrder/vButton.png) no-repeat;background-size: 100%;}
+.onceAccount.ss-btn .right i,.onceAccount .right.wait-btn i{background:url(../images/ss-sprites.png) no-repeat;background-size:225px 225px;background-position:2px -19px;}
+.onceAccount.threeBox span i{top:3px;}
+.onceAccount .left i{background:url(../images/ss-sprites.png) no-repeat;background-size:225px 225px;background-position:-20px -19px;}
+.deleteO{ background: url(../images/ss-sprites.png) no-repeat; background-position: -19px -20px; background-size: 100%;}
+.threeBox span{width: 33.33%;}
+.threeBox i{width: 16px;height: 16px;}
+.threeBox .left i{background: url(../images/myOrder/sales_return.png) no-repeat;background-size: 100%;}
+.threeBox .center i{background: url(../images/myOrder/logistics.png) no-repeat;background-size: 100%;}
+.threeBox .center{border-left: 1px solid #e2e2e2;box-sizing: border-box;}
+.threeBox .right i{background: url(../images/myOrder/evaluate.png) no-repeat;background-size: 100%;}
+li.stateBox{width: 50%;position: relative;}
+li.stateBox .state{position: absolute;top: 50%;left: 0;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);}
+li.stateBox .type{color: #8d8d8d; font-size: 12px;}
+li.stateBox .title{ font-size: 14px;}
+
+.orderTotalBox{width: 100%; margin-top: 10px; background-color: #fff;}
+.orderItems{width: 100%; border-bottom:thin solid #eeeeee; height: 35px;line-height: 35px;font-size: 12px; position: relative;}
+.orderItems div{color: #ee4910; position: absolute;top: 50%;right: 10px;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);}
+.orderItems div#logistText{right: 25px;color: #8d8d8d;}
+.orderItems p{margin-left: 10px;}
+.logistText{ color: #8d8d8d; line-height: 14px; height: 14px; margin-right: 10px; margin-top: 8px;}
+.orderItems img{ height: 12px; width: 7px; display: inline-block;position: absolute;top: 50%;right: 10px;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);}
+.onceAccounts1{float: left; margin-left: 10px;}
+.onceAccounts2{float: right; color: #8d8d8d;margin-right: 10px;}
+.information{background: #fff;padding: 14px 15px;position: relative;}
+.information p{color: #8d8d8d;line-height: 18px;margin: 0;}
+.information button{position: absolute;top:14px;right: 14px; background: #ee4910;font-size: 10px; color: #fff;border-radius: 4px;padding: 2px;}
+
+/*付款成功*/
+.waitPaymentBtn{background: #fff;overflow: hidden;border-bottom: 1px solid #e2e2e2;}
+.waitPaymentBtn span{display: inline-block;width: 50%;float: left;text-align: center;font-size: 16px;padding: 10px 0;}
+.waitPaymentBtn span:first-child a{border-left: none;}
+.waitPaymentBtn span a{border-left: 1px solid #e2e2e2; width: 100%;display: inline-block;}
+
+/*待付款*/
+.onceAccount .left.wait-btn,.onceAccount .right.wait-btn{width: 50%;}
+
+#pop1 input{ color:#8d8d8d; font-size:14px; font-weight:normal;}
+#copy{position: absolute;top:14px;right: 14px; font-size: 12px;line-height: 14px;padding: 2px 4px;background: #ee4910;color: #fff;text-align: center; border-radius: 2px;}
+.orderD1,.orderD2,.orderD3{
+	width: 100%; border-bottom:thin solid #eeeeee; height: 30px; 
+}
+.orderTotalBox p{
+	float: left; padding: 0 0 0 0; margin: 0 0 0 0; font-size: 12px; color: black; line-height: 14px; height: 14px; margin-left: 15px; margin-top: 8px;
+}
+.orderD1 div,.orderD2 div,.orderD3 div{
+	float: right; padding: 0 0 0 0; margin: 0 0 0 0; font-size: 12px; color: #8d8d8d; line-height: 14px; height: 14px; margin-right: 10px; margin-top: 8px;
+}
+
+/*收货地址*/
+.thePageThree{
+	float: left; width: 100%; display: none;
+}
+
+/*待评价*/
+.waitCommentList{
+	float: left;width: 100%;
+}		
+.waitCommentList .listBox{margin-top: 10px;background: #fff;    padding: 8px;}
+.waitCommentList .listBox img{float: left;width: 84px;height: 80px; }
+.waitCommentList .listBox div{overflow: auto;font-size: 15px;position: relative;height: 80px;padding-left: 8px;}
+.waitCommentList .listBox div span{position: absolute;right: 0;bottom: 0;background:#f64414;color: #fff;display: inline-block;font-size: 12px;text-align: center;line-height: 14px;padding: 5px 10px;border-radius: 2px;}
+.waitCommentList .listBox h3{color: #222;}
+
+/*发表评价页面*/
+.comment{
+	padding: 12px 12px;text-align: center;
+}
+.comment textarea{
+	width: 100%;min-height:142px ;border: 1px solid #cacaca; background: #fff;border-radius: 4px;box-sizing: border-box;padding: 4px 6px;font-size: 13px;color: #000;    border: none; -webkit-appearance: none;resize: none;margin-top: 20px;
+}
+.comment .submit{
+	width: 100%;
+    color: #FFFFFF;
+    background-color: #f64414;
+    height: 42px;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 12px;
+    line-height: 42px;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+}
+.comment .submit:active {
+    background-color: #D23B12;
+}
+/*发表评论弹出窗*/
+.capacity_box{
+	position:fixed;  top:30%; width: 100%; z-index: 999;display: none;
+}
+
+.capacity_back{
+	position:fixed;  top:0;width: 100%; height: 100%; z-index: 888; background-color: black; 
+	filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.5; /*Firefox私有，透明度50%*/
+	opacity:0.5;/*其他，透明度50%*/
+	display: none;
+}
+
+.capacity_div{
+	border-color:#eeeeee;
+	border-style:solid;
+	border-width:thin;
+	-webkit-box-shadow: black 0px 0px 10px;
+	-moz-box-shadow: black 0px 0px 10px;
+	box-shadow: black 0px 0px 10px;background: black;behavior: url(/PIE.htc);
+	
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;  
+	width: 200px; position: absolute; left: 50%; height: 0; background-color:white;
+	 transform: translate(-50%);
+	-ms-transform: translate(-50%);		/* IE 9 */
+	-webkit-transform: translate(-50%);	/* Safari and Chrome */
+	-o-transform: translate(-50%);		/* Opera */
+	-moz-transform: translate(-50%);	
+}
+
+.text_div{
+	width: 100%; text-align: center; margin-top: 19px; font-size: 15px; font-family: '微软雅黑'; color: #ee4910; float: left; font-weight: bold; display: none;
+}
+
+.capacity_button{
+	-moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px; 
+    border:none;
+	width: 80%; margin-left: 10%; margin-top: 17px; font-size: 15px; -webkit-appearance: none;  height:30px;
+	background-color: #ee4910; color:white;
+}
+
+.capacity_button:active{
+	background-color: #CC4010;
+}
+
+
+/*失效订单*/
+.onceAccount .delete{ width: 100%;}
+.sh-name{width: 56%;display: inline-block;}
+
+.orderList:last-child {
+    margin-bottom: 45px;
+}
+/*物流信息*/
+.wuliu-information{
+	background: #fff;padding: 20px 14px 16px;color: #666;margin-bottom: 10px;
+}
+.wuliu-information .title{
+}
+.wuliu-information .items{
+	position: relative;
+	margin-bottom: 4px;
+}
+.items:first-child .title{color: black;}
+.items #copy{
+	position: absolute;top: 0;right: 0;
+}
+.track{
+	background: #fff;padding-bottom: 30px;
+}
+.track-title{
+	font-size: 16px;margin: 0 10px;border-bottom:1px solid #e7e4e4;line-height: 45px;
+}
+.name span:first-child{display: inline-block;width: 54%;}
+.Lmessage{ padding-top: 40px;}
+.message{ padding:0 18px 20px 28px;  position: relative; overflow: hidden;color: #787878;}
+.message.active{color: #2d2d2d;}
+.message:last-child{padding-bottom: 0;position: relative;}
+.line{ position: absolute; left: 28px; top:0; width: 1px; height: 100%; background: #a6a7a1;}
+.message .active{ width: 12px; height: 12px; border-radius: 50%; background: #f38013;}
+.message .active .clircle2{ background: #f38013;}
+.circle{ position: absolute; top: 0px; left: 22px; width: 12px; height: 12px;border-radius: 50%; background: #ccc; z-index: 10;}
+.clrcle2{ width: 12px; height: 12px; background: #ccc;border-radius: 50%; position: absolute; bottom: 0;}
+.message p{ float: left; margin-left: 20px;padding-bottom: 4px;line-height: 20px;}
+.onceAccount .logistics i{ background: url(../images/myOrder/logistics.png) 0 4px no-repeat; background-size: 80%;}
+.onceAccount .deleteO i{ background: url(../images/ss-sprites.png) no-repeat; background-position: -20px -19px; background-size: 225px 225px;}
+.onceAccount .eva i{ background: url(../images/myOrder/evaluate.png) 0 2px no-repeat;background-size: 80%;}
+#status{color: #2bca00;}
+.items:first-child{font-size: 16px;}
+.message:last-child:before{content: "";position: absolute; bottom: 0px; left: 22px; width: 12px; height: 12px;border-radius: 50%; background: #ccc; z-index: 10;}

@@ -1,0 +1,54 @@
+body{background-color: #eeeeee;}
+/***********个人中心css***************/
+.personalHeader{width: 100%;overflow: hidden;position: relative;margin-bottom: 12px;}
+.personalHeader img{width: 100%;}
+.personalHeader .blurBg{margin-top: -5px;padding-bottom: 58%;}
+.blur{position: absolute;top: 0;left: 0;
+		filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+-webkit-filter: blur(3px); /* Chrome, Opera */
+   -moz-filter: blur(3px);
+    -ms-filter: blur(3px);    
+        filter: blur(3px);	
+		filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+	}
+.personalPos{position:absolute;left: 0;bottom: 0;width: 100%;height: 78%;}
+
+.personalPos p{height: 27%;width: 100%;text-align: center;font-size: 18px;color: #fff; position: absolute;left: 0;bottom: 0;}
+.order a{width:100%; color: #000;font-size: 14px;display:inline-block;}
+.order li{border-bottom: 1px solid #c8c8c8; background: #fff; padding: 0 15px 0 47px;line-height: 44px;position: relative;}
+.order li:last-child{border-bottom: none;}
+.order .mf-icon{width: 24px;height: 24px;background-size: 100%;left: 7px;position: absolute; top:50%;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);background: url(../images/me.png) no-repeat; background-size: 176px 21px;}
+.order .iocnMyOder{height: 14px;}
+.order .iconMoney{height: 22px;background-position: -24px 0;}
+.order .iconAddress{height: 20px;background-position: -49px 0;}
+.order .iconShare{height: 23px;background-position: -73px 0;}
+.order .iconMobile{height: 22px;background-position: -95px 0;width: 18px;}
+.order .iconBankCard{height: 17px;background-position: -133px 0;width: 24px;}
+.order .iconService{height: 22px;background-position: -111px 0;}
+.order .iconQRCode{height: 22px;background-position: -155px 0;}
+.orderPadding{padding:0 10px; background: #fff;}
+.order .iconFollowUs{width: 19.5px;height: 22px;background-size: 100%;left: 7px;position: absolute; top:50%;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);background: url(../images/guanzhu.png) no-repeat; background-size: 100%;}
+.order .rwm_yq{width: 22px;height: 22px;background-size: 100%;left: 4px;position: absolute; top:50%;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);background: url(../images/rwm_yq.png) no-repeat; background-size: 100%;}
+.userHeader img {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    ransform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #58585c;background: url(../images/header-bg.png) no-repeat center center;
+}
+.userHeader:before{content: "";position: absolute;   top: 26%;left: 50%;    -webkit-transform: translate(-50%, -50%);transform: translate(-50%,-50%);
+width: 122px;height: 122px;background: url(../images/header-bg.png) no-repeat center center;background-size:100%;opacity: 0.3;}
+.bgBack{background: rgba(0, 0, 0, 0.8);position: fixed;top: 0;left: 0;width: 100%;    height: 100%;z-index:1000;display: none;}
+.bgBack img{position: fixed;right: 18px;top: 20px;width: 230px;z-index: 20001;}
+
+.codeFile{position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0;}
+.personalHeader .blurBg{padding-bottom: 68%;}
+.personalPos{height: 88%;}
+.personalPos p{height: 33%;}
+.personalPos p span{width: 100%;display: block;}

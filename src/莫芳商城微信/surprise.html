@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>莫芳-惊喜</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/surprise.css"/>	
+	</head>
+	<body style="background: #ff4136;">				
+		<div class="surpriseBox" style="background: #ff413a;">
+			<div class="surprise">
+				<img src="images/header-choujian.jpg"/>
+				<div class="end-date"><p>我的抽奖机会：<span class="playnum">111</span></p></div>
+			</div>
+			<!--抽奖区域-->
+			<div id="lottery">
+			    <ul class="lottery-item">
+			    	<li>
+			    		<div class="lottery-item-iphone">
+			    			<div class="lottery-item-money-bottom">
+				    			<p>iPhone7</p>				    				
+			    			</div>
+			    		</div>
+			    	</li>
+			    	<li>
+			    		<div class="lottery-item-money">
+			    			<div class="lottery-item-money-bottom">
+				    			<p class="money">1999元</p>
+				    			<p>现金红包</p>				    				
+			    			</div>
+			    		</div>
+			    	</li>
+			    	<li>
+			    		<div class="lottery-item-money">
+			    			<div class="lottery-item-money-bottom">
+				    			<p class="money">199元</p>
+				    			<p>现金红包</p>				    				
+			    			</div>
+			    		</div>
+			    	</li>
+			    	<li>
+			    		<div class="lottery-item-money">
+			    			<div class="lottery-item-money-bottom">
+				    			<p class="money">99元</p>
+				    			<p>现金红包</p>				    				
+			    			</div>
+			    		</div>
+			    	</li>
+			    	<li>
+			    		<div class="lottery-item-money">
+			    			<div class="lottery-item-money-bottom">
+				    			<p class="money">9元</p>
+				    			<p>现金红包</p>				    				
+			    			</div>
+			    		</div>
+			    	</li>
+			    	<li>
+			    		<div class="lottery-item-money">
+			    			<div class="lottery-item-money-bottom">
+				    			<p class="money">3元</p>
+				    			<p>现金红包</p>				    				
+			    			</div>
+			    		</div>
+			    	</li>
+			    </ul>
+			    <div class="click-lottery">点击抽大奖</div>
+			</div>
+		</div>
+		<!--活动规则-->
+		<div class="regulation">
+			<h3>活动规则</h3>
+			<p>1、获赠的产品抵用券请登录太平洋保险生活广场 http://www.601601.com/，进入指定页面购买抵用（需先注册激活），此抵用券不兑换现金、抵用券部分不开发票，购买产生快递费用请自行承担，使用过程中如有任何问题，请致电主办方客服热线： 4006595500转6 （周一至周五 8:30-17:30）； </p>
+			<p>2、车险免单奖品为4999元太平洋车险保单（私家车），可包括：机动车交通事故责任强制保险、车辆损失险（不计免赔），第三者责任险50万元（不计免赔）、车上人员责任险（1万元每座）、车辆涉水险等5项。其它投保险种/条款、保险金额的增加由中奖用户自理； </p>
+			<p>3、车险免单中奖者需要在1年之内（即从中奖之日起）通过 www.10108888.com.cn 网上全流程购买1年相关车险；车险免单中奖者如未通过 www.10108888.com.cn 网上投保、提供资料不真实、不齐全等，则视为中奖者自动放弃该奖项； </p>
+			<p>4、凡用户个人资料，我们将其做个人隐私保护，并承诺不泄露于其他机构； </p>
+			<p>5、本次活动解释权归太平洋保险在线服务科技有限公司所有； </p>
+			<p>6.港澳台地区不参加此次活动。</p>
+		</div>
+		<!--没有中奖提示开始-->
+		<div class="prompt-bg" style="display: none;"></div>
+		<div class="prompt" style="display: none;">
+			<span class="close"></span>
+			<h2>没中奖~</h2>
+			<p>最重要的就是开心咯！</p>
+			<img src="images/sad.jpg"/>
+			<div class="mf-btn mf-konw">我知道了</div> 
+		</div>
+		<!--没有中奖提示结束-->
+		<!--中奖提示开始-->
+		<div class="prompt-bg" style="display: none;"></div>
+		<div class="prompt1" style="display: none;">
+			<span class="close1"></span>
+			<img src="images/hb.png"/>			
+			<p>获得</p>
+			<p class="money">3元</p>
+			<p>现金红包</p>
+			<div class="mf-btn mf-konw">我知道了</div> 
+		</div>
+		<!--中奖提示结束-->
+		
+		<div style="height: 48px;"></div>
+		<footer class="nav">
+			<ul>
+			    <li class="index"><a href="index.html?type=1"><i class="icon1-A"></i><span>首页</span></a></li>
+			    <li class="shoppingCart"><a href="shoppingCart.html?type=2"><i class="icon2-A"></i><span>购物车</span></a></li>
+			    <li class="surprise"><a href="surprise.html?type=3"><i class="icon3-B"></i><span>惊喜</span></a></li>
+			    <li class="me"><a href="personCenter.html?type=4"><i class="icon4-A"></i><span>我</span></a></li>
+			</ul>		
+		</footer>			
+<script src="js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript">
+$(window).ready(function(){
+	$(".close,.close1").click(function(){
+		$(".prompt,.prompt1,.prompt-bg").hide()
+	})
+})
+
+</script>
+	</body>
+</html>

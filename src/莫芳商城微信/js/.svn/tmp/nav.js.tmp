@@ -1,0 +1,32 @@
+	$(function(){
+		$(".nav li").click(function(){
+			  $(".nav li").each(function(){
+					$(this).find("i").attr("class",'icon'+($(this).index()+1)+'-A');
+				})
+				$(this).find("i").attr("class",'icon'+($(this).index()+1)+'-B');
+		})
+			
+	})
+
+	function goIndex(){		
+		 window.parent.location.href="index.html";
+	}
+	function goClassification(){
+		window.parent.location.href="classify.html";
+	}
+	function goBusinessList(){
+		 window.parent.location.href="businessList.html";
+	}
+	
+	function goPersonal(){
+		if(getCookie("uid")==""||getCookie("uid")==null){
+			window.parent.location.href = "login/login.html?type=4";
+		}else{
+<<<<<<< .mine
+		 	window.parent.location.href="./my/personCenter.html";
+=======
+			 $("#bigBox").find("iframe").attr("src","my/personCenter.html");
+		 	//window.parent.location.href="./my/personCenter.html";
+>>>>>>> .r4028
+		}
+	}

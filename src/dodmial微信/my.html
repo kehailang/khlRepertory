@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>个人中心</title>  
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->    
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/my.css"/>
+	</head>
+	<body>
+	<!--总分区-->
+	<div class="wrapper">
+		<!--个人头部信息-->
+		<div class="header-avatar avatar-bg">
+			<div class="oa-contact-cell mui-table">
+				<div class="oa-contact-avatar mui-table-cell">
+					<img src="images/header.jpg" />
+				</div>
+				<div class="oa-contact-content mui-table-cell">
+					<div class="mui-clearfix">
+						<h4 class="oa-contact-name">赫尔普适性</h4>
+						<p class="md-fsize12">123粉丝  |  550关注</p>
+						<p class=" md-fsize12">
+							态度决定一切，看你用不用心
+						</p>
+					</div>
+				</div>
+				<a href="personalcenter/setting.html"><i class="icon d_iconfont d_icon_shezhi"></i></a>
+			</div>			
+		</div>
+		<!--收藏、话题、报告、提醒-->
+		<div class="my-items">
+	        <ul class="mui-table-view mui-grid-view mui-grid-9">
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	            	<a href="#">
+	                    <span class="mui-icon icon d_iconfont d_icon_aixin"></span>
+	                    <div class="mui-media-body">收藏</div>
+	            	</a>
+	            </li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	            	<a href="#">
+	                    <span class="mui-icon icon d_iconfont d_icon_huati"><span class="mui-badge">5</span></span>
+	                    <div class="mui-media-body">话题</div>
+	            	</a>
+	            </li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	            	<a href="#">
+	                    <span class="mui-icon icon d_iconfont d_icon_baogao"></span>
+	                    <div class="mui-media-body">报告</div>
+	            	</a>
+	            </li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+	            	<a href="#">
+	                    <span class="mui-icon icon d_iconfont d_icon_aixin"></span>
+	                    <div class="mui-media-body">提醒</div>
+	           		 </a>
+	            </li>
+	        </ul> 
+		</div>
+		<!--个人列表-->
+		<div class="my-lists">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right md-fsize15" href="my_order.html">
+						<i class="icon d_iconfont d_icon_dingdan"></i>
+						我的订单
+						<i class="mui-pull-right">8</i>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right md-fsize15">
+						<i class="icon d_iconfont d_icon_jijin"></i>
+						我的基金
+						<i class="mui-pull-right">¥ 80.00</i>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right md-fsize15">
+						<i class="icon d_iconfont d_icon_daijinquan"></i>
+						我的代金券
+						<i class="mui-pull-right">3</i>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right md-fsize15">
+						<i class="icon d_iconfont d_icon_yaoqing"></i>
+						邀请有礼
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right md-fsize15" href="tel:10086">
+						<i class="icon d_iconfont d_icon_kefu"></i>
+						联系客服
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right md-fsize15" href="personalcenter/personal_details.html">
+						<i class="icon d_iconfont d_icon_me"></i>
+						我的个人信息
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--底部导航-->
+	<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item" href="index.html">
+			<span class="mui-icon icon d_iconfont d_icon_shouyeshouye"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="crunchies.html">
+			<span class="mui-icon icon d_iconfont d_icon_huangguanline"></span>
+			<span class="mui-tab-label">榜单</span>
+		</a>
+		<a class="mui-tab-item" href="classify.html">
+			<span class="mui-icon icon d_iconfont d_icon_fenlei"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="teacher.html">
+			<span class="mui-icon icon d_iconfont d_icon_iconsetty"></span>
+			<span class="mui-tab-label">体验师</span>
+		</a>
+		<a class="mui-tab-item mui-active" href="my.html">
+			<span class="mui-icon icon d_iconfont d_icon_me"></span>
+			<span class="mui-tab-label">个人</span>
+		</a>
+	</nav>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>	
+
+		// 监听tap事件，解决 a标签 不能跳转页面问题
+		mui('nav,mui-slider-group a,header a').on('tap','a',function(){document.location.href=this.href;});
+
+	</script>
+
+
+	</body>
+</html>

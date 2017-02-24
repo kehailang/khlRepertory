@@ -1,0 +1,27 @@
+.login-frame{margin-top:60px ;}
+.mui-input-group .mui-input-row:after,.mui-input-group:before{height: auto;}
+.mui-input-group .mui-input-row{border-bottom: 1px solid #e0e0e0;}
+.mui-input-group .mui-input-row,.mui-input-group input{height: 55px;padding:6px 12px 6px 5px;}
+.login-frame input::-webkit-input-placeholder{color: #666666;}
+.login-frame .mui-input-row .mui-input-clear~.mui-icon-clear{top: 23px; right: 0;width: 20px;height: 20px;}
+.mui-content-padded .mui-btn-primary{margin:30px 0 20px;}
+.mui-content-padded{overflow: hidden;margin: 17.5px;}
+.link-area a,.link-area .mui-pull-right.go-login{border-bottom: 1px solid #595959;line-height: 16px;color: #595959;}
+.link-area .mui-pull-right{border-bottom: 1px solid #ff3333;color: #ff3333;}
+/*其他登陆方式*/
+.dm-other-ways{color: #333;text-align: center;padding: 50px 0 20px;}
+.dm-other-ways span.md-fsize12{position: relative;}
+.dm-other-ways span.md-fsize12:before{content:"" ;position: absolute;top: 8px;left: 84px;width: 18px;height: 1px;background: #bcbcbc;}
+.dm-other-ways span.md-fsize12:after{content:"" ;position: absolute;top: 8px;right: 84px;width: 18px;height: 1px;background: #bcbcbc;}
+.dm-choose-ways{margin-top: 42px;}
+.dm-choose-ways .d_iconfont{font-size: 48px;color: #333;}
+.dm-choose-ways .d_iconfont.d_icon_weibo{margin: 0 40px;}
+
+.dm-express{color: #a9a9a9;position: relative;}
+.dm-express p{position: absolute;bottom: 20px;right: 0;left: 0;}
+.dm-express span{border-bottom: 1px solid #595959;}
+.dm-express a{color: #5d84f6;}
+body,html {height: 100%; margin: 0 auto;}
+.wrapper{margin: 0 auto;}
+
+

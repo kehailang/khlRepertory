@@ -1,0 +1,99 @@
+//计算选择商品盒子宽
+function resizeBox(){
+	var addBoxW = $(".onceAccount").width();
+	var addInpW =$(".onceAccount .right").width()+5;
+	$(".onceAccount .left").css({"width":(addBoxW-addInpW)+"px"})
+}resizeBox();
+window.onresize = resizeBox;
+
+//购物结算
+$(function(){
+	$(".onceAccount .left span").click(function(){		
+				var  isAllChecked =$(this).attr("class");
+				$(this).toggleClass("cur");	
+				if(isAllChecked=="cur"){
+					$(".product > span").removeClass("cur");
+					$(this).removeClass("cur");
+					$("input[name='isSelected']").val(0);
+				}else{
+					$(".product > span").attr("class","cur");
+					$(this).attr("class","cur");
+					$("input[name='isSelected']").val(1);
+				}	
+				setTotal(); 
+			});
+	$(".product > span").click(function(){
+				var  isChecked =$(this).attr("class");
+				if(isChecked == "cur"){
+					$(this).removeClass("cur");	
+					$(".onceAccount .left span").removeClass("cur");
+					$(this).children("input").val(0);	
+				}else{
+					$(this).toggleClass("cur");			
+					$(this).children("input").val(1);
+				}
+		setTotal(); 
+		checkBtn()
+	})
+	 
+//加减
+	$(".add").click(function(){ 
+		var t=$(this).parent().find('input[class*=text_box]'); 
+		if(t.val()<99){
+			t.val(parseInt(t.val())+1);			
+			var num=t.val();
+			var cd=t.attr("data-cid");
+			updateCart(cd,num);
+		}
+		//$(this).parent().find(".min").find("i").css("background","url(../images/shoppingCart/min.jpg) no-repeat");
+		setTotal(); 
+	});
+	$(".min").click(function(){ 
+		var t=$(this).parent().find('input[class*=text_box]'); 
+		
+		if(t.val()>1){
+			t.val(parseInt(t.val())-1);
+			var num=t.val();
+			var cd=t.attr("data-cid");
+			updateCart(cd,num);
+			$(this).find("i").css("background","url(../images/shoppingCart/min.jpg) no-repeat");
+		}if(t.val()==1){ 
+			//$(this).find("i").css("background","url(../images/shoppingCart/min-1.png) no-repeat");
+		}
+		setTotal(); 
+	});	
+	
+	
+	
+	function setTotal(){ 
+		var txt = 0;
+		var s=0; 
+		$(".orderList").each(function(){ 				
+		var  isChecked =$(this).children("div.product").children("span").attr("class")
+		if(isChecked =="cur"){
+			txt++;
+			s=s+parseInt(parseInt($(this).children("div.product").children("div.orderTxt").children("span.coin").children("i.price").html())*parseInt($(this).children("div.product").children("div.orderTxt").children("div.amount").children('input.text_box').val())); 
+		}
+		
+		if(txt == 0){
+			$(".replace").html("请选择商品");
+		}else{
+			$(".replace").html("合计：<em id=\"total\"></em>松鼠币");
+		}
+	}); 
+		$("#total").html(s); 
+	} 
+		setTotal(); 
+	
+	//全选与不全选按钮
+	function checkBtn(){
+		var len = $(".product > span").length;
+		var checkLen = $(".product > .cur").length ;
+		if(len == checkLen){
+			$(".onceAccount .left span").addClass("cur");
+		}else{
+			$(".onceAccount .left span").removeClass("cur");
+		}
+	}checkBtn()
+
+})

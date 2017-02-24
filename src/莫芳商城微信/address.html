@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>莫芳-收货地址</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/address.css" />
+		<link rel="stylesheet" href="css/mui.poppicker.css" />
+
+	</head>
+	<body>
+		<div class="addressForm">
+			<form action="">
+				<div class="addressInput">
+					<label class="label"><input type="text" placeholder="收货人" readOnly/></label>
+					<input type="text" id="aName" placeholder="名字" />
+				</div>
+				<div class="addressInput">
+					<label class="label"><input type="text" placeholder="手机号码" readOnly/></label>
+					<input type="text" id="aPhone" placeholder="11位手机号码" />
+				</div>
+				<div class="addressInput">
+					<label class="label"><input type="text" placeholder="选择地区" readOnly/></label>
+					<input type="text" class="aArea" id="city-picker" placeholder="地区信息" readOnly/><i></i>
+				</div>
+				<div class="addressInput address-detail">
+					<label class="label"><input type="text" placeholder="详细地址" readOnly/></label>
+					<textarea type="text" id="aAddressDetails" placeholder="街道门牌信息"></textarea>
+				</div>
+				<div class="addressInput">
+					<label class="label"><input type="text" placeholder="邮政编码" readOnly/></label>
+					<input type="text" id="aZipCode" placeholder="邮政编码" />
+				</div>				
+				<div class="addressInput">
+					<label class="label"><input type="text" placeholder="设为默认" readOnly/></label>
+					<span class="default cur"></span>
+				</div>				
+			</form>
+		</div>
+		<div class="btn-fixed" style="position: relative;">
+			<div class="btn-cancel mf-btn">取消</div>
+			<div class="btn-save mf-btn mf-btn-red" id="save">保存</div>
+		</div>	
+		<footer class="nav">
+			<ul>
+			    <li class="index"><a href="index.html?type=1"><i class="icon1-B"></i><span>首页</span></a></li>
+			    <li class="shoppingCart"><a href="shoppingCart.html?type=2"><i class="icon2-A"></i><span>购物车</span></a></li>
+			    <li class="surprise"><a href="surprise.html?type=3"><i class="icon3-A"></i><span>惊喜</span></a></li>
+			    <li class="me"><a href="personCenter.html?type=4"><i class="icon4-A"></i><span>我</span></a></li>
+			</ul>		
+		</footer>	
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script>		
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//-----------------------------------------
+					//					//级联示例
+					var cityPicker = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('city-picker');	
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							if((items[2] || {}).text=="" || (items[2] || {}).text==null){
+								items[2].text="";
+							}
+							showCityPickerButton.value=(items[0] || {}).text + "" + (items[1] || {}).text + "" + (items[2] || {}).text;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var addBoxW = $(".addressInput").width();
+			var addInpW =$(".addressInput .label").width()+5;
+			$(".addressInput >input,textarea").css({"width":(addBoxW-addInpW)+"px"})
+		
+			$(".addressInput").click(function(){
+				$(this).find(".default").toggleClass("cur")
+			})
+			$(".addressInput>input,textarea").focus(function(){
+				$(".nav").css({"position":"relative","height":" 48px","overflow":" hidden"})
+			})
+			$(".addressInput>input,textarea").blur(function(){
+				$(".nav").css("position","fixed")
+			})
+		</script>
+		
+	</body>
+</html>

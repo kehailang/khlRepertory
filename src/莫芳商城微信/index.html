@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>莫芳-首页</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+			.swiper-container-horizontal>.swiper-pagination-bullets{bottom: 7px;}
+			.swiper-pagination-bullet{background: #fff;}
+			.swiper-pagination-bullet-active{background: #000;}	
+    	</style>
+	</head>
+	<body>
+		<footer class="nav">
+			<ul>
+			    <li class="index"><a href="index.html?type=1"><i class="icon1-B"></i><span>首页</span></a></li>
+			    <li class="shoppingCart"><a href="shoppingCart.html?type=2"><i class="icon2-A"></i><span>购物车</span></a></li>
+			    <li class="surprise"><a href="surprise.html?type=3"><i class="icon3-A"></i><span>惊喜</span></a></li>
+			    <li class="me"><a href="personCenter.html?type=4"><i class="icon4-A"></i><span>我</span></a></li>
+			</ul>		
+		</footer>	
+		<!--banner-->
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="images/banner.jpg"/></div>
+		        <div class="swiper-slide"><img src="images/banner.jpg"/></div>
+		        <div class="swiper-slide"><img src="images/banner.jpg"/></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>	
+		<ul class="index-list">
+			<li>
+				<a href="productDetails.html">
+					<img src="images/index-list0.png"/>
+				</a>
+			</li>
+			<li>
+				<a href="productDetails.html">
+					<img src="images/index-list1.png"/>
+				</a>
+			</li>
+		</ul>
+		<div style="height: 48px;"></div>
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>	</body>
+		<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        autoplay: 2000,//可选选项，自动滑动
+	    });
+	    </script>
+</html>

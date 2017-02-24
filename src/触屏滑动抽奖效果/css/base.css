@@ -1,0 +1,135 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);margin:0; padding:0; border:none;font-family: 'Microsoft YaHei' }
+* {
+-webkit-touch-callout:none;
+/*-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;*/
+}
+a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+	width: 100%;
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+
+/* 初始化 */
+body{font-family: 'Microsoft YaHei';font-size: 15px;}
+em,i{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+
+input,textarea,button,select,option{color:#000; outline: none; resize: none;-webkit-appearance: none;background: white;font-size: 14px;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#666666; font-family:Microsoft YaHei,Tahoma,Arial,sans-serif;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal; font-family: Microsoft YaHei;}
+/*移除 input type="number" 时浏览器自带的上下箭头*/
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+input::-webkit-outer-spin-button {
+-webkit-appearance: none;
+}
+/*公共样式*/
+.clear{ clear: both;}
+img{border: none; display:block;}
+body{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	max-width: 768px;
+	margin: 0 auto;
+	background: #f2f2f2;
+	color: #333333;
+}
+.mf-red{color:#ff0000;}
+.mf-btn,.mf-btn-red{background: #1b1b1f;color: #fff;text-align: center;}
+.mf-btn-red{background: #ff0000;}
+.btn-payment{background: #ed5137;color: #fff;}
+.mf-btn a{color: #fff;display: inline-block;width: 100%;height: 100%;}
+/*底部的button*/
+.btn-fixed{position: fixed;bottom: 0;width: 100%;z-index: 100;max-width: 768px;}
+.btn-fixed .mf-btn{width: 50%;float: left;font-size: 17px;height: 48px;line-height: 48px;}
+/*设为默认样式*/
+.default{width: 22px;height: 22px;display: inline-block;background: url(../images/select.png) no-repeat;background-size: 45px 23px;position: absolute;top: 50%;right: 18px;-webkit-transform: translate(0,-50%);-ms-transform: translate(0,-50%);transform: translate(0,-50%);}
+.default.cur{background-position: -23px 0; }
+/*.icon-return */
+.icon-return {
+    width: 8px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    background: url(../images/icon-return.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+/*精灵图*/
+.nav{ height:48px; border-top:1px solid #e9e9e9; background:#fff; position:fixed; bottom:0; width:100%;z-index: 997;    max-width: 768px;}
+.nav ul li{ width:25%; float:left; text-align:center; padding:6px 0 14px;}
+.nav ul li i{  width:20px; height:22px; display:block; margin:0 auto;background:url(../images/nav.png) no-repeat;background-size:96px 46px;}
+.nav ul li i.icon1-A{ background-position: 0 1px;}
+.nav ul li i.icon1-B{background-position: 0 -25px;}
+.nav ul li i.icon2-A{ background-position: -24px 0;width: 22px;}
+.nav ul li i.icon2-B{ background-position: -24px -25px;width: 22px;}
+.nav ul li i.icon3-A{ background-position: -50px 1px;width: 21px;}
+.nav ul li i.icon3-B{ background-position: -50px -25px;width: 21px;}
+.nav ul li i.icon4-A{ background-position:-75px 0;}
+.nav ul li i.icon4-B{ background-position: -75px -25px;}
+.nav ul li span{ display:block; text-align:center;font-size: 12px;padding: 2px 0;}
+.nav ul a{width: 100%;height: 100%;display: inline-block;}
+
+/*数量加减*/
+.amount{position: absolute; bottom:0;left: 0;width: 100px;border: 1px solid #666666;border-radius:2px;overflow: hidden;line-height: 24px;height: 24px; }
+.amount >*{float: left;width: 33.33%;text-align: center;}
+.amount span i{display: inline-block;position: relative;width: 14px;}
+.amount .min i,.amount .add i{background:url(../images/min.png) no-repeat;height: 1px;top: -3px;left:0;background-size:100%;}
+.amount .add i{background:url(../images/add.png) no-repeat;height: 14px;top:2px;left: 0;background-size:15px 15px;}
+.amount .text_box{border-left: 1px solid #666;border-right: 1px solid #666;height: 100%;box-sizing: border-box;-webkit-appearance: none;border-radius: 0;color: #000;}
+
+
+
+/*遮罩背景*/
+.prompt-bg,.alertBg{background: rgba(0, 0, 0, 0.65);position: fixed;top: 0;height: 100%;width: 100%;z-index: 1101;max-width: 768px;display: none;}
+/*没中奖提示样式*/
+.prompt,.prompt1{background: #fff;border-radius: 4px;padding:13px;position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 102;text-align: center;width: 65%;color: #010101;overflow: hidden;}
+.prompt1{background:#d84e43 ;padding: 0;color: #fff;}
+.mf-konw{background: #ef0e3a;font-size:16px;line-height: 34px;height: 34px;border-radius: 4px;}
+.prompt1 .money{font-size:32px;color: #fccd00;}
+.prompt1 .mf-konw{background: none;border-radius: 4px;border: 1px solid #fff;margin: 20px 40px;}
+.prompt1 p{margin: 10px 0;}
+.prompt h2{padding-bottom: 10px;font-size: 26px;    margin-top: 30px;}
+.prompt p{padding-bottom: 10px;font-size: 18px;}
+.prompt img{width: 50%;margin: 15px auto 25px;}
+.close,.close1{width: 24px;height: 24px;display: inline-block;background: url(../images/close.jpg) no-repeat;background-size:100%;float: right;}
+.prompt1 .close1{position: absolute;top: 10px;right: 10px;background: url(../images/close.png) no-repeat;background-size: 100%;}

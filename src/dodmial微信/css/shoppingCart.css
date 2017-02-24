@@ -1,0 +1,30 @@
+.myOrder{padding: 49px 0 0;}
+.dm-shopping-edit.mui-bar-nav{background: #fff;color: #333;line-height: 44px;text-align: right;padding-right: 15px;}
+.orderList{padding: 14px 0;background: #fff;    border-bottom: 1px solid #dadada;}
+.product{padding:0 20px 0 45px;overflow: hidden;position: relative;}
+.orderImg{float: left; width: 106px;height: 90px;border: 1px solid #eaeaea; overflow: hidden;margin-right: 15px;}
+.orderImg img{width: 100%;height: 100%;}
+.orderTxt{overflow: hidden; position: relative;height: 90px;}
+.orderTxt h3{margin-bottom: 4px;line-height: 16px;font-size: 15px;}
+.orderTxt p{color: #333333;}
+.onceAccount > div{float: left;    color: #666666;}
+.onceAccount .left{overflow: hidden;width: 70%;padding-left: 40px;box-sizing: border-box;    position: relative;}
+.onceAccount .right{width: 30%; font-size:18px; float: right;position: relative;}
+.onceAccount .left >*{    display: inline-block;}
+.orderTxt .amount~span,.orderTxt h3~span{color: #999999;}
+.onceAccount .left p em,.onceAccount .right i{font-style: normal;}
+.onceAccount .right i img{position: absolute;top:15px;left:22px;width: 16px;height: 16px; }
+.onceAccount .right i{padding-left: 18px;}
+.check-all,.replace{float: left;margin-left: 5px;}
+.replace {overflow:hidden;text-overflow:ellipsis; white-space:nowrap; color: #666666;}
+.orderTxt span.coin{display: block;color: #000;margin-top: 4px;}
+.btn-settleAccounts{background: #ff0000;}
+ .delete{position: absolute;top: 50%;right: 15px;-webkit-transform: translate(0,-50%);-ms-transform: translate(0,-50%);transform: translate(0,-50%);color: #2e2e2e;}  
+ #total,.ren{color: #ff3333;}
+ .mf-red{color: #666;}
+.dm-fixed-bm.dm-pading0{padding: 0;}
+.orderTxt-bom{margin-top:11px;}
+
+.btn-fixed{position: fixed;bottom: 0;width: 100%;z-index: 100;max-width: 768px;}
+.btn-fixed .mf-btn{width: 50%;float: left;font-size: 17px;height: 48px;line-height: 48px;}
+

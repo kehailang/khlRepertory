@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>提现</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/account.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body>
+		<!--总分区-->
+		<div class="wrapper">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">提现</h1>
+			</header>
+			<!--内容区域-->
+			<div class="content">				
+				<div class="withdraw_con">
+					<div class="items">
+						<span class="mui-pull-left font-size32">可提现返利</span>
+						<span class="mui-pull-right red-color font-size32">1911.01元</span>
+					</div>
+					<div class="withdraw_con_items">
+						<div>
+							<span class="mui-pull-left">已绑定提现账户（支付宝）</span>
+							<span class="mui-pull-right">939***@qq.com</span>
+						</div>
+						<div class="withdraw_con_top">
+							<span class="mui-pull-left">提现账户（支付宝）实名名字</span>
+							<span class="mui-pull-right">李三</span>
+						</div>
+						<div class="mui-input-row">	
+							<input type="number" class="mui-input-clear md-fsize15" placeholder="请输入提现金额（整数）">
+						</div>
+						
+					</div>
+					<div class="mui-content-padded">
+						<div class="mui-btn-block mui-btn-primary" id="withdraw_prompt">确认提现</div>
+					</div>
+				</div>
+				<p class="prompt-text">温馨提示：提现到账时间一般为7个工作日左右，如有疑问，可拨打电话<a href="tel:020-89206201">020-89206201</a></p>
+				
+			</div>
+		</div>
+		<!--弹出窗提示-->
+		<div class="alert-prompt" style="display:none;">
+			<div class="alert-prompt-con">
+				<h3 class="title font-size36">温馨提示</h3>
+				<p class="txt font-size32">是否确认提现XXX元到支付宝939***@qq.com账户上</p>
+				<div class="confirm-btn">
+					<div class="btn_button cancel">取消</div>
+					<div class="btn_button">确认</div>
+				</div>
+			</div>
+		</div>		
+		<script type="text/javascript">
+				$(function(){
+				//您尚未绑定提现账号温馨提示
+				$("#withdraw_prompt").click(function(){
+					$(".alert-prompt").show();//显示
+				})
+				//点击取消隐藏
+				$(".cancel").click(function(){
+					$(".alert-prompt").hide();//隐藏
+				})								
+			})
+		</script>
+		
+	</body>
+</html>

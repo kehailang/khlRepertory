@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>返利</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/account.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body>
+		<!--总分区-->
+		<div class="wrapper">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">返利</h1>
+			</header>
+			<!--内容区域-->
+			<div class="content">				
+				<div class="withdraw_con">
+					<div class="items">
+						<span class="mui-pull-left">可提现返利</span>
+						<span class="mui-pull-right red-color">1911.01元</span>
+					</div>
+					<div class="withdraw">
+						<a href="budget_detail.html" class="red ss-btnwidth">收支明细</a>
+						<a href="javascript:;" class="red ss-btnwidth mui-pull-right" id="withdraw_prompt">提现</a>
+					</div>
+				</div>
+				<div class="withdraw_con">
+					<a href="my_order.html">
+					<div class="items">
+						<span class="mui-pull-left">即将可用（待返）</span>
+						<span class="mui-pull-right">1911.01元<i class="mui-navigate-right"></i></span>
+					</div>
+					</a>
+					<div class="items">
+						<span class="mui-pull-left">您已累计获得返现</span>
+						<span class="mui-pull-right">1911.01元</span>
+					</div>
+				</div>
+				<div class="withdraw_con">
+					<a href="fans_order.html">
+						<div class="items">
+							<span class="mui-pull-left">即将到账（粉丝奖励）</span>
+							<span class="mui-pull-right">1911.01元<i class="mui-navigate-right"></i></span>
+						</div>
+					</a>
+					<div class="items">
+						<span class="mui-pull-left">一级粉丝数量</span>
+						<span class="mui-pull-right">1911个</span>
+					</div>
+					<div class="items">
+						<span class="mui-pull-left">您已累计获得粉丝奖励</span>
+						<span class="mui-pull-right">15151.01元</span>
+					</div>
+				</div>
+				<div class="withdraw_con">
+					<div class="items">
+						<span class="mui-pull-left">即将到账（二级粉丝奖励）</span>
+						<span class="mui-pull-right">1911.01元</span>
+					</div>
+					<div class="items">
+						<span class="mui-pull-left">二级粉丝数量</span>
+						<span class="mui-pull-right">1911个</span>
+					</div>
+					<div class="items">
+						<span class="mui-pull-left">您已累计获得二级粉丝奖励</span>
+						<span class="mui-pull-right">15151.01元</span>
+					</div>
+				</div>
+				<p class="prompt-text">温馨提示：二级粉丝涉及到个人隐私，因此只展示奖励总数，而不展示其粉丝订单的详情。</p>
+				
+			</div>
+		</div>
+		<!--您尚未绑定提现账号或实名认证-->
+		<div class="alert-prompt user_approve">
+			<div class="alert-prompt-con">
+				<h3 class="title font-size36">温馨提示</h3>
+				<p class="txt font-size32">您尚未绑定提现账号或实名认证</p>
+				<div class="confirm-btn">
+					<div class="btn_button cancel">取消</div>
+					<div class="btn_button">去绑定</div>
+				</div>
+			</div>
+		</div>		
+		<!--是否确认提现XXX元到支付宝账户上-->
+		<div class="alert-prompt alipay">
+			<div class="alert-prompt-con">
+				<h3 class="title font-size36">温馨提示</h3>
+				<p class="txt font-size32">是否确认提现XXX元到支付宝939***@qq.com账户上</p>
+				<div class="confirm-btn">
+					<div class="btn_button cancel">取消</div>
+					<div class="btn_button">去绑定</div>
+				</div>
+			</div>
+		</div>		
+		<script type="text/javascript">
+				$(function(){
+				//您尚未绑定提现账号温馨提示
+				$("#withdraw_prompt").click(function(){
+					$(".user_approve").show();//显示
+				})
+				//点击取消隐藏
+				$(".cancel").click(function(){
+					$(".alert-prompt").hide();//隐藏
+				})								
+			})
+		</script>
+		
+	</body>
+</html>

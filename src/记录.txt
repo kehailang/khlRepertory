@@ -1,0 +1,62 @@
+柯海浪
+kehl
+FBihn1DMmjhEHayO7V
+
+https://192.168.31.60/svn/songshu/Requirement
+
+
+想多~\(≧▽≦)/~啦啦啦
+
+微信小程序 appID:wxccf09a24f98fd482
+
+<<node-vue环境  http://blog.csdn.net/u013182762/article/details/53021374>>
+1、node -v
+2、npm -v
+3、npm install -g cnpm --registry=http://registry.npm.taobao.org
+4、npm install -g vue-cli 
+5、vue init webpack firstVue   //这个命令的意思是初始化一个项目
+6、cd desktop/firstVue
+7、cnpm install
+8、npm run dev
+
+
+<<git使用>>
+1、cd:
+2、cd www
+3、mkdir testgit //创建一个目录
+4、cd testgit //进到testgit目录
+5、pwd //显示当前目录
+6、git init //把这个目录变成git可以管理的仓库
+7、git add readme.txt //添加到暂存区
+8、git commit -m '增加内容xxxx' //提交到仓库
+9、git status //查看文件状态
+10、git diff readme.txt //查看文件修改了什么内容
+11、git log //查看历史记录
+12、git reset --hard HEAD //版本号回退到上一个版本
+13、cat readme.txt //查看这个文件内容
+14、git reflog //获取版本号
+15、git reset hard xxxxx //恢复版本号
+16、git checkout -- xxxx //丢弃工作区的修改
+17、rm readme.txt //删除文件
+二、远程仓库
+1、cd ~/.ssh //检测是否生成过key
+2、ssh-keygen -t rsa -C “邮箱地址”
+3、git remote add origin https://github.com/kehailang/testgit.git  //本地仓库的内容推送到GitHub仓库
+\\git remoet add origin git push -u origin master
+
+4、git push -u origin master
+
+
+三、创建与合并分支
+1、git checkout -b dev  //创建并切换dev分支
+2、git branch //查看当前分支
+3、git checkout master //切换分支master
+4、git merge dev  //在master分支上合并dev分支内容
+5、git branch name  //创建分支
+6、git checkout -b name  //删除分支
+7、git log --graph --pretty=oneline --abbrev-commit //用带参数的git log也可以看到分支的
+合并情况
+
+
+四、如何解决冲突
+1、

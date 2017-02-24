@@ -1,0 +1,42 @@
+.can-carry,.carry-amount{background: #fff;padding: 0 18px;overflow: hidden;}
+.can-carry-money{float: left;width: 60%; font-size: 17px;color: #333333;padding: 10px 0;}
+.can-carry-money .money{font-size: 24px;color: #ff3333;}
+.can-carry-btn{border: 1px solid #ed5137;color: #ed5137;width: 106px;height: 34px;text-align: center;line-height: 34px;float: right;box-sizing: border-box;border-radius: 8px;    margin-top: 20px;}
+.carry-amount{margin: 10px 0 0;padding: 0;}
+.carry-amount .items{height: 48px;line-height: 48px; border-bottom: 1px solid #cecece;font-size: 17px;padding: 0 18px;}
+/*.carry-amount .items:last-child{border-bottom: none;}*/
+.items .label{width: 26%;display: inline-block;}
+.label input{font-size: 18px;width: 100%;}
+.items .input{width:74%;display: inline-block; float: right;position: relative;}
+.input input{width:100%; font-size: 22px;}
+input::-webkit-input-placeholder{color:#333333;}
+input:-moz-placeholder{color:#333333;}
+.items .input .bank-card{font-size: 15px;}
+.items .input .icon-return{right: 0;} 
+.amount-text,.add-text{color: #999999;font-size: 15px;padding: 10px 18px;}
+.mf-withdraw,.mf-confirm{background: #ed5137;line-height: 42px;margin: 0 18px;border-radius: 4px;font-size: 18px;}
+.mf-confirm{margin-top: 38px;}
+.add-text{line-height: 46px;padding: 0 18px;}
+.addBankCard{margin: 0;}
+.addBankCard input{font-size: 17px;}
+.addBankCard .input input::-webkit-input-placeholder{color:#ccc;}
+.addBankCard .input input:-moz-placeholder{color:#ccc;}
+.addBankCard  .items .input .bank-card{font-size: 17px;}
+.success{text-align: center;padding: 25px 0 20px;}
+.success .txt{color: #ed5137;font-size: 18px;}
+.txt img{width: 17px;height: 17px;display: inline-block;margin: -2px auto;margin-right: 6px;}
+.dispose{color: #666666;font-size: 15px;margin-top: 10px;}
+.withdraw-succeed{margin: 0;}
+.withdraw-succeed .input input{text-align: right;}
+.withdraw-succeed .input input::-webkit-input-placeholder{color:#666666;}
+.withdraw-succeed .input input:-moz-placeholder{color:#666666;}
+.bankBox{position: relative;}
+.bank_xl>ul>li,.newBankCard{line-height: 48px;border-bottom: 1px solid #cecece;padding-left: 18px;background: #fff;font-size: 17px;}
+.newBankCard{margin-top: 15px;border-bottom: 1px solid #cecece;border-top: 1px solid #cecece;}
+.newBankCard a{width: 100%;height: 100%;display: inline-block;}
+.carry-amount .items .verify{padding:0 5px;border: 1px solid #ed5137;color: #ed5137;font-size: 14px;position: absolute;top: 8px;right: 0;height: 30px;line-height: 30px;border-radius: 4px;}
+
+.mf-choose{width: 100%;font-size: 17px;}
+.input input::-webkit-input-placeholder{
+	color:#d5cccc;
+}

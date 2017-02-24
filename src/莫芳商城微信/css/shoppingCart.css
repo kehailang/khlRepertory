@@ -1,0 +1,37 @@
+.myOrder{margin: 10px 0 45px;}
+.orderList{padding: 16px 0;margin-bottom: 10px;background: #fff;}
+.product{padding:0 20px 0 50px;overflow: hidden;position: relative;}
+.orderImg{float: left; width: 70px;height: 70px;border: 1px solid #eaeaea; overflow: hidden;margin-right: 20px;}
+.orderImg img{width: 100%;height: 100%;}
+.orderTxt{overflow: hidden; position: relative;height: 72px;}
+.orderTxt h3{margin-bottom: 4px;line-height: 16px;font-size: 15px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.orderTxt p{color: #666666;}
+.orderTxt p span{margin-right: 12px;}
+.orderTxt p span:last-child{margin-right: 0;}
+.coin{position: absolute;right: 0;bottom: -2px;color: #ee4910;font-size: 14px;}
+.product .coin i{font-style: normal;}
+.amount{position: absolute; bottom:0;left: 0;width: 100px;border: 1px solid #666666;border-radius:2px;overflow: hidden;line-height: 24px;height: 24px; }
+.amount >*{float: left;width: 33.33%;text-align: center;}
+.amount span i{display: inline-block;position: relative;width: 14px;}
+.amount .min i,.amount .add i{background:url(../images/min.png) no-repeat;height: 1px;top: -3px;left:0;background-size:100%;}
+.amount .add i{background:url(../images/add.png) no-repeat;height: 14px;top:2px;left: 0;background-size:15px 15px;}
+.amount .text_box{border-left: 1px solid #666;border-right: 1px solid #666;height: 100%;box-sizing: border-box;-webkit-appearance: none;border-radius: 0;color: #000;}
+.product > span,.onceAccount .left span{width: 22px;height: 22px;display: inline-block;background: url(../images/select.png) no-repeat;background-size: 45px 23px;position: absolute;top: 50%;left: 18px;-webkit-transform: translate(0,-50%);-ms-transform: translate(0,-50%);transform: translate(0,-50%);}
+.product > span.cur,.onceAccount .left span.cur{background-position: -23px 0; }
+.fixed{position: fixed;bottom: 48px;left: 0;width: 100%;z-index: 100;}
+.onceAccount{background: #fff;border-top: 1px solid #e2e2e2;max-width: 768px;margin: 0 auto;overflow: hidden;}
+.onceAccount > div{float: left;}
+.onceAccount .left{overflow: hidden;width: 70%; height: 45px;line-height: 24px;padding-left: 40px;box-sizing: border-box;    position: relative;}
+.onceAccount .right{width: 30%; height: 45px;line-height: 45px; font-size:18px; float: right;position: relative;}
+.onceAccount .left >*{    display: inline-block;}
+
+.onceAccount .left p em,.onceAccount .right i{font-style: normal;}
+.onceAccount .right i img{position: absolute;top:15px;left:22px;width: 16px;height: 16px; }
+.onceAccount .right i{padding-left: 18px;}
+.check-all,.replace{float: left;height: 45px;line-height: 45px;margin-left: 5px;}
+.replace {width: 79%;overflow:hidden; /*不显示超过对象宽度的内容*/ text-overflow:ellipsis; /*当对象内文本溢出时显示省略标记（...）*/ white-space:nowrap; /*限制在一行内显示所有文本*/ }
+.btn-settleAccounts{}
+.delete{position: absolute;top: 0;right: 0;}  
+ 
+.cart-empty img{width: 45%;margin: 50px auto 20px;}
+.txt-empty{text-align: center;font-size: 15px;}

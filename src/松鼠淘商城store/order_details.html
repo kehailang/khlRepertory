@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>订单详情</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->  
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />		    
+	    <link rel="stylesheet" type="text/css" href="css/details.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/address.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body style="background: #f2f2f2;">
+		<!--总分区-->
+		<div class="wrapper">
+			<!--订单详情-->
+			<div id="order_details"  style="display: block;">
+				<!--返回导航头部-->
+				<header class="bar-nav border-bottom">
+					<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+				    <h1 class="font-size34 bar-nav-title">订单详情</h1>
+				</header>
+				<!--内容区域-->
+				<div class="content ts_content">
+					<div class="details-box">
+						<!--订单状态-->
+						<div class="order-status">
+							<div class="mui-pull-left dm-positionleft50">
+								<h4 class="font-size36">已经发货</h4>
+								<p class="font-size24">商品已经出库，预计1月20日到达</p>
+							</div>
+							<div class="mui-pull-right">
+								<img src="images/hezi.png"/>
+							</div>
+						</div>	
+						<!--订单进度-->
+						<ul class="order-progress">
+							<li class="active">
+								<div class="order-progress-item">
+									<i class="icon iconfont icon-fukuan"></i>
+									<span>下单付款</span>									
+								</div>
+							</li>
+							<li>
+								<div class="order-progress-item">
+									<i class="icon iconfont icon-shouhuo"></i>
+									<span>确认收货</span>									
+								</div>
+							</li>
+							<li>
+								<i class="icon iconfont icon-fanli"></i>
+								<span>返利成功</span>
+							</li>
+						</ul>
+						<ul class="order-number">
+							<li class="items">
+								<span class="mui-pull-left">订单号</span>
+								<span class="mui-pull-right red-color">￥67.00</span>
+							</li>
+						</ul>
+						<p class="order-number-p">确定收货后第八天可到账</p>
+						<ul class="order-number">
+							<li class="items">
+								<span>选择收货地址</span>
+								<span class="mui-pull-right"><i class="mui-navigate-right"></i></span>
+							</li>
+						</ul>
+						<ul class="order-number">
+							<!--有地址的时候-->
+							<li class="items items-address"  id="default_address">
+								<div class="importance">
+									<span class="mui-pull-left">收货人：张三</span>
+									<span class="mui-pull-right">15989231237</span>
+								</div>
+								<div class="address">收货地址：中华人民共和国广东省海珠区新港东路1088号 中洲交易中心1219室</div>
+								<i class="mui-navigate-right"></i>
+							</li>
+							<!--没有地址的时候-->
+							<li class="items items-address" id="no_address"  style="display: none;">
+								<span class="font-size24">请选择地址</span>
+								<i class="mui-navigate-right"></i>
+							</li>						
+							
+						</ul>
+						<ul class="order-number dingdan">
+							<li class="items">
+								<span class="md-fsize15">最新物流：已到达上海市分点，下一站广州</span>
+								<i class="mui-navigate-right"></i>
+							</li>
+							<li class="items bordernone">
+								<span class="md-fsize15">订单详情</span>
+							</li>
+							<li class="items bordernone">
+				     	 		<div class="orders_ti">
+			     	 				<div class="orderImg mui-pull-left"><img src="images/img7.jpg"/></div>
+			     	 				<div class="orderTxt">
+			     	 					<h3 class="header-txt mui-ellipsis-2">雪屋猫砂盘大号封闭式猫便盆厕所极简 优雅原创设计 / 松鼠汇</h3>
+			     	 					<p class="type">颜色：米白色，尺寸：170/92A/M</p>	
+			     	 					<p><span class="mui-pull-left red-color">￥367.00</span><span class="mui-pull-right">X1</span></p>
+			     	 				</div>		             	 			
+				     	 		</div>
+				     	 		<div class="orders_ti">
+			     	 				<div class="orderImg mui-pull-left"><img src="images/img7.jpg"/></div>
+			     	 				<div class="orderTxt">
+			     	 					<h3 class="header-txt mui-ellipsis-2">雪屋猫砂盘大号封闭式猫便盆厕所极简 优雅原创设计 / 松鼠汇</h3>
+			     	 					<p class="type">颜色：米白色，尺寸：170/92A/M</p>	
+			     	 					<p><span class="mui-pull-left red-color">￥367.00</span><span class="mui-pull-right">X1</span></p>
+			     	 				</div>		             	 			
+				     	 		</div>
+				     	 		<div class="orders_ti">
+			     	 				<div class="orderImg mui-pull-left"><img src="images/img7.jpg"/></div>
+			     	 				<div class="orderTxt">
+			     	 					<h3 class="header-txt mui-ellipsis-2">雪屋猫砂盘大号封闭式猫便盆厕所极简 优雅原创设计 / 松鼠汇</h3>
+			     	 					<p class="type">颜色：米白色，尺寸：170/92A/M</p>	
+			     	 					<p><span class="mui-pull-left red-color">￥367.00</span><span class="mui-pull-right">X1</span></p>
+			     	 				</div>		             	 			
+				     	 		</div>
+								<ul class="order-number marginbottom">
+									<li class="items bordertopnone">
+										<span class="mui-pull-left">运费：</span>
+										<span class="mui-pull-right">￥10.00</span>
+									</li>
+									<li class="items bordernone">
+										<span class="mui-pull-left">合计：</span>
+										<span class="mui-pull-right red-color">￥367.00</span>
+									</li>
+								</ul>				     	 		
+							</li>
+						</ul>
+						<ul class="order-number">
+							<li class="items bordernone">
+								<span class="mui-pull-left">流水号：</span>
+								<span class="mui-pull-right">123115646546121</span>
+							</li>
+							<li class="items">
+								<span class="mui-pull-left">订单状态：</span>
+								<span class="mui-pull-right">待返利</span>
+							</li>
+							<li class="items bordernone">
+								<span class="mui-pull-left">物流公司：</span>
+								<span class="mui-pull-right">中通快递</span>
+							</li>
+							<li class="items">
+								<span class="mui-pull-left">快递单号：</span>
+								<span class="mui-pull-right">45646132131434</span>
+							</li>
+						</ul>
+					</div>
+					<div class="ss-button submit-orders">
+						<a href="javascript:;" class="add-cart font-size30">取消订单</a>
+						<a href="javascript:;" class="buy-now font-size30 red">确定支付</a>
+				  </div>								
+				</div>
+			</div>
+			<!--添加地址-->
+			<div id="address_add"  style="display: none;">
+				<!--返回导航头部-->
+				<header class="bar-nav border-bottom">
+					<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+				    <h1 class="font-size34 bar-nav-title">收货地址</h1>
+				</header>
+				<!--内容区域-->
+				<div class="content ts_content">
+					<!--添加地址-->
+					<div class="dm-input-row md-border-top5">
+						<form class="mui-input-group">
+							<div class="mui-input-row">	
+								<input type="text" class="mui-input-clear" placeholder="收货人姓名">
+							</div>
+							<div class="mui-input-row">	
+								<input type="number" class="mui-input-clear" placeholder="手机号码">
+							</div>
+							<div class="mui-input-row">	
+								<input type="text" class="mui-input-clear" id="city-picker" placeholder="省、市、区" readonly="readonly">
+								<i class="mui-navigate-right"></i>
+							</div>
+							<div class="mui-input-row">
+								<textarea class="mui-input-clear" placeholder="详细地址"></textarea>
+							</div>
+						</form>
+						<div class="mui-content-padded">
+							<div class="mui-btn-block mui-btn-primary">保存</div>
+						</div>			
+					</div>						
+				</div>
+			</div>
+			<!--地址列表-->
+			<div id="address_list"  style="display: none;">
+				<!--返回导航头部-->
+				<header class="bar-nav border-bottom">
+					<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+				    <h1 class="font-size34 bar-nav-title">收货人信息</h1>
+				</header>
+				<!--内容区域-->
+				<div class="content ts_content">
+					<!--地址列表-->
+					<div class="addressBox md-border-top5">
+						<div class="addressList">
+							<div class="addressList-top">
+								<div class="name">
+									<span class="nickname font-size30">某某某</span>
+									<span class="tel font-size30">15888888888</span>
+								</div>
+								<p class="addressTxt font-size24">广东省广州市海珠区琶洲会展南5路中洲 交易中心(中洲交易中心二期)1219</p>						
+							</div>
+							<div class="addressList-bottom">
+								<span class="mui-pull-left set-default"><i></i>默认</span>
+								<span class="mui-pull-right">
+									<span class="d_icon_bianji"><i class="icon iconfont icon-bianji"></i>编辑</span>
+									<span class="d_icon_shanchu"><i class="icon iconfont icon-shanchu"></i>删除</span>	
+								</span>
+							</div>
+						</div>
+						<div class="addressList">
+							<div class="addressList-top">
+								<div class="name">
+									<span class="nickname font-size30">某某某</span>
+									<span class="tel font-size30">15888888888</span>
+								</div>
+								<p class="addressTxt font-size24">广东省广州市海珠区琶洲会展南5路中洲 交易中心(中洲交易中心二期)1219</p>						
+							</div>
+							<div class="addressList-bottom">
+								<span class="mui-pull-left set-default"><i></i>默认</span>
+								<span class="mui-pull-right">
+									<span class="d_icon_bianji"><i class="icon iconfont icon-bianji"></i>编辑</span>
+									<span class="d_icon_shanchu"><i class="icon iconfont icon-shanchu"></i>删除</span>	
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="mui-content-padded">
+						<a href="address.html"><div class="mui-btn-block mui-btn-primary">新增收货地址</div></a>
+					</div>			
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="dm-fixed-bm">
+			<div class="ss-button orders-details">
+				<a href="return_request.html" class="add-cart font-size30">申请退款</a>
+				<a href="logisticsInformation.html" class="buy-now font-size30">查看物流</a>
+				<a href="reviews.html" class="add-cart font-size30 red">立即评价</a>
+		   </div>			
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//点击没有地址的时候
+			$("#no_address").click(function(){
+				$("#order_details").hide();
+				$(".dm-fixed-bm").hide();
+				$("#address_add").show();
+			});
+			//点击有地址的时候
+			$("#default_address").click(function(){
+				$("#order_details").hide();
+				$(".dm-fixed-bm").hide();
+				$("#address_list").show();
+			});
+			//点击address_add、address_list下面的返回
+			$("#address_add .return-left,#address_list .return-left").click(function(){
+				$("#order_details").show();
+				$(".dm-fixed-bm").show();
+				$("#address_add,#address_list").hide();				
+			})
+			//点击取消隐藏
+			$(".cancel").click(function(){
+				$(".alert-prompt").hide();//隐藏
+			})
+			
+			//设为默认地址
+			$(".set-default").click(function(){
+				$(this).find("i").toggleClass("cur");
+				$(this).parents('.addressList').siblings().find('.cur').removeClass('cur');
+			})
+		
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//-----------------------------------------
+					//					//级联示例
+					var cityPicker = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('city-picker');	
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							if((items[2] || {}).text=="" || (items[2] || {}).text==null){
+								items[2].text="";
+							}
+							console.log((items[2] || {}).text);
+							showCityPickerButton.value=(items[0] || {}).text + "" + (items[1] || {}).text + "" + (items[2] || {}).text;
+							
+							//alert(showCityPickerButton.value)
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+	</body>
+</html>

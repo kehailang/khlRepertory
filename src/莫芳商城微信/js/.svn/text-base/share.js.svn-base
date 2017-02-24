@@ -1,0 +1,35 @@
+function share(){
+	$("#mcover").css("display","block");
+}
+	$("#mcover").click(function(){
+		$("#mcover").css("display","none");
+	})
+function toScale(){
+  	//对象的固定宽高
+	var dataW=400;
+	var dataH=571;
+	//对象的宽高比
+	var WH=dataW/dataH;
+	//放大比例
+	var theScale=0;
+	//当前窗口大小
+	var width=$(window).width();
+	var height=$(window).height()-45;
+	//当前窗口宽高比（减去头部title高度）
+	var thisWH=width/height;
+	
+	if(WH<=thisWH){
+		theScale=height/dataH;
+	}else{
+		theScale=width/dataW;
+	}
+	//改变bigBox比例
+	$(".shareYl").css("transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".shareYl").css("-ms-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".shareYl").css("-webkit-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".shareYl").css("-o-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".shareYl").css("-moz-transform","translate(-50%,-50%) scale("+theScale+")");
+	//获取bigBBox高度
+	$(".bigBBox").css("height",height+"px");
+}toScale();
+window.onresize = toScale;

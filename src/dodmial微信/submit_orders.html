@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>提交订单</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->  
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/order.css"/>
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />		    	    
+	</head>
+	<body style="background: #f2f2f2;">
+		<!--总分区-->
+		<div class="wrapper">
+			<div class="details-box">
+				<ul class="order-number">
+					<li class="items">
+						<span class="md-fsize15">收货人信息</span>
+					</li>
+					<li class="items dm-paddingright">
+						<div class="importance">
+							<span class="md-fsize15 mui-pull-left">何想想</span>
+							<span class="md-fsize15 mui-pull-right">186 2080 6053</span>
+						</div>
+						<div class="address md-fsize12 dm-color-gray">广东省广州市海珠区新港东路1088号中洲交易中心1218</div>
+						<i class="icon d_iconfont d_icon_gengduo mui-pull-right md-fsize20 dm-positionleft50"></i>
+					</li>
+				</ul>
+				<ul class="order-number">
+					<li class="items">
+						<span class="md-fsize15 mui-pull-left">订单号</span>
+						<span class="md-fsize15 mui-pull-right">125112115511</span>
+					</li>
+					<li class="items">
+						<span class="md-fsize15 mui-pull-left">下单时间</span>
+						<span class="time md-fsize15 mui-pull-right dm-color-gray">2016/11/22</span>
+					</li>
+				</ul>
+				<ul class="order-number">
+					<li class="items">
+						<span class="md-fsize15">商品清单</span>
+					</li>
+					<li class="items dm-paddingnone">
+		     	 		<div class="orderList">
+		    	 			<div class="product">
+		     	 				<div class="orderImg mui-pull-left"><img src="images/img8.jpg"/></div>
+		     	 				<div class="orderTxt mui-pull-left">
+		     	 					<h3><span class="header-txt md-fsize15">37度苏秘水漾清润套盒</span></h3>
+		     	 					<p><em class="no-payment md-fsize18 dm-color-danger">¥9.9</em><span>x1</span></p>		     	 					
+		     	 				</div>		             	 				
+		     	 			</div>		             	 			
+		     	 		</div>
+		     	 		<div class="orderList">
+		    	 			<div class="product">
+		     	 				<div class="orderImg mui-pull-left"><img src="images/img8.jpg"/></div>
+		     	 				<div class="orderTxt mui-pull-left">
+		     	 					<h3><span class="header-txt md-fsize15">37度苏秘水漾清润套盒</span></h3>
+		     	 					<p><em class="no-payment md-fsize18 dm-color-danger">¥9.9</em><span>x1</span></p>		     	 					
+		     	 				</div>		             	 				
+		     	 			</div>		             	 			
+		     	 		</div>
+					</li>
+				</ul>
+				<ul class="order-number">
+					<li class="items">
+						<span class="md-fsize15">留言备注</span>
+					</li>
+					<li class="items">
+		     	 		<textarea class="mui-input-clear md-fsize15" placeholder="填写留言备注"></textarea>
+					</li>
+				</ul>
+				<ul class="order-number">
+					<li class="items" id="showUserPicker">
+						<span class="md-fsize15 mui-pull-left">选择快递</span>
+						<span class="md-fsize15 mui-pull-right" id="userResult">顺丰快递</span>
+						<i class="icon d_iconfont d_icon_gengduo mui-pull-right md-fsize20 dm-positionleft50"></i>
+					</li>
+					<li class="items">
+						<span class="md-fsize15 mui-pull-left">订单总计</span>
+						<span class="time md-fsize15 mui-pull-right dm-color-danger">共2件 18.88元</span>
+					</li>
+				</ul>
+			</div>			
+		</div>
+		<!--支付成功-->
+		<div class="alert-prompt" style="display:block;">
+			<div class="alert-prompt-con">
+				<img src="images/succeedicon.png"/>
+				<p>支付成功</p>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="btn-fixed dm-fixed-bm">
+			<div class="btn-cancel mf-btn">取消订单</div>
+			<div class="btn-payment mf-btn mf-btn-red">去付款</div>
+		</div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			//商品清单右边的宽度
+			$(".order-number .orderTxt").css("width",$(".order-number .product").width()-$(".order-number .orderImg").width());
+			//选择快递
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//普通示例
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: '1',
+						text: '顺丰快递'
+					}, {
+						value: '2',
+						text: '圆通快递'
+					}, {
+						value: '3',
+						text: '蜂鸟快递'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+					var userResult = doc.getElementById('userResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							userResult.innerText =JSON.stringify(items[0].text);
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+
+				});
+			})(mui, document);
+		</script>
+	</body>
+</html>

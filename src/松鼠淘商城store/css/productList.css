@@ -1,0 +1,23 @@
+body{ background-color: #f0f0f0; width: 100%; overflow-x: hidden; overflow-y: scroll;}
+#banner_swiper{ width: 100%; height: auto;}
+p.explain{ line-height: .81rem; text-align: center; color: #4c4c4c; font-size: .24rem;}
+.explain em{ color: #fd1721;}
+#tabbox{height: 100%; margin: 0 auto; padding-bottom: .15rem;}
+.waterfall_box{ float: left; -webkit-box-sizing: border-box;padding:0 .2rem;width: 100%;}
+.waterfall_data{font-size: .24rem; margin-bottom: .2rem;width: 50%;float: left;}
+.waterfall_data:nth-child(2n){padding-left: .1rem;}
+.waterfall_data:nth-child(2n+1){padding-right: .1rem;}
+.waterfall_data img{width: 100%; height: auto;}
+.detail{ padding: .3rem .2rem .24rem;line-height: .38rem;background: #fff;}
+.waterfall_title{color: #959595;font-size: .3rem;margin-bottom: .15rem;}
+.price1{ color: #505050; margin-right: .01111rem;}
+.price2{color: #fd1721;}
+.price2 em{background-color: #fd1721;color:#FFFFFF;border-radius:.1rem; padding:0 .06rem;}
+.reward{color: #959595; margin-top: .12rem;}
+.reward span{color: #fd1721;}
+.waterfall_data .btn{margin-top:.2rem; overflow: hidden;}
+.waterfall_data .btn1{ float:left; background-color: #fd1721; color: #FFFFFF; margin-right: .15rem;display: inline-block;width: 45%;float: left;text-align: center;border-radius: 4px;line-height: .48rem;}
+.mui-scroll-wrapper {
+    overflow-y: auto;
+    height: 100%;
+}

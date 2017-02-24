@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>莫芳-个人中心</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/personCenter.css"/>
+	</head>
+	<body>
+		<footer class="nav">
+			<ul>
+			    <li class="index"><a href="index.html?type=1"><i class="icon1-A"></i><span>首页</span></a></li>
+			    <li class="shoppingCart"><a href="shoppingCart.html?type=2"><i class="icon2-A"></i><span>购物车</span></a></li>
+			    <li class="surprise"><a href="surprise.html?type=3"><i class="icon3-A"></i><span>惊喜</span></a></li>
+			    <li class="me"><a href="personCenter.html?type=4"><i class="icon4-B"></i><span>我</span></a></li>
+			</ul>		
+		</footer>		
+		<!---个人中心head----->
+		<div class="personalHeader">
+			<div class="blurBg" style="background: black;">
+				<img id="headImg1" class="blur"/></div>
+			<div class="personalPos">
+				<div class="userHeader"><img id="headImg2" src="images/header.jpg"/></div>
+				<p id="pName">
+					<span>小狗</span>
+					<span>小狗</span>
+				</p>
+			</div>
+		</div>
+		<div class="orderPadding">		
+			<ul class="order">				
+				<li>
+					<a href="myOrder.html">	
+						<i class="mf-icon iocnMyOder"></i>我的订单<i class="icon-return"></i>
+					</a>	
+				</li>
+				<li>
+					<a href="myMoney.html">
+						<i class="mf-icon iconMoney"></i>我的金额<i class="icon-return"></i>
+					</a>
+				</li>
+				<li>
+					<a href="address01.html">
+						<i class="mf-icon iconAddress"></i>收货地址<i class="icon-return"></i>				
+					</a>
+				</li>	
+				<li>
+					<a href="bindingMobile.html" >
+						<i class="mf-icon iconMobile"></i>绑定手机号<i class="icon-return"></i>				
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="javascript:;" class="click-kefu">
+						<i class="mf-icon iconService"></i>在线客服<i class="icon-return"></i>				
+					</a>
+				</li>									
+				<li id="share">
+					<a href="javascript:;">
+						<i class="mf-icon iconShare"></i>分享<i class="icon-return"></i>				
+					</a>
+				</li>
+				<li>
+					<a href="addBankCard.html" >
+						<i class="mf-icon iconBankCard"></i>添加银行卡<i class="icon-return"></i>				
+					</a>
+				</li>				
+				<li>
+					<a href="followUs.html" >
+						<i class="mf-icon iconFollowUs"></i>关注我们<i class="icon-return"></i>				
+					</a>
+				</li>				
+				<li>
+					<a href="followUs.html" >
+						<i class="mf-icon rwm_yq"></i>我的邀请二维码<i class="icon-return"></i>				
+					</a>
+				</li>				
+				<li style=" border-bottom: 1px solid #c8c8c8;">
+					<!--<input type="file" class="codeFile"/>-->
+					<a href="javascript:;">
+						<i class="mf-icon iconQRCode"></i>我的二维码<i class="icon-return"></i>				
+					</a>
+				</li>				
+			</ul>
+			<div style=" padding: 20px 0 40px;text-align: center;-webkit-user-select: none;-webkit-user-select: text;-webkit-user-select: all;">
+				<input type="button" value="长按用户ID复制" style="background: red;color: #fff;display: block; padding: 2px 8px;font-size: 12px;margin: 0 auto 10px;"/>
+				<div>
+					<span>用户id:</span>
+					<input type="text" value="jfiejfiuruu8889jfiejfiuruu8889" readonly="readonly" style="width: 70%;"/>
+				</div>
+				
+			</div>
+		</div>
+		<div class="bgBack"><img src="images/tishi.png"></div>
+		<!--在线客服-->
+		<div class="bgBack kefu">
+			<div class="qqkefu">
+				<img src="images/close2.png"class="prompt-close"/>
+				<div>
+					<p>技术客服</p>
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=395936482&site=qq&menu=yes" >
+						<img src="images/qq.jpg"/>				
+					</a>					
+					<p>周一至周五</p>
+					<p>09:00 — 18:00</p>
+				</div>
+				<div>
+					<p>售后客服</p>
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=395936482&site=qq&menu=yes" >
+						<img src="images/qq.jpg"/>				
+					</a>	
+					<p>周一至周五</p>
+					<p>09:00 — 18:00</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="alertBg">
+			<div class="prompt">
+			<div class="box-qrcode">
+				<span class="prompt-close"></span>
+				<img src="images/code2.jpg"/>
+				<p>为了确保奖品成功发放 请长按二维码关注公众号</p>
+			</div>
+			</div>						
+		</div>
+<style type="text/css">
+	.qqkefu{position: absolute;top: 50%;left: 50%;width: 80%;background: #fff;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);text-align: center; padding: 20px 0; border-radius: 8px;}
+	.qqkefu img{position: initial;width: 40%;margin: 15px auto 10px;}
+	.qqkefu div p:first-child{font-size: 16px;}
+	.qqkefu div{width: 50%;float: left;}
+	.qqkefu .prompt-close{position: absolute;right: -15px;width: 32px;top: -26px;}
+	.qqkefu div:last-child{border-left: 1px solid #c3c3c3;box-sizing: border-box;}
+</style>
+		<div style="height: 48px;"></div>
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js" ></script>
+		<script>
+			$(window).ready(function(){
+				setImgWH();
+				$("#share").click(function(){
+					$(".bgBack").show()
+				})
+				$(".bgBack").click(function(){
+					$(".bgBack").hide()
+				});
+				$(".prompt-close").click(function(){
+					$(".alertBg").hide()
+				});
+				
+				//客服
+				$(".click-kefu").click(function(){
+					$(".kefu").show()
+				})
+			});
+			function setImgWH(){
+				var height = $("#headImg2").width();
+				$("#headImg2").css("height",height );
+			}
+			
+		</script>
+	</body>
+</html>

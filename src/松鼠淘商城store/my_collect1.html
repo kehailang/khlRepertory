@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的收藏</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/collect.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body>
+		<!--总分区-->
+		<div class="wrapper">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">我的收藏</h1>
+			    <span class="mui-pull-right header-right font-size30"><a href="my_collect.html">完成</a></span>
+			</header>
+			<!--内容区域-->
+			<div class="content">
+				<!--我的收藏列表-->
+				<ul class="mui-table-view collect delete-list">
+					<li class="mui-table-view-cell mui-media margin-top15">
+						<span class="select-btn dm-positionleft50"><i></i></span>
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="images/header1.jpg">
+							<div class="mui-media-body">
+								<p class="font-size28 mui-ellipsis-2 title-p">哆味道礼品装湖南石门特产冰糖橙新 哆味道礼品装湖南石门特产冰糖橙...</p>
+								<div>
+										<span class="font-size28">￥29.00</span>
+										<span class="note font-size28">￥29.00</span>
+									<span class="mui-pull-right font-size28 red-color"><span class="font-size28 back-btn">返</span>￥7.00</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media margin-top15">
+						<span class="select-btn dm-positionleft50"><i></i></span>
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="images/header1.jpg">
+							<div class="mui-media-body">
+								<p class="font-size28 mui-ellipsis-2 title-p">哆味道礼品装湖南石门特产冰糖橙新 哆味道礼品装湖南石门特产冰糖橙...</p>
+								<div>
+										<span class="font-size28">￥29.00</span>
+										<span class="note font-size28">￥29.00</span>
+									<span class="mui-pull-right font-size28 red-color"><span class="font-size28 back-btn">返</span>￥7.00</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media margin-top15">
+						<span class="select-btn dm-positionleft50"><i></i></span>
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="images/header1.jpg">
+							<div class="mui-media-body">
+								<p class="font-size28 mui-ellipsis-2 title-p">哆味道礼品装湖南石门特产冰糖橙新 哆味道礼品装湖南石门特产冰糖橙...</p>
+								<div>
+										<span class="font-size28">￥29.00</span>
+										<span class="note font-size28">￥29.00</span>
+									<span class="mui-pull-right font-size28 red-color"><span class="font-size28 back-btn">返</span>￥7.00</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--弹出窗提示-->
+		<div class="alert-prompt remove">
+			<div class="alert-prompt-con">
+				<h3 class="title font-size36">温馨提示</h3>
+				<p class="txt font-size32">确认要删除这些珍藏已久的商品吗？</p>
+				<div class="confirm-btn">
+					<div class="btn_button cancel">取消</div>
+					<div class="btn_button">确认</div>
+				</div>
+			</div>
+		</div>		
+		<!--底部全选结算-->
+		<div class="dm-fixed-bm">
+			<div class="mui-pull-left">
+				<span class="select-btn dm-positionleft50"><i></i></span>
+				<div class="check-all font-size30">全选</div>
+			</div>
+			<div class="mui-pull-right">
+				<a href="javascript:;" class="font-size30 delete-btn red dm-positionright50"><span class="icon iconfont icon-shanchu"></span>删除</a>
+			</div>
+		</div>
+		<script src="js/collect_choose.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".delete-btn").click(function(){
+				$(".remove").show();
+			})
+			$(".cancel").click(function(){
+				$(".alert-prompt").hide();
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>404提示</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">	 
+		<!-- 公共基础样式 -->   
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body style="background: #f2f2f2;">
+		<!--总分区-->
+		<div class="wrapper">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">404提示</h1>
+			</header>
+			<div style="width: 66%;margin: 40% auto 1rem;text-align: center;">
+				<div style="font-size: .32rem;">页面无法正常打开，请稍后重试~</div>
+				<img src="images/404.jpg" style="width: 66%;margin: 1rem auto .51rem;"/>
+				<div style="font-size: .36rem;">提示语</div>
+			</div>
+			
+			
+		</div>
+		<!--底部导航-->
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<span class="icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item unopen" href="javascript:;">
+				<span class="icon iconfont icon-miaosha1"></span>
+				<span class="mui-tab-label">限量秒杀</span>
+			</a>
+			<a class="mui-tab-item" href="shoppingCart.html">
+				<span class="icon iconfont icon-gouwuche"></span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a class="mui-tab-item" href="my.html">
+				<span class="icon iconfont icon-yonghu"></span>
+				<span class="mui-tab-label">个人中心</span>
+			</a>
+		</nav>
+		<!--弱提示-->
+		<div class='weak-prompt'></div>	
+		<script type="text/javascript">
+			$(".unopen").click(function(){
+				$('.weak-prompt').html("此功能暂未开放");
+				$('.weak-prompt').show().delay(2000).fadeOut();
+			})
+
+		</script>
+	</body>
+</html>

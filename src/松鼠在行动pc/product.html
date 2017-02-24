@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<title>产品中心</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/mousewheel.css">
+
+</head>
+
+<body>
+<!--最大容器-->
+<div class="bigBox">
+		<!--头部banner部分开始-->
+		<div class="homeBanner">
+			<div class="nav">
+				<div class="logo">
+					<a href="index.html"></a>
+				</div>
+				<ul class="mainNav">
+					<li>
+							<a href="index.html" class="letter">首        页</a>
+					</li>
+					<li class="product">
+						<a href="product.html"></a>
+					</li>
+					<li>
+						<a href="cooperation01.html" class="letter">合        作</a>
+					</li>
+					<li>
+						<a href="news.html">新闻动态</a>
+					</li>
+					<li>
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li>
+						<a href="contact.html">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部banner部分结束-->
+
+<div class="content">
+<div class="contentbox"> 
+  <div class="page1">
+  	<div class="page1box">
+		<h1 id="page1I"><img src="images/iphone.png"/></h1>
+    	<p id="page1P" ><img src="images/pic/cp.png"/></p>
+	</div>
+  </div>
+  
+  
+  
+  <div class="page2">
+    <div class="lineLeft">
+    	<div class="page2T">
+    		<img src="images/serve_icon.png" />
+	    	<h4>生活服务</h4>
+	    	<p>这里出了个「吃喝玩乐」神器</p>
+	    	<p>价格敢比团购价</p>
+    	</div>
+    </div>
+    <div class="lineMiddle">
+     	<div class="page2T">
+    		<img src="images/sao_icon.png" />
+	    	<h4>扫一扫</h4>
+	    	<p>有买就有送</p>
+	    	<p>扫扫就领松鼠币</p>
+	    	<p>1松鼠币=1元</p>
+    	</div>
+    </div>
+    <div class="lineRight">
+    	<div class="page2T">
+    		<img src="images/money_icon.png" />
+	    	<h4>神奇松鼠币  </h4>
+	    	<p>美妆、服装鞋帽、3C、全球购… </p>
+	    	<p>每天用松鼠币把[种的草]换回家 </p>
+    	</div>
+    </div>
+  </div>
+  
+ <div class="page3">
+	    <div class="lineLeft3">
+	    	<div class="page3T">
+	    		<img src="images/share_icon.png" />
+		    	<h4>天生爱分享   </h4>
+		    	<p>福利藏在松鼠币 </p>
+		    	<p>暖心福利送闺蜜 </p>
+	    	</div> 	
+	    </div>
+	    <div class="lineMiddle3">
+	    	<div class="page3T">
+	    		<img src="images/shopp_icon.png" />
+		    	<h4>网购控最爱 </h4>
+		    	<p>心水商品数不清</p>
+		    	<p>逼格甩某宝几条街 </p>
+	    	</div>  	
+	    </div>
+	    <div class="lineRight3">
+	    	<div class="page3T">
+	    		<img src="images/coin_icon.png" />
+		    	<h4>商品只送不卖</h4>
+		    	<p>商品用松鼠币兑换 </p>
+		    	<p>标价敢比网购价</p>
+	    	</div>
+	    </div>		
+  </div>
+
+
+  
+  
+   <div class="page4">
+    <div class="tags">
+    	<div style="margin-top: -15%;">
+    		<h3>看看主人们怎么说? </h3>
+	    	<ul>
+	    		<li><span class="cur"></span></li>
+	    		<li><span></span></li>
+	    		<li><span></span></li>
+	    		<li><span></span></li>
+	    		<li><span></span></li>
+	    	</ul>
+	    	<div><img src="images/pic/qq3.jpg" class="cur"/></div>
+	    	<div><img src="images/pic/qq4.jpg" /></div>
+	    	<div><img src="images/pic/qq2.jpg" /></div>
+	    	<div><img src="images/pic/qq1.jpg" /></div>
+	    	<div><img src="images/pic/qq.jpg" /></div>
+		</div>
+    </div>
+  </div>
+</div> 
+</div>
+
+<ol class="gps">
+  <li class="current"></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+	<div class="footer">
+		<div class="left">CopyRight © 2016 BitAuto,All Rights Reserved. 粤ICP备15063565号-1 版权所有 &nbsp;广东松鼠在行动信息有限公司   </div>
+		<div class="right">全国统一服务热线  4000-084-018     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;地址：广州市海珠区琶洲中洲交易中心1219</div>
+	</div>
+	<img src="images/arrow.png" style="width: 45px; height:25px; bottom: 55px; left: 50%;margin-left: -22px;" id="array" class="resize"/>
+</div>	
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/animation.js"></script>
+<script>
+		$(function(){
+//		var bgs = ['#267bf0','#8532d8','#c332d9','#d82173','#d98022'];
+		$(".page4 .tags li").mouseover(function(){
+			var num = $(this).index();
+			$(this).find("span").addClass("cur").end().siblings().find("span").removeClass("cur");			
+			$(".tags >div div").eq(num).find("img").addClass("cur").end().siblings().find("img").removeClass("cur");	
+		})
+		$(".page4 .tags li:eq(0)").mouseenter(function(){
+			$(".page4").css({"background":"#267bf0"})
+		})
+		$(".page4 .tags li:eq(1)").mouseenter(function(){
+			$(".page4").css("background","#8532d8");
+		})
+		$(".page4 .tags li:eq(2)").mouseenter(function(){
+			$(".page4").css("background","#c332d9");
+		})
+		$(".page4 .tags li:eq(3)").mouseenter(function(){
+			$(".page4").css("background","#d82173");
+		})
+		$(".page4 .tags li:eq(4)").mouseenter(function(){
+			$(".page4").css("background","#d98022");
+		})
+	})
+</script>
+
+</body>
+</html>

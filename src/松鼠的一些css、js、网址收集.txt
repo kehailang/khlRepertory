@@ -1,0 +1,441 @@
+<<跨浏览器磨砂效果背景图片模糊特效>>
+http://www.htmleaf.com/jQuery/Image-Effects/201507042161.html
+<<javascript JY官方网站>>
+http://www.lovewebgames.com/
+<<仿淘宝的省级联动>>
+http://www.lovewebgames.com/
+<<插件的网站>>
+http://www.dowebok.com/
+
+<<去除移动端默认点击高亮>>
+ -webkit-tap-highlight-color: rgba(0,0,0,0);  /*去除移动端默认点击高亮*/
+
+<<几秒后消失>>
+$ ('.weak-prompt').show().delay(2500).fadeOut()
+
+<<js来算盒子的宽度>>
+
+
+
+<<对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器>>
+$(function(){
+	//对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
+	var useragent = navigator.userAgent;
+	if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+	    // 这里警告框会阻塞当前页面继续加载
+	    alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+	    // 以下代码是用javascript强行关闭当前页面
+	    var opened = window.open('about:blank', '_self');
+	    opened.opener = null;
+	    opened.close();
+	}
+
+<<HTML5 移动端长按复制>>
+-webkit-user-select: none;-webkit-user-select: text;-webkit-user-select: all;
+
+<<>>
+ display: -webkit-box;    /*容器为旧伸缩盒*/
+ -webkit-box-align: center; /*设置旧伸缩盒对齐方式*/
+display: flex;            /*容器为伸缩盒*/
+align-items: center;  /*纵轴方向上的对齐方式设置为居中*/
+
+<<选中当前的添加状态也可再点击取消>>
+function imagesClick(obj){
+	if($(obj).attr("class")=="cur"){
+		$(obj).removeClass()
+	}else{
+		$(obj).removeClass().addClass("cur")
+	}
+}
+
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer"content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+
+<<页面选中的状态颜色>>
+::selection {
+background-color: rgba(66, 37, 137, 1);
+color: #E8284C;
+}
+
+<<问卷网>>
+https://www.wenjuan.com/
+
+<<如果为空就..否则..>>
+ var imgUrl = result.list[i].img_url == '' ? 'images/public/lazyImg.jpg' : result.list[i].img_url;
+
+<<唯品会的这样计算页面的大小来自适应>>
+<script type="text/javascript" src="js/jquery-2.0.0.min.js" ></script>
+<script>
+	$(window).resize(function(){
+		var ww = $(window).width(), min=320, max=640;
+		if(ww<min) ww=min;
+		if(ww>max) ww=max;
+		$("html").css("font-size", ww*100/max+"px");
+	}).resize();
+</script>
+		    /*响应式布局 start*/
+		    function setRootFontSize() {
+		        var width = document.documentElement.clientWidth, fontSize;
+		        fontSize = (width / 10);
+		        document.getElementsByTagName('html')[0].style['font-size'] = fontSize + 'px';
+		    }
+		    setRootFontSize();
+		    window.addEventListener('resize', function() {
+		        setRootFontSize();
+		    }, false);
+		    /*响应式布局 end*/
+
+
+
+
+
+<<给网页设置想要的字体>>
+<style> 
+@font-face
+{
+font-family: myFirstFont;
+src: url('Sansation_Light.ttf')
+    ,url('Sansation_Light.eot'); /* IE9 */
+}
+
+div
+{
+font-family:myFirstFont;
+}
+</style>
+
+<<页面加载就执行>>
+
+setTimeout(function(){//定时器 
+$(".inner div").animate({ "top": "-25px", "left": "-25px", "width": "110%", "height": "110%"}, 2000);//将图片垂直水平居中放大
+},
+300);//设置三千毫秒即0.3秒
+
+
+
+<<手机验证加封装好的弹出窗效果>>
+
+<!--弹出窗-->	
+<div class="tip_popupBg"></div>
+<div class="tip_popupBox">
+	<div class="tip_popupCon">
+		<div id="divTxt"></div>
+		<input type="button" value="ok" id="ok_button" onclick="clickButton()"/>
+	</div>
+</div>
+   
+<script type="text/javascript" src="../js/jquery-2.1.3.min.js" ></script>
+<script>
+	function boxShow(txt){
+		$("#divTxt").html(txt);
+		$(".tip_popupBox").fadeIn()
+		$(".tip_popupCon").animate({"height":"70px"},300);
+		$(".tip_popupBox").fadeIn()
+	}
+		function boxHide(){		
+		$(".tip_popupBox").fadeOut()
+		$(".tip_popupCon").animate({"height":"0"},300);
+		$(".tip_popupBox").fadeOut()
+	}
+	function clickButton(){
+		boxHide();
+	}
+	$(function(){
+		var myreg = /^1[3458]\d{9}$/;
+		$("#iphone").blur(function(){
+			var regVal = this.value;
+			if($("#iphone").val().trim() ==""){
+				boxShow("请填写手机号码");
+			}else if(!myreg.exec(regVal)){
+				boxShow("手机号码格式不对")
+			}
+			
+		})
+	})
+</script>
+
+
+<<该元素显示后延迟隐藏效果>>
+$ ('.boxTip').show ().delay(1000).fadeOut()
+
+<<实现移动端满屏的效果>>
+<script type="text/javascript">
+
+function getDis(){
+	//对象的固定宽高
+	var dataW=476;
+	var dataH=666;
+	//对象的宽高比
+	var WH=dataW/dataH;
+	//放大比例
+	var theScale=0;
+	//当前窗口大小
+	var width=$(window).width();
+	var height=$(window).height()-50;
+	//当前窗口宽高比（减去头部title高度）
+	var thisWH=width/height;
+	
+	if(WH<=thisWH){
+		theScale=height/dataH;
+	}else{
+		theScale=width/dataW;
+	}
+	//改变bigBox比例
+	$(".bigBox").css("transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-ms-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-webkit-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-o-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-moz-transform","translate(-50%,-50%) scale("+theScale+")");
+	//获取bigBBox高度
+	$(".bigBBox").css("height",height+"px");
+}getDis()
+
+</script>
+<script type="text/javascript">
+$(window).ready(function(){
+  	getDis();
+});
+
+$(window).resize(function(){
+  	//getDis();
+});
+
+
+function getDis(){
+	//对象的固定宽高
+	var dataW=476;
+	var dataH=666;
+	//对象的宽高比
+	var WH=dataW/dataH;
+	//放大比例
+	var theScale=0;
+	//当前窗口大小
+	var width=$(window).width();
+	var height=$(window).height();
+	//当前窗口宽高比（减去头部title高度）
+	var thisWH=width/height;
+	
+	if(WH<=thisWH){
+		theScale=height/dataH;
+	}else{
+		theScale=width/dataW;
+	}
+	//改变bigBox比例
+	$(".bigBox").css("transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-ms-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-webkit-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-o-transform","translate(-50%,-50%) scale("+theScale+")");
+	$(".bigBox").css("-moz-transform","translate(-50%,-50%) scale("+theScale+")");
+	//获取bigBBox高度
+	$(".bigBBox").css("height",height+"px");
+}
+document.getElementById("getBottun").addEventListener('touchstart',function(){},false);
+</script>
+
+<<css去掉数字拨号码的样式>>
+<meta name = "format-detection" content="telephone = no" />
+
+<<收藏/已收藏的动画效果>>
+<span class="shoucan">收藏</span>
+<div class="boxTip">
+	<p class="boxTxt"></p>
+</div>
+<script src="jquery-2.1.3.min.js"></script>
+<script>
+	function boxShow(boxTxt){
+		$(".boxTxt").html(boxTxt);
+		$ ('.boxTip').show ().delay(1000).fadeOut()
+	}
+	function qhTxt(txt){
+		$(".shoucan").html(txt);
+	}
+	$(function(){
+		var cur = true;		
+		$(".clickSC").click(function(){			
+			if(cur == true){
+				$(this).find("span").addClass("cur");
+				$(".imgCur").attr("src","imgs/dibu4.png");
+				qhTxt("已收藏")
+				cur = false;
+				setTimeout(function(){
+					boxShow("收藏成功")
+				},500)									
+			}else{
+				$(this).find("span").removeClass("cur");
+				$(".imgCur").attr("src","imgs/dibu3.png");
+				qhTxt("收藏")
+				cur = true;
+				setTimeout(function(){
+					boxShow("取消收藏")
+				},500)								
+			}
+		})
+	})
+
+</script>
+
+<<input默认的时候有个黑色底>>
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    -webkit-appearance: none;
+
+
+<<复制链接>>
+<input value="http://gzmofang.com/index.php?m=home&c=user&a=register&sm=-1&st" class="lianjie" id="copyUrl"/><input type="button" value="复制链接" class="fuzhi" onclick="copyUrl()"/>
+<script>
+	function copyUrl(){		
+		var url = document.getElementById("copyUrl");
+		url.select();
+		document.execCommand("Copy");
+	}
+</script>
+
+
+<<onresize窗口大小>>
+	<div id="content" class="content">
+		<div id="w50" style="width: 100px">50</div>
+		<div id="wAuto">auto</div>
+	</div>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+		<script type="text/javascript">
+		$(window).resize(function(){
+				setResize();
+		});
+		$(window).ready(function(){
+				setResize();
+		});
+		function setResize(){
+			var content = document.getElementById("content");
+			content.style.height = window.innerHeight - 50+'px';				
+			var ww = $("#content").width()-101;
+			$("#wAuto").css({"width":ww+'px'})
+			
+		}
+
+		</script>
+
+<script>
+$(document).ready(function(){
+	$(".table>thead>tr>th.sorting").click(function(){
+		if($(this).hasClass("cur")){
+			$(this).removeClass("cur").addClass("cur1")
+		}else if($(this).hasClass("cur1")){
+			$(this).removeClass("cur1").addClass("cur")
+		}else{
+			$(this).addClass("cur")
+		}
+		$(this).siblings("th").removeClass("cur cur1")
+	})
+});
+</script>
+
+
+
+<<浏览器的兼容性符号>>
+  css
+      .bb{
+          background-color:#f1ee18;/*所有识别*/
+          .background-color:#00deff\9; /*IE6、7、8识别*/
+          +background-color:#a200ff;/*IE6、7识别*/
+          _background-color:#1e0bd1;/*IE6识别*/
+      }
+
+
+<<表情正则>>
+var specialSymbol = /\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g;
+
+<<手机等移动平台上浏览器网页中点击链接跳转到QQ聊天界面
+>>
+<<http://shang.qq.com/v3/widget.html>>qq推广工具
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1123339021&site=qq&menu=yes">1121111</a>
+
+《数组》
+ var allProductId=[];
+$(".product > span.cur").each(function(index, el) {
+	allProductId[index]=$(this).parents().children(".orderTxt").children(".amount").children(".product_id").val();
+});
+
+<<常用 刷新的几种方法:>>
+<a href="javascript:history.go(-1)">返回上一页</a> 
+<a href="javascript:location.reload()">刷新当前页面</a> 
+<a href="javascript:" onclick="history.go(-2); ">返回前两页</a> 
+<a href="javascript:" onclick="self.location=document.referrer;">返回上一页并刷新</a> 
+<a href="javascript:" onclick="history.back(); ">返回上一页</a> 
+<a href="javascript:" onclick="self.location=document.referrer;">返回上一页并刷新</a>
+
+
+《  设置cookie  》
+
+//设置cookie
+function setCookie(cname, cvalue, minutes) {
+    var d = new Date();
+    d.setTime(d.getTime() + (minutes*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+//获取cookie
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+//清除cookie  
+function clearCookie(name) {  
+    setCookie(name, "", -1);  
+}
+
+
+function downliadHint_go(){
+	window.location.href="download.html";
+}
+
+function downliadHint_close(){
+	setCookie("downliadHint","1");
+	document.getElementById("downloadHint_BigDiv").style.display="none";
+	document.getElementById("downloadHint_BigDiv2").style.display="none";
+}
+
+function downliadHint_type(){
+	if(getCookie("downliadHint")=="1"){
+		document.getElementById("downloadHint_BigDiv").style.display="none";
+		document.getElementById("downloadHint_BigDiv2").style.display="none";
+	}
+}
+
+downliadHint_type();
+
+《  设置cookie  》
+
+
+<< css3 使用animation 只执行一次然后停留在执行后的状态>>
+ -webkit-animation:'index' 5s ease-in-out 0s 1 alternate forwards;
+forwards：当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。
+@-webkit-keyframes 'index'{
+   0%{
+  left:0%;
+}
+   50%{
+ left:50%; 
+   }
+   100%{
+ left:100%;
+}
+}
+
+
+<<截取两行字省略号>>
+.ellipsis-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal!important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}

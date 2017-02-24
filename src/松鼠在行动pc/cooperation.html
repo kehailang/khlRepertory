@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/base.css" />
+
+		<link rel="stylesheet" href="css/swiper.min.css">
+			<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+		min-width: 1280px;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{    height: 100%;}
+    .swiper-slide:nth-of-type(1) {background: #F76868;}
+    .swiper-slide:nth-of-type(2) {background: #F4C55D;}
+    .swiper-slide:nth-of-type(3) {background: #5BA29B;}
+    .swiper-slide:nth-of-type(4) {background: #b262c9;padding-bottom: 40px;}
+    .swiper-pagination-bullet{width: 14px;height: 14px;background: url(images/circle1.png) no-repeat;    opacity: 1;}
+    .swiper-pagination-bullet-active{width: 14px;height: 14px;background: url(images/circle.png) no-repeat;}
+    .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{    margin: 14px 0;}
+    .swiper-container-vertical>.swiper-pagination-bullets{right: 28px;}
+    </style>
+	</head>
+<body>
+   <!-- Swiper -->
+    <div class="swiper-container swiper-container-vertical">
+		<!--头部banner部分开始-->
+		<div class="homeBanner">
+			<div class="nav">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<ul class="mainNav">
+					<li>
+							<a href="index.html" class="letter">首        页</a>
+					</li>
+					<li>
+						<a href="product.html">产品中心</a>
+					</li>
+					<li class="cooperation">
+						<a href="cooperation.html"></a>
+						<div>
+							<a href="cooperation01.html">商家入驻</a>
+							<a href="cooperation.html">供应商</a>
+						</div>
+					</li>
+					<li>
+						<a href="news.html">新闻动态</a>
+					</li>
+					<li>
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li>
+						<a href="contact.html">联系我们</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+		<!--头部banner部分结束-->
+   	
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active"><img src="images/img/ban3.png"/></div>
+            <div class="swiper-slide swiper-slide-next"><img src="images/img/ban2.png"/></div>
+            <div class="swiper-slide"><img src="images/img/ban1.png"/></div>
+            <div class="swiper-slide"><img src="images/img/banner1.jpg"/>
+		         <div class="footer">
+        	CopyRight © 2016 BitAuto,All Rights Reserved. &nbsp;&nbsp;粤ICP备15063565号-1版权所有&nbsp;广东松鼠在行动信息有限公司 &nbsp;&nbsp;&nbsp;&nbsp;全国统一服务热线  4000-084-018    &nbsp;&nbsp;地址：广州市海珠区琶洲中洲交易中心1219
+		        </div>   
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+	<img src="images/arrow.png" style="width: 45px; height:25px; bottom: 55px; left: 50%;margin-left: -22px;" id="array" class="resize"/>
+    </div>
+	<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween:0,
+        mousewheelControl: true,
+        simulateTouch : false,
+		onSlideChangeEnd: function(swiper){
+			if(swiper.activeIndex ==3){
+				$("#array").hide()
+			}else{
+				$("#array").show()
+			}
+	 }
+
+	});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+//input的宽度
+function resizeBox(){
+	var addBoxW = $(".ss-itemsInput").width();
+	var addInpW =$(".ss-label").width()+40;
+	$(".ss-input-txt").css({"width":(addBoxW-addInpW)+"px"})
+}resizeBox();
+window.onresize = resizeBox;
+

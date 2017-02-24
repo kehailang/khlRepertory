@@ -1,0 +1,142 @@
+html, body {
+        position: relative;
+        height: 100%;
+    }
+
+#main-index{
+	background-color: #eeeeee;
+}
+.swiper-container {
+        width: 100%;
+        height: auto;
+        margin-top: -30px;
+        
+    }
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.swiper-pagination{
+	margin-bottom: 8%;
+}
+.titleB_box{
+	width: 100%;
+	margin-top: -8%;
+	z-index: 10;
+	position: relative;
+}
+.titleB_box div{ 	
+	width: 25%;
+	position: absolute;
+	top: 5%;
+	left: 0;
+	
+}
+.titleB_box div:nth-of-type(2){
+	left: 25%;
+}
+.titleB_box div:nth-of-type(3){
+	left: 50%;
+}
+.titleB_box div:nth-of-type(4){
+	left: 75%;
+}
+.mian-title { 
+	text-align: center; 
+	width: 100%; 
+	margin: 20px auto 0; 
+	height: 38px; 
+	display: block; 
+	background: #fff; 
+	line-height: 36px; 
+}
+.mian-title h2 { 
+	margin: 0px auto; 
+	font-size: 16px; 
+	font-family: "微软雅黑"; 
+	font-weight: normal;   
+	background-size: 1.5%; 
+	padding-top: 1px; 
+}
+.mian-title h2 img,.youLike h2 img{
+	width: 16px;
+	height: 18px;
+	margin: -4px 2px 0 0;
+	vertical-align: middle;
+	display: inline-block;
+}
+.recommend-product,.product-banner{
+	width: 100%;
+	height: auto;
+}
+.product-left{
+	float: left;
+	width: 40%;
+}
+.product-right{
+	float: right;
+	width: 60%;
+}
+
+.youLike{
+	clear: both;
+	width: 100%;
+	height: 38px;
+	background-color:#fff ;
+	text-align: center;
+	margin: 12px auto 0;
+	line-height: 38px;
+}
+.youLike h2{
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 7px;
+}
+#tabbox{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.tab_conbox{
+	border-top: none;
+	background: #EEEEEE;
+	padding-top: 8px;
+}
+
+.jp{ width: 100%; height: auto;overflow: hidden;}
+.jp img{ width: 100%; height: auto;}
+.jp-bottom{ width: 100%; height: auto; overflow: hidden; margin-bottom: 10px; background-color: #FFFFFF;}
+.jp-top{}
+.jp-left{ float: left; width: 40%;}
+.jp-bottom ul{ width: 100%; height: auto;}
+.jp-bottom ul li{border-left: thin solid #eeeeee; -webkit-box-sizing: border-box;}
+.jp-bottom ul li img{ width: 100%; height: auto;}
+<<<<<<< .mine
+.jp-bottom li:nth-of-type(1){float: left; width: 39.6%;}
+.jp-bottom li:nth-of-type(2){float: left; width: 30%;border-bottom: 1px solid #eeeeee;}
+.jp-bottom li:nth-of-type(3){float: left; width: 30%;border-bottom: 1px solid #eeeeee;}
+=======
+.jp-bottom li:nth-of-type(1){float: left; width: 39.6%;}
+.jp-bottom li:nth-of-type(1) img{}
+.jp-bottom li:nth-of-type(2){float: left; width: 30%;}
+.jp-bottom li:nth-of-type(3){float: left; width: 30%;}
+>>>>>>> .r3755
+.jp-bottom li:nth-of-type(4){float: left; width: 30%;}
+.jp-bottom li:nth-of-type(5){float: left; width: 30%;}
+

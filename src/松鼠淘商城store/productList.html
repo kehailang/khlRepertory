@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>商品列表</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" href="css/swiper.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/productList.css" />
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	</head>
+	<body>
+		<!--总分区-->
+		<div class="wrapper">
+			<!--banner-->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="images/banner.jpg"/></div>
+			        <div class="swiper-slide"><img src="images/banner.jpg"/></div>
+			        <div class="swiper-slide"><img src="images/banner.jpg"/></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>	
+			<!--列表-->
+			<p class="explain">护肤品全场返利<em>26%</em>封顶</p>
+			<div class="waterfall_box">
+				<div class="waterfall_data">
+					<img src="images/product.png" />
+					<div class="detail">
+						<p class="waterfall_title">3W诊所 护手霜 100ML</p>
+						<div class="price">
+							<span class="price1">￥450.00</span>
+							<span class="price2"><em>返</em> 350.00</span>
+						</div>
+						<div class="reward">代言人总奖金：<span>2.2/件</span></div>						
+						<div class="btn">
+							<span class="btn1">马上抢</span>
+							<span class="btn1">分享赚钱</span>
+						</div>
+					</div>
+				</div>
+				<div class="waterfall_data">
+					<img src="images/product.png" />
+					<div class="detail">
+						<p class="waterfall_title">3W诊所 护手霜 100ML</p>
+						<div class="price">
+							<span class="price1">￥450.00</span>
+							<span class="price2"><em>返</em> 350.00</span>
+						</div>
+						<div class="reward">代言人总奖金：<span>2.2/件</span></div>						
+						<div class="btn">
+							<span class="btn1">马上抢</span>
+							<span class="btn1">分享赚钱</span>
+						</div>
+					</div>
+				</div>
+				<div class="waterfall_data">
+					<img src="images/product.png" />
+					<div class="detail">
+						<p class="waterfall_title">3W诊所 护手霜 100ML</p>
+						<div class="price">
+							<span class="price1">￥450.00</span>
+							<span class="price2"><em>返</em> 350.00</span>
+						</div>
+						<div class="reward">代言人总奖金：<span>2.2/件</span></div>						
+						<div class="btn">
+							<span class="btn1">马上抢</span>
+							<span class="btn1">分享赚钱</span>
+						</div>
+					</div>
+				</div>
+				<div class="waterfall_data">
+					<img src="images/product.png" />
+					<div class="detail">
+						<p class="waterfall_title">3W诊所 护手霜 100ML</p>
+						<div class="price">
+							<span class="price1">￥450.00</span>
+							<span class="price2"><em>返</em> 350.00</span>
+						</div>
+						<div class="reward">代言人总奖金：<span>2.2/件</span></div>						
+						<div class="btn">
+							<span class="btn1">马上抢</span>
+							<span class="btn1">分享赚钱</span>
+						</div>
+					</div>
+				</div>
+				<div class="waterfall_data">
+					<img src="images/product.png" />
+					<div class="detail">
+						<p class="waterfall_title">3W诊所 护手霜 100ML</p>
+						<div class="price">
+							<span class="price1">￥450.00</span>
+							<span class="price2"><em>返</em> 350.00</span>
+						</div>
+						<div class="reward">代言人总奖金：<span>2.2/件</span></div>						
+						<div class="btn">
+							<span class="btn1">马上抢</span>
+							<span class="btn1">分享赚钱</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div id="top" class="top"></div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//返回顶部
+			$(window).scroll(function(){
+				//console.log($(window).scrollTop())
+				if($(window).scrollTop()>200){
+					$("#top").fadeIn(500);
+				}else{
+					$("#top").fadeOut(500);
+				}
+			});
+			//点击返回顶部
+			$("#top").click(function(){
+				$("body,html").animate({scrollTop:0},500);
+			});
+		
+			//点击通告关闭按钮
+			$(".annunciate .close").click(function(){
+				$(".annunciate").hide()
+			})
+			//banner
+			var swiper = new Swiper('.swiper-container', {
+			    pagination: '.swiper-pagination',
+			    paginationClickable: true,
+			    autoplay: 2000,//可选选项，自动滑动
+			    autoplayDisableOnInteraction : false,    //注意此参数，默认为true
+			});
+			// 监听tap事件，解决 a标签 不能跳转页面问题
+			mui('nav,mui-slider-group a,header a').on('tap','a',function(){document.location.href=this.href;});
+		
+		</script>
+	
+	</body>
+</html>

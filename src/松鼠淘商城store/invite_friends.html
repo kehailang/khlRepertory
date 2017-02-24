@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>邀请好友</title>  
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->    
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body style="background: #fff;">
+		<!--总分区-->
+		<div class="wrapper" style="padding: 0;">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">邀请好友</h1>
+			</header>
+			<!--内容区域-->
+			<div class="content">
+				<img src="images/bg2.jpg" style="padding-bottom: .5rem;"/>
+			</div>	
+			<a href="javascript:;"><div class="btn1_spokesman">立即邀请好友</div></a>						
+		</div>
+		<!--分享-->
+		<div class="alert-prompt tishi">
+			<img src="images/tishi.png">
+		</div>		
+		<script type="text/javascript">
+			$(".btn1_spokesman").click(function(){
+				$(".tishi").show();
+			});
+			$(".tishi").click(function(){
+				$(".tishi").hide();
+			});
+			
+		</script>
+		
+	</body>
+</html>

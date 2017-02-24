@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>绑定邮箱</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/my.css"/>
+	</head>
+	<body class="md-background-white">
+		<!--总分区-->
+		<div class="wrapper md-background-white">
+			<div class="dm-input-form binding dm-pading15 md-border-top5">
+				<p class="md-fsize12">请输入邮箱地址，并获取验证码进行绑定</p>
+				<form class="mui-input-group">
+					<div class="mui-input-row">	
+						<input type="text" class="mui-input-clear md-fsize15" placeholder="输入常用邮箱地址">
+					</div>
+					<div class="mui-input-row">	
+						<div class="verification-code mui-pull-left">
+							<input type="text" class="mui-input-clear md-fsize15" placeholder="请输入验证码">
+						</div>
+						<div class="test-get-code mui-pull-right">
+							<input type="text" class="md-fsize15" value="获取验证码" readonly="readonly">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="mui-content-padded">
+				<button class="mui-btn mui-btn-block mui-btn-primary">绑 定</button>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+	</body>
+</html>

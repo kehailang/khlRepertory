@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+.waterfall_boxA{
+	box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;float:left; width:50%; padding-left:8px; padding-right:4px; /* font-family: 微软雅黑; */ position: relative;
+}
+
+.waterfall_boxB{
+	box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;float:right; width:50%; padding-left:4px; padding-right:8px; /* font-family: 微软雅黑; */ position: relative;
+}
+
+.waterfall_boxC{
+	box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;float:right; width:100%; padding-left:10px; padding-right:10px; /* font-family: 微软雅黑;  */position: relative;
+}
+
+.waterfall_data{
+	width:100%; background-color:#FFFFFF; border:thin solid #ccc;-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius:5px; overflow:hidden;margin-bottom:8px;
+	z-index:999;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+}
+
+.waterfall_img{
+	width:100%;display: block;
+}
+
+.waterfall_title{
+	float:left; margin-top:15px; font-size:16px; line-height:20px;/* font-family: 微软雅黑; */
+	box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+	width:100%; padding-left:5px; padding-right:5px;text-align:center;
+	text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis; overflow: hidden; white-space:nowrap;-moz-binding: url("ellipsis.xml#ellipsis");
+}
+
+.waterfall_price{
+	float:left; margin-top:10px; font-size:19px; color:#ee4910;line-height:21px;
+	box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+	width:100%; text-align:center;
+	
+}
+
+.waterfall_property{
+	float:left; margin-top:10px; border-top:thin solid #cacaca; border-bottom:thin solid #cacaca; height:40px; width:100%;
+	box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+	padding-left:10px; padding-right:10px; position:relative;
+}
+
+.waterfall_countNum{
+	color:#8d8d8d; font-size:14px; width:auto; float:left;line-height:16px; margin-left:2px; margin-top:12px;
+}
+
+.waterfall_popboxdiv{
+	overflow: hidden;
+    text-align: center;
+    width: auto;
+    display: inline-block !important;
+}
+
+.waterfall_left{
+	 height:40px;float:left; width: 33.3%; text-align: center;
+}
+.waterfall_leftImg{
+	width:11px; height:9.5px; float:left; margin-top:15.25px;display: block;
+}
+
+
+.waterfall_center{
+	height:40px; float:left; width: 33.3%; text-align: center;
+}
+.waterfall_centerImg{
+	width:12px; height:11px; float:left; margin-top:14.5px;display: block;
+
+}
+
+.waterfall_right{
+	height:40px; float:left; width: 33.3%; text-align: center;
+}
+
+.waterfall_rightImg{
+	width:12px; height:11px; float:left; margin-top:15px;display: block;
+}
+
+.waterfall_details{
+	padding:10px 10px 15px 10px; width:100%; float:left;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+}
+.waterfall_detailsT{
+ 	font-size:12px; line-height:17px; color:#8d8d8d; word-break:break-all;
+}
+.waterfall_detailsTs{
+	color:#000000;
+}
+
+.waterfall_time{
+	float:left; width:100%; margin-top:10px;font-size:12px; line-height:17px; color:#8d8d8d;
+}
+
+.waterfall_comment{
+	float:left; width:100%;margin-top:10px; 
+}
+.waterfall_commentBox{
+	float:left; width:20%; padding-left:1%; padding-right:1%;box-sizing:border-box;-moz-box-sizing:border-box;
+}
+.waterfall_commentBox img{
+	width:100%; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius:50%; border:none; display:block;
+}
+
+
+.waterfall_propertyBig {
+    float: right;
+    /* margin-top: 10px; */
+    /* border-top: thin solid #cacaca; */
+    /* border-bottom: thin solid #cacaca; */
+    height: 30px;
+    width: 133px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    position: relative;
+}
+
+.waterfall_priceBig {
+    float: left;
+    margin-top: 10px;
+    font-size: 19px;
+    color: #ee4910;
+    line-height: 21px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* width: 100%; */
+    text-align: center;
+}
+
+.waterfall_addBoxBig{
+	box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+	width: 100%;float:left; padding-left: 10px;padding-right: 10px;
+}
+
+.waterfall_leftBig{
+	 height:30px;float:left; 
+}
+.waterfall_centerBig{
+	height:30px; position:absolute; width:auto; left:50%; 
+	transform:translate(-50%,0);
+	-ms-transform:translate(-50%,0); 	
+	-moz-transform:translate(-50%,0); 	
+	-webkit-transform:translate(-50%,0); 
+	-o-transform:translate(-50%,0); 
+}
+.waterfall_rightBig{
+	height:30px; float:right; 
+}

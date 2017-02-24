@@ -1,0 +1,41 @@
+/*物流信息*/
+.wuliu-information{
+	background: #fff;padding: 15px 14px;color: #999;margin-bottom: 10px;
+}
+.wuliu-information .title{
+}
+.wuliu-information .items{
+	position: relative;
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+.items:first-child .title{color: black;}
+.items #copy{
+	position: absolute;top: 0;right: 0;
+}
+.track{
+	background: #fff;border-top:1px solid #d6d6d6;
+}
+.track-title{
+	font-size: 18px;margin: 0 0 0 16px;border-bottom:1px solid #d4d4d4;line-height: 45px;padding: 0 8px;
+}
+.name span:first-child{display: inline-block;width: 54%;}
+.message-box{    padding-top: 12px;}
+.Lmessage{margin: 0 0 0 28px;position: relative;border-left: 1px solid #d4d4d4;}
+.message{overflow: hidden; position: relative;color: #787878;    margin-left: 20px;padding: 8px 0;}
+.message-bm{border-bottom: 1px solid #d4d4d4;overflow: hidden;padding-bottom: 15px;font-size: 15px;    padding-right: 10px;}
+
+.Lmessage:first-child:after{content: "";position: absolute; top: 0; left: -4px; width: 9px; height: 16px; background: #fff; z-index: 9;}
+.Lmessage:last-child .message{padding-bottom: 0;border-bottom: none;}
+.Lmessage:last-child .message .message-bm{border-bottom: none;}
+.Lmessage.active:before{background: #ed5137;width: 18px; height: 18px;border: 2px solid #facac3;left: -11px;}
+.Lmessage.active .message-bm{color: #ed5137;}
+.message-bm p:last-child{font-size: 12px;margin-top: 2px;}
+.status{color: #ed5137;}
+.items:first-child{font-size: 18px;    padding-bottom: 2px;}
+.Lmessage:before{content: "";position: absolute; top: 10px; left: -5px; width: 9px; height: 9px;border-radius: 50%; background: #d4d4d4; z-index: 10;}
+.logistics-big{overflow: hidden;display: -moz-box; display: -ms-flexbox;display: -webkit-box; display: -webkit-flex; display: box; display: flexbox; display: flex;background: #fff;border-bottom: 1px solid #dedede;margin-bottom: 13px;padding-left: 14px;box-sizing: border-box;}
+.wuliu-img{position: relative; width: 100px;}
+.wuliu-img img{padding-top: 15px;}
+.wuliu-information{-webkit-box-flex:1; -moz-box-flex:1; -webkit-flex:1;-ms-flex:1;flex:1;}
+.wuliu-information a{color: #ed5137;}

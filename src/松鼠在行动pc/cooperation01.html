@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/base.css" />
+
+		<link rel="stylesheet" href="css/swiper.min.css">
+			<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+		min-width: 1280px;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide >img{    height: 100%;}
+    .swiper-slide:nth-of-type(1) {background: #F37189;}
+    .swiper-slide:nth-of-type(2) {background: #5EAEF3;}
+    .swiper-slide:nth-of-type(3) {background: #8FC055;}
+    .swiper-slide:nth-of-type(4) {background: #B362C9;padding-bottom: 40px;}
+    .swiper-pagination-bullet{width: 14px;height: 14px;background: url(images/circle1.png) no-repeat;    opacity: 1;}
+    .swiper-pagination-bullet-active{width: 14px;height: 14px;background: url(images/circle.png) no-repeat;}
+    .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{    margin: 14px 0;}
+    .swiper-container-vertical>.swiper-pagination-bullets{right: 28px;}
+    </style>
+	</head>
+<body>
+   <!-- Swiper -->
+    <div class="swiper-container swiper-container-vertical">
+		<!--头部banner部分开始-->
+		<div class="homeBanner">
+			<div class="nav">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<ul class="mainNav">
+					<li>
+							<a href="index.html" class="letter">首        页</a>
+					</li>
+					<li>
+						<a href="product.html">产品中心</a>
+					</li>
+					<li class="cooperation">
+						<a href="cooperation01.html"></a>
+						<div>
+							<a href="cooperation01.html">商家入驻</a>
+							<a href="cooperation.html">供应商</a>
+						</div>
+					</li>
+					<li>
+						<a href="news.html">新闻动态</a>
+					</li>
+					<li>
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li>
+						<a href="contact.html">联系我们</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+		<!--头部banner部分结束-->
+   	
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/img/ban1.jpg"/></div>
+            <div class="swiper-slide "><img src="images/img/ban2.jpg"/></div>
+            <div class="swiper-slide"><img src="images/img/ban3.jpg"/></div>
+            <div class="swiper-slide">
+		         <div class="footer">
+        	CopyRight © 2016 BitAuto,All Rights Reserved. &nbsp;&nbsp;粤ICP备15063565号-1版权所有&nbsp;广东松鼠在行动信息有限公司 &nbsp;&nbsp;&nbsp;&nbsp;全国统一服务热线  4000-084-018    &nbsp;&nbsp;地址：广州市海珠区琶洲中洲交易中心1219
+		        </div>    
+		        <div class="information">
+		        	<!--<div class="left"><img src="images/wenzi.png"/></div>-->
+			        <div class="right">
+			        	
+				       	<div class="message">
+				       		<div>
+				       			<img src="images/woman.png" />
+					        	<h4>立即留言（24小时内获得快速回复）</h4>
+					        	<form>
+					        		<div class="frmInput">
+					        			<div class="input">
+						        			<label>姓名：</label>
+						        			<input type="text" />	
+					        			</div>
+					        			<div class="input">
+					        				<span><label>先生</label>
+					        				<input type="radio" checked=""/></span>
+					        				<span><label>女生</label>
+					        				<input type="radio"/></span>
+					        			</div>
+					        		</div>
+					        		<div class="frmInput">
+					        			<div class="input">
+						        			<label>电话：</label>
+						        			<input type="text" />	
+					        			</div>
+					        			<div class="input">
+						        			<label>联系时间：</label>
+						        			<select>
+						        				<option></option>
+						        				<option>4</option>
+						        				<option>5</option>
+						        			</select>
+					        			</div>
+					        		</div>
+					        		<div class="frmInput">
+					        			<div class="input01">
+						        			<label>邮箱：</label>
+						        			<input type="text" />	
+					        			</div>
+					        		</div>
+					        		<div class="frmInput">
+					        			<div class="input01">
+						        			<label>地址：</label>
+											<div><select id="s_province" name="s_province"></select> 
+											<select id="s_city" name="s_city" ></select> 
+											<select id="s_county" name="s_county"></select></div>
+					        			</div>
+					        		</div>
+					        		<div class="frmInput">
+					        			<div class="input03">
+						        			<label>备注：</label>
+											<textarea></textarea>
+					        			</div>
+					        		</div>
+					        		<div class="frmInput">
+					        			<div class="right">
+					        				<button>提交留言</button>
+					        			</div>
+					        		</div>
+					        	</form>
+		      	    		</div>
+				       	</div>	
+		       		 </div>
+			    </div>		        
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+		<img src="images/arrow.png" style="width: 45px; height:25px; bottom: 50px; left: 50%;margin-left: -22px;" id="array" class="resize"/>
+    </div>
+	<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+   <script src="js/swiper.min.js"></script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween:0,
+        mousewheelControl: true,
+        simulateTouch : false,
+        onSlideChangeEnd: function(swiper){
+      		if(swiper.activeIndex ==3){
+      			$("#array").hide();
+      		}else{
+      			$("#array").show()
+      		}
+   		}
+	});
+    </script>
+ 
+<script class="resources library" src="js/city.js" type="text/javascript"></script>
+<script type="text/javascript">_init_area();</script>	
+	<script type="text/javascript">
+	var Gid  = document.getElementById ;
+	var showArea = function(){
+		Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" + 	
+		Gid('s_city').value + " - 县/区" + 
+		Gid('s_county').value + "</h3>"
+								}
+	Gid('s_county').setAttribute('onchange','showArea()');
+	
+	</script>
+	
+</body></html>

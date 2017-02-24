@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>莫芳-提现</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/withdraw.css"/>
+	</head>
+	<body>
+		<div class="can-carry">
+			<div class="can-carry-money">
+				<p>可提现金额</p>
+				<p class="money">188.00元</p>
+			</div>
+			<div class="can-carry-btn">全部提现</div>
+		</div>
+		<div class="bankBox">
+			<ul class="carry-amount">
+				<li class="items">
+					<label class="label"><input type="text" placeholder="金额" readonly="readonly" /></label>
+					<label class="input"><input type="text" placeholder="100.00"/></label>
+				</li>
+				<li class="items">
+					<label class="label"><input type="text" placeholder="银行卡" readonly="readonly" /></label>
+					<label class="input">
+						<select class="mf-choose" id="selectId">
+							<option readOnly="true">请选择银行卡</option>
+							<option>中国邮政</option>
+							<option>中国农业银行</option>
+							<option>中国建设银行</option>
+							<option>中国工商银行</option>
+							<option>中国银行</option>
+							<option>中国光大银行</option>
+							<option>华夏银行</option>
+							<option>中国民生银行</option>
+							<option>平安银行</option>
+							<option>兴业银行</option>
+						</select>						
+						<i class="icon-return"></i>
+					</label>					
+				</li>			
+			</ul>
+		</div>
+		<div class="amount-text">最少提现<em class="mf-red">10元</em>，预计<em class="mf-red">两天内</em>到账</div>
+		<div class="mf-btn mf-withdraw">提现</div> 
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//请选择银行卡color颜色默认为灰色			
+				$("#selectId").css("color","#d5cccc")
+				$("#selectId").change(function(){
+					console.log($(this).val())
+					//请选择其他银行卡color颜色为333333		
+					$("#selectId").css("color","#333333");
+				});			
+			})
+		</script>
+		
+	</body>
+</html>

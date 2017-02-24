@@ -1,0 +1,74 @@
+.wrap{margin:0 auto;}
+.tabs{height:44px;background: #fff;border-bottom: 1px solid #cccccc;position: fixed;width: 100%;z-index: 100;top: 0;max-width: 768px;}
+.tabs a{display:block;float:left;width:25%;color:#333;text-align:center;line-height:44px;font-size:14px;text-decoration:none;}
+.tabs a span.active{border-bottom: 2px solid #000;}
+.tabs a span{line-height:40px;    display: inline-block;}
+.swiper-container{width:100%;border-top:0;    margin-top: 44px;}
+
+.myOrder{margin: 10px 0; background: #fff;}
+.myOrder .size{color: #333333;border-bottom: 1px solid #e3e3e3;padding: 6px 20px;font-size: 15px;margin-bottom: 10px; overflow:hidden;}
+.myOrder .size em{font-style: normal;float: right;color: #999999;float: right;}
+.myOrder .product{padding: 0 20px 0;overflow: hidden;position: relative;}
+.product .orderImg{float: left; width: 70px;height: 70px;border: 1px solid #eaeaea; overflow: hidden;margin-right: 20px;}
+.product .orderImg img{width: 100%;}
+.product .orderTxt p{color: #999999;}
+.product .orderTxt p span{margin-right: 12px;}
+.product .sum{width: 30%;float: right;text-align: right;color: #333333;font-size: 18px;}
+.header-txt{width: 70%;display: inline-block;}
+.orderList .allSum{line-height: 32px;text-align: right;float: left; display: inline-block;}
+.orderBtn .btn{float: right;}
+.orderBtn .btn a{line-height: 25px; color: #999999;display: inline-block;border: 1px solid #c7c7c7; text-align: center;text-decoration: none;border-radius: 4px;padding: 0 6px;}
+.orderBtn{text-align: right;padding:9px 20px 4px;overflow: hidden; border-top: 1px solid #e5e5e5;margin-top: 10px;}
+.orderBtn .btn a.gray{border: 1px solid #ff4545;color: #ff4545;}
+.allSum span{color:#ff4545 ;}
+
+/*订单详情*/
+.order-number,.order-message,.remark,.myMoney{margin:10px 0;background: #fff;}
+.order-number .items,.importance,.address,.remark p,.remark textarea{border-bottom: 1px solid #dddddd;font-size: 15px;color: #333333;line-height: 44px;height: 44px;padding: 0 20px;position: relative;}
+.order-number .items:last-child,.importance:last-child,.address:last-child{border-bottom: none;}
+.order-number span:first-child,.importance span:first-child{float: left;}
+.order-number span:last-child,.importance span:last-child{float: right;}
+.order-number .time{color: #999999;}
+.address{color: #999999;font-size: 12px;height: auto;line-height: 18px;padding: 14px 20px;}
+.no-payment,.common{color:#ff3333;}
+.free-shipping{color: #666666;} 
+.remark{overflow: hidden;}
+.remark textarea{height: 85px;border-bottom: 0;width: 100%;line-height: 22px;box-sizing: border-box;padding: 10px 20px;}
+textarea::-webkit-input-placeholder{color:#333333;}
+textarea:-moz-placeholder{color:#333333;}
+.btn-cancel{background: #e8e8e8;color: #999999;}
+/*我的金额*/
+
+.myMoney{margin-top: 0;text-align: center;padding: 25px 0 30px;}
+.myMoney p{font-size: 18px;}
+.myMoney .money{font-size: 30px;color: #ff3333;margin-top: 5px;}
+.all-order-message{font-size: 15px;color: #666666;line-height: 20px;margin-bottom: 5px;}
+.all-order-message span{color: #0099cc;}
+.all-order-message em{color: #ff3333;}
+.all-order{padding: 0 14px 90px;box-sizing: border-box;border-top: 18px solid #fff;/*border-bottom: 58px solid #fff;*/ /*padding-top: 190px;padding-top: 63%;*/}
+.btn-withdraw{background: #000;color: #fff;}
+.product .sum.mf-red{color: #ff0000;}
+
+
+.order-sign{color: #ff3333;font-size: 15px;    padding: 0 20px 0;}
+.line-through{text-decoration:line-through;}
+.product .orderTxt p{color: #333333;font-size: 15px;}
+.product .orderTxt .no-payment{float: right;}
+.product .orderTxt {overflow: hidden;
+    height: 75px;}
+.product .orderTxt h3 {
+    margin-top: 0;
+    line-height: 16px;
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 3px;
+    position: relative;
+}
+
+.din-number{padding: 5px 20px 0;}
+
+
+
+
+
+

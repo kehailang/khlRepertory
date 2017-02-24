@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>绑定手机号码</title>
+		<!-- 为移动设备添加 viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<!-- telephone为no -->
+		<meta name="format-detection" content="telephone = no">
+		<!-- 公共基础样式 -->   
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/account.css"/>
+		<!--公用脚本加载-->
+		<script src="js/jquery-2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>	    		
+	    
+	</head>
+	<body>
+		<!--总分区-->
+		<div class="wrapper">
+			<!--返回导航头部-->
+			<header class="bar-nav border-bottom">
+				<a href="javascript:;" onclick="javascript:history.go(-1);" class="return-left"><span class="icon iconfont icon-fanhui"></span></a>
+			    <h1 class="font-size34 bar-nav-title">绑定手机号码</h1>
+			</header>
+			<!--内容区域-->
+			<div class="content">				
+				<div class="login-frame">
+					<form class="mui-input-group">
+						<div class="mui-input-row">	
+							<input type="text" class="mui-input-clear md-fsize15" placeholder="请输入您的手机号码">
+						</div>
+						<div class="mui-input-row">	
+							<div class="verification-code mui-pull-left">
+								<input type="text" class="mui-input-clear md-fsize15" placeholder="请输入验证码">
+							</div>
+							<div class="test-get-code mui-pull-right">
+								<input type="text" class="md-fsize15" value="发送验证码" readonly="readonly" onclick="sendemail()" id="btn">
+							</div>
+						</div>
+					</form>
+				</div>
+				<!--登录部分-->
+				<div class="mui-content-padded">
+					<div class="mui-btn-block mui-btn-primary">确 认</div>
+				</div>
+			</div>
+		</div>	
+		<script type="text/javascript">
+			//发送验证码倒计时60秒
+			var countdown=60; 
+			function sendemail(){
+			    var obj = $("#btn");
+			    settime(obj);
+			    
+			    }
+			function settime(obj) { //发送验证码倒计时
+			    if (countdown == 0) { 
+			        obj.attr('disabled',false); 
+			        //obj.removeattr("disabled"); 
+			        obj.val("免费获取验证码");
+			        countdown = 60; 
+			        return;
+			    } else { 
+			        obj.attr('disabled',true);
+			        obj.css("color","#ababab");
+			        obj.val("重新发送(" + countdown + ")");
+			        countdown--; 
+			    } 
+			setTimeout(function() { 
+			    settime(obj) }
+			    ,1000) 
+			}	
+		</script>
+		
+	</body>
+</html>

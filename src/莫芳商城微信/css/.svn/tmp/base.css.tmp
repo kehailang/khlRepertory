@@ -1,0 +1,119 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);margin:0; padding:0; border:none;font-family: 'Microsoft YaHei' }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+	width: 100%;
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+
+/* 初始化 */
+body{font-family: 'Microsoft YaHei';font-size: 14px;}
+em,i{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+
+input,textarea,button,select,option{color:#666; outline: none; resize: none;-webkit-appearance: none;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#666666; font-family:Microsoft YaHei,Tahoma,Arial,sans-serif;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal; font-family: Microsoft YaHei;}
+
+/*公共样式*/
+.clear{ clear: both;}
+img{border: none; display:block;}
+body{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.nav{
+	position: fixed;
+	width: 100%;
+	height: 56px;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #EEEEEE;
+	z-index: 900;
+}
+.ss-btn{background: #ee4911;border-radius: 6px;}
+.ss-btn:active {background-color: #CC4010;}
+/*头部样式*/
+.title-top{height: 45px;line-height: 45px; background: #fff;text-align: center;width: 100%;border-bottom: 1px solid #e2e2e2;font-size: 17px;padding: 0 10px;box-sizing: border-box; position: relative;}
+.title-center{font-size: 16px;color: #323232;}
+.return-left{width: 25px;height: 39px;display: inline-block;background: url(../images/public/return_left.png) no-repeat left center;background-size:12px 23px;position: absolute;top: 50%;left: 10px;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);}
+.title-register,.title-edit{color: #ef4811; position: absolute;top: 50%;right: 10px;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);font-size: 14px;}
+.title-top .home{position: absolute;top: 50%;right: 10px;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);}
+.title-top .home img{width:25px; height:25px; }
+.title-edit{color: #8d8d8d;}
+/*提示窗口css样式*/
+.bgBack{position: fixed; z-index: 998; width: 100%; height: 100%; background: black;top: 0; opacity: 0.2;max-width: 768px;margin: 0px auto;display: none;}
+.bgAlert{-webkit-box-sizing:border-box; box-sizing:border-box;-webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); -webkit-border-radius: 2px; border-radius:2px; border:thin solid #eeeeee;position: fixed; z-index: 999; background-color: #fff; top:50%; left: 50%;box-shadow: 2px 2px 5px #777; padding: 15px 15px;overflow: hidden;  min-width:250px; display: none;}
+.alert-text{word-break:break-all;float: left;  text-align: center; font-size: 14px; color: black; width: 100%;}
+.alert-button{-webkit-transform:translate(-50%,0);transform:translate(-50%,0); border-radius:5px;
+	float: left; width: 100px; color: #fff; font-size: 14px;background-color: #ff3f26; margin-top: 15px; margin-left:50%;line-height: 16px; padding-bottom: 5px; padding-top: 5px; text-align: center;}
+/*加载中*/
+#waitBack{position: fixed; z-index: 998; width: 100%; height: 100%; display: none;opacity: 0.5; }
+#waitAlert{transform:translate(-50%,-50%);	-webkit-transform:translate(-50%,-50%);  border-radius:10px; border:thin solid #eeeeee;position: fixed; z-index: 999; background-color: #fff; width: 80px; height: 120px; top:50%; left: 50%; display:none;box-shadow: 2px 2px 1px #777; }
+#waitAlert img{width: 100%; float: left; display: block; border-radius:10px;}
+#waitAlert div{width: 100%; border-top: thin solid #eeeeee; float: left;}
+#waitAlert div p{width: 100%; float: left; padding: 0 0 0 0; margin: 0 0 0 0; margin-top: 10px; text-align: center; font-size: 12px; line-height: 14px;color: #7D7A7A;}	
+
+/*极速加载*/
+#bottomLoading{width:100%; float:left; height:20px; position:relative; background-color: #ffffff;}
+.gsou-loading{height:20px;position:absolute; left:50%;-webkit-transform: translate(-50%,0);transform: translate(-50%,0);}
+#bottomLoadingImg{background:url(../images/public/loading.gif) no-repeat;background-size:100%; width:20px; height:20px; float:left;}
+#bottomLoadingText{height:20px; float:left; line-height:20px; font-size:14px; font-weight:bold; color:#999999; margin-left:5px;}
+#bottomLoading2{width:100%; float:left; height:44px; position:relative; background-color: #eeeeee; position: relative; display:none;}
+#bottomLoading2:before{content: "";position: absolute;top: 0;left: 0; height: 22px; border-bottom: thin solid #a1a1a1; width: 100%;}
+.tip-border{height: 10px; width:42px; position: absolute; background-color: #eeeeee; top:15px; left: 50%; transform: translate(-20px,0); -ms-transform: translate(-20px,0);  -o-transform: translate(-20px,0);  -moz-transform: translate(-20px,0);   -webkit-transform: translate(-20px,0);z-index: 800;}
+#bottomLoading2 img{position: absolute; height: 40px; width:60px; top:0; left: 50%; transform: translate(-20px,0); -ms-transform: translate(-20px,0);  -o-transform: translate(-20px,0);  -moz-transform: translate(-20px,0); -webkit-transform: translate(-20px,0); z-index: 900;}
+<<<<<<< .mine
+
+/*没有订单的提示样式*/
+.promptBox{width: 100%; height: 300px; margin-top: 60px; background-color: #eeeeee;}
+.prompt-img{float: left; width: 100px;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);position: relative; left: 50%; top:0; }
+.prompt-text{float: left; width: 100%; text-align: center;font-size: 12px; margin-top: 20px; color: #828282;}
+.blankBoxPop{float: left; width: 100%;position: relative; height: 50px;margin-top: 20px;}
+.prompt-btn{position: absolute; left: 50%; top:0; background-color: #fff;padding: 8px 16px;color: #666;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);}
+.prompt-btn:active{background-color: #E2E1E1;}
+=======
+
+/*返回顶部*/
+.top{
+	position:fixed;
+	right:10px;
+	bottom:100px;
+	float:right;
+	width:38px;
+	height:38px;
+	z-index:10;
+	display: none;
+	background:url("../images/public/fhtb_icon.png");
+}>>>>>>> .r3755
